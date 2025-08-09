@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz Application</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 2em; }
+    #quiz-container { margin-top: 1.5em; }
+    .question { margin-bottom: 1em; }
+    .question button.option { display:block; margin:0.3em 0; }
+    .question-types { margin-bottom: 1em; }
+    .question-types label { margin-right: 1em; }
+  </style>
+</head>
+<body>
+  <h1>Quiz Application</h1>
+  <div style="display:flex;justify-content:space-between;align-items:center;">
+    <div id="progress-indicator"></div>
+    <button id="darkModeToggle" style="margin-bottom:1em;">Toggle Dark Mode</button>
+  </div>
+  <div class="question-types">
+    <label><input type="checkbox" id="documentCheck" checked> Document Question</label>
+    <label><input type="checkbox" id="locationCheck" checked> Location Question</label>
+    <label><input type="checkbox" id="contentCheck" checked> Content Question</label>
+  </div>
+  <p>
+    <input type="file" id="fileInput" accept="application/json">
+    <label>Number of questions: <input type="number" id="questionCount" min="1" style="width:4em;"></label>
+    <button id="startBtn">Start Quiz</button>
+  </p>
+  <div id="quiz-container"></div>
+  <div id="review-container" style="display:none;"></div>
+  <script src="data.js"></script>
+  <script src="quiz.js"></script>
+</body>
+</html>
