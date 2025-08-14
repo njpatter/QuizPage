@@ -85,6 +85,15 @@ const dirInput = document.createElement('input');
 dirInput.type = 'file';
 dirInput.webkitdirectory = true;
 dirInput.style.display = 'none';
+
+// Add event listener to debug directory selection
+dirInput.addEventListener('change', (e) => {
+  if (e.target.files.length > 0) {
+    console.log('Directory selected, files detected:', e.target.files.length);
+    console.log('Sample file paths:', Array.from(e.target.files).slice(0, 3).map(f => f.webkitRelativePath || f.name));
+  }
+});
+
 document.body.appendChild(dirInput);
 
 const modeToggle = document.createElement('button');
@@ -98,10 +107,12 @@ modeToggle.addEventListener('click', () => {
     fileInput.style.display = 'none';
     dirInput.style.display = '';
     modeToggle.textContent = 'Switch to File Mode';
+    console.log('Switched to Directory Mode');
   } else {
     fileInput.style.display = '';
     dirInput.style.display = 'none';
     modeToggle.textContent = 'Switch to Directory Mode';
+    console.log('Switched to File Mode');
   }
 });
 
@@ -113,12 +124,55 @@ fileInput.parentNode.insertBefore(loadDefaultBtn, fileInput.nextSibling);
 
 loadDefaultBtn.addEventListener('click', () => {
   if (typeof defaultQuizData !== 'undefined' && defaultQuizData.length > 0) {
+    // Clear any previously loaded file data and use default questions
     quizData = defaultQuizData;
     allDocumentNames = Array.from(new Set(quizData.map(q => q.document_answer)));
+    
+    // Update status indicator to show default questions are loaded
+    const statusIndicator = document.getElementById('status-indicator');
+    if (statusIndicator) {
+      statusIndicator.innerHTML = `✅ Default questions loaded (${defaultQuizData.length} questions available)`;
+    }
+    
+    // Clear file inputs
+    fileInput.value = '';
+    dirInput.value = '';
+    
     startQuiz();
   } else {
     alert('Default questions not available. Please load a quiz file.');
   }
+});
+
+// Add test button for debugging directory loading
+const testDirBtn = document.createElement('button');
+testDirBtn.textContent = 'Test Directory';
+testDirBtn.style.marginLeft = '1em';
+testDirBtn.style.fontSize = '0.8em';
+testDirBtn.style.padding = '0.3em 0.6em';
+fileInput.parentNode.insertBefore(testDirBtn, fileInput.nextSibling);
+
+testDirBtn.addEventListener('click', () => {
+  console.log('=== Directory Input Test ===');
+  console.log('isDirectoryMode:', isDirectoryMode);
+  console.log('dirInput.webkitdirectory:', dirInput.webkitdirectory);
+  console.log('dirInput.files.length:', dirInput.files.length);
+  
+  if (dirInput.files.length > 0) {
+    console.log('Files in directory input:');
+    Array.from(dirInput.files).forEach((file, index) => {
+      console.log(`  ${index + 1}. ${file.name} (${file.webkitRelativePath || 'no relative path'})`);
+    });
+  } else {
+    console.log('No files selected in directory input');
+  }
+  
+  // Test the filter
+  const testFiles = Array.from(dirInput.files).filter(f => f.name.endsWith('.json'));
+  console.log('Files matching .json pattern:', testFiles.length);
+  testFiles.forEach(f => console.log(`  - ${f.name}`));
+  
+  console.log('=== End Test ===');
 });
 
 // Auto-load default questions on page load
@@ -268,11 +322,12 @@ startBtn.addEventListener('click', () => {
     reader.onload = e => {
       try {
         const newData = JSON.parse(e.target.result);
-        // Merge with existing data if any
-        if (quizData.length > 0) {
-          quizData = quizData.concat(newData);
-        } else {
-          quizData = newData;
+        // Replace existing data with new data
+        quizData = newData;
+        // Clear any existing status indicator
+        const statusIndicator = document.getElementById('status-indicator');
+        if (statusIndicator) {
+          statusIndicator.innerHTML = `📁 Loaded ${newData.length} questions from file`;
         }
       } catch (err) {
         alert('Could not parse quiz file as JSON.');
@@ -288,12 +343,24 @@ startBtn.addEventListener('click', () => {
       alert('Please choose a directory with question JSON files or click "Load Default Questions".');
       return;
     }
+    
+    // Debug: Log what files were detected
+    console.log('Directory input files:', Array.from(dirInput.files).map(f => f.name));
+    
     // Only load *_questions.json files
-    const files = Array.from(dirInput.files).filter(f => f.name.endsWith('_questions.json'));
+    const files = Array.from(dirInput.files).filter(f => f.name.endsWith('.json'));
+    
+    console.log('Filtered question files:', files.map(f => f.name));
+    
     if (!files.length) {
-      alert('No *_questions.json files found in directory.');
+      // Show more detailed error message
+      const allFiles = Array.from(dirInput.files).map(f => f.name);
+      console.log('All files in directory:', allFiles);
+      
+      alert('No JSON files found in directory. Please ensure your question files have a .json extension');
       return;
     }
+    
     let loaded = 0;
     let allQuestions = [];
     files.forEach(file => {
@@ -301,17 +368,23 @@ startBtn.addEventListener('click', () => {
       reader.onload = e => {
         try {
           const data = JSON.parse(e.target.result);
-          if (Array.isArray(data)) allQuestions = allQuestions.concat(data);
+          if (Array.isArray(data)) {
+            allQuestions = allQuestions.concat(data);
+            console.log(`Loaded ${data.length} questions from ${file.name}`);
+          } else {
+            console.warn(`${file.name}: Not a list, skipping`);
+          }
         } catch (err) {
-          // skip file
+          console.error(`Error parsing ${file.name}:`, err);
         }
         loaded++;
         if (loaded === files.length) {
-          // Merge with existing data if any
-          if (quizData.length > 0) {
-            quizData = quizData.concat(allQuestions);
-          } else {
-            quizData = allQuestions;
+          // Replace existing data with new data
+          quizData = allQuestions;
+          // Clear any existing status indicator
+          const statusIndicator = document.getElementById('status-indicator');
+          if (statusIndicator) {
+            statusIndicator.innerHTML = `📁 Loaded ${allQuestions.length} questions from ${files.length} files`;
           }
           // Build document name set
           allDocumentNames = Array.from(new Set(quizData.map(q => q.document_answer)));
@@ -352,6 +425,10 @@ function startQuiz() {
   if (statusIndicator) {
     statusIndicator.innerHTML = `📝 Quiz started with ${selectedQuestions.length} questions from ${quizData.length} total questions`;
   }
+  
+  // Clear file inputs to show they've been processed
+  fileInput.value = '';
+  dirInput.value = '';
   
   fileInput.disabled = true;
   dirInput.disabled = true;
