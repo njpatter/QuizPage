@@ -46,19 +46,21 @@ const contentCheck = document.getElementById('contentCheck');
 // Add event listeners for question type checkboxes
 documentCheck.addEventListener('change', () => {
   selectedQuestionTypes.document = documentCheck.checked;
-  // If document is unchecked, uncheck location and content
+  // If document is unchecked, uncheck location and content only if they depend on it
   if (!documentCheck.checked) {
-    locationCheck.checked = false;
-    contentCheck.checked = false;
-    selectedQuestionTypes.location = false;
-    selectedQuestionTypes.content = false;
+    // Only uncheck location if content is not checked (since content can be independent)
+    if (!contentCheck.checked) {
+      locationCheck.checked = false;
+      selectedQuestionTypes.location = false;
+    }
+    // Don't automatically uncheck content - it can be independent
   }
 });
 
 locationCheck.addEventListener('change', () => {
   selectedQuestionTypes.location = locationCheck.checked;
-  // If location is checked, ensure document is checked
-  if (locationCheck.checked && !documentCheck.checked) {
+  // If location is checked, ensure document is checked (unless content is also checked)
+  if (locationCheck.checked && !documentCheck.checked && !contentCheck.checked) {
     documentCheck.checked = true;
     selectedQuestionTypes.document = true;
   }
@@ -66,16 +68,11 @@ locationCheck.addEventListener('change', () => {
 
 contentCheck.addEventListener('change', () => {
   selectedQuestionTypes.content = contentCheck.checked;
-  // If content is checked, ensure document and location are checked
-  if (contentCheck.checked) {
-    if (!documentCheck.checked) {
-      documentCheck.checked = true;
-      selectedQuestionTypes.document = true;
-    }
-    if (!locationCheck.checked) {
-      locationCheck.checked = true;
-      selectedQuestionTypes.location = true;
-    }
+  // Content can be selected independently - no forced dependencies
+  // Only ensure document is checked if location is also checked
+  if (contentCheck.checked && locationCheck.checked && !documentCheck.checked) {
+    documentCheck.checked = true;
+    selectedQuestionTypes.document = true;
   }
 });
 
@@ -131,6 +128,7 @@ loadDefaultBtn.addEventListener('click', () => {
     // Update status indicator to show default questions are loaded
     const statusIndicator = document.getElementById('status-indicator');
     if (statusIndicator) {
+      statusIndicator.style.display = 'block';
       statusIndicator.innerHTML = `✅ Default questions loaded (${defaultQuizData.length} questions available)`;
     }
     
@@ -186,13 +184,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     
     // Add status indicator
-    const statusDiv = document.createElement('div');
-    statusDiv.id = 'status-indicator';
-    statusDiv.style.marginTop = '0.5em';
-    statusDiv.style.fontSize = '0.9em';
-    statusDiv.style.color = '#666';
-    statusDiv.innerHTML = `✅ Default questions loaded (${defaultQuizData.length} questions available)`;
-    fileInput.parentNode.appendChild(statusDiv);
+    const statusIndicator = document.getElementById('status-indicator');
+    if (statusIndicator) {
+      statusIndicator.style.display = 'block';
+      statusIndicator.innerHTML = `✅ Default questions loaded (${defaultQuizData.length} questions available)`;
+    }
   }
 });
 
@@ -212,95 +208,344 @@ const style = document.createElement('style');
 style.textContent = `
   .question-pair {
     background: var(--card-bg, #fff);
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
-    padding: 1.5em;
-    margin-bottom: 2em;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    transition: background 0.3s;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid var(--border-color, #e2e8f0);
+    transition: all 0.3s ease;
   }
+
+  .question-pair:hover {
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    transform: translateY(-2px);
+  }
+
   .section-heading {
-    font-size: 1.1em;
-    font-weight: bold;
-    margin-bottom: 0.5em;
-    margin-top: 0.5em;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    margin-top: 0;
+    color: var(--heading-color, #1e293b);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
   }
+
+  .section-heading::before {
+    content: '';
+    width: 4px;
+    height: 20px;
+    background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+    border-radius: 2px;
+  }
+
+  .question {
+    margin-bottom: 1rem;
+  }
+
+  .question p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--text-color, #374151);
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background: var(--question-bg, #f8fafc);
+    border-radius: 8px;
+    border-left: 4px solid #4f46e5;
+  }
+
+  .options-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
   button.option {
     width: 100%;
     text-align: left;
-    margin: 0.3em 0;
-    padding: 1em 1.2em;
-    border-radius: 6px;
-    border: 1px solid #ddd;
-    background: var(--btn-bg, #f9f9f9);
-    font-size: 1.1em;
-    transition: background 0.2s, color 0.2s;
+    padding: 1rem 1.25rem;
+    border-radius: 8px;
+    border: 2px solid var(--option-border, #e2e8f0);
+    background: var(--option-bg, #fff);
+    font-size: 1rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
     cursor: pointer;
+    position: relative;
+    overflow: hidden;
   }
+
+  button.option:hover:not(:disabled) {
+    border-color: #4f46e5;
+    background: var(--option-hover-bg, #f8fafc);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(79, 70, 229, 0.1);
+  }
+
   button.option:disabled {
     opacity: 0.7;
     cursor: not-allowed;
+    transform: none;
   }
+
   button.option.correct {
-    background: #d4f8e8 !important;
-    color: #1a7f37;
-    border-color: #1a7f37;
-    animation: pop 0.3s;
+    background: #ecfdf5 !important;
+    color: #065f46;
+    border-color: #10b981;
+    animation: correctAnswer 0.4s ease;
   }
+
   button.option.incorrect {
-    background: #ffeaea !important;
-    color: #b30000;
-    border-color: #b30000;
-    animation: shake 0.3s;
+    background: #fef2f2 !important;
+    color: #991b1b;
+    border-color: #ef4444;
+    animation: incorrectAnswer 0.4s ease;
   }
-  @keyframes pop { 0% { transform: scale(1); } 60% { transform: scale(1.08); } 100% { transform: scale(1); } }
-  @keyframes shake { 0%, 100% { transform: translateX(0); } 20%, 60% { transform: translateX(-6px); } 40%, 80% { transform: translateX(6px); } }
+
+  @keyframes correctAnswer {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.02); }
+    100% { transform: scale(1); }
+  }
+
+  @keyframes incorrectAnswer {
+    0%, 100% { transform: translateX(0); }
+    20%, 60% { transform: translateX(-4px); }
+    40%, 80% { transform: translateX(4px); }
+  }
+
   .feedback {
-    font-weight: bold;
-    margin-top: 0.7em;
+    font-weight: 600;
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
     opacity: 0;
     animation: fadeIn 0.5s forwards;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
   }
-  @keyframes fadeIn { to { opacity: 1; } }
+
+  .feedback.correct {
+    background: #ecfdf5;
+    color: #065f46;
+    border: 1px solid #a7f3d0;
+  }
+
+  .feedback.incorrect {
+    background: #fef2f2;
+    color: #991b1b;
+    border: 1px solid #fecaca;
+  }
+
+  @keyframes fadeIn {
+    to { opacity: 1; }
+  }
+
   .score {
-    font-size: 1.2em;
-    margin: 1em 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 2rem 0;
     text-align: center;
+    padding: 2rem;
+    background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+    color: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(79, 70, 229, 0.3);
   }
-  @media (max-width: 700px) {
-    .question-pair { padding: 1em; max-width: 98vw; }
-    button.option { font-size: 1em; padding: 0.8em 0.7em; }
+
+  .detailed-score {
+    background: var(--card-bg, #fff);
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    border: 1px solid var(--border-color, #e2e8f0);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
   }
-  body.dark-mode {
-    background: #181c1f;
-    color: #e6e6e6;
+
+  .detailed-score h3 {
+    margin-bottom: 1rem;
+    color: var(--heading-color, #1e293b);
+    font-size: 1.25rem;
   }
+
+  .score-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--border-color, #e2e8f0);
+  }
+
+  .score-item:last-child {
+    border-bottom: none;
+  }
+
+  .score-label {
+    font-weight: 500;
+    color: var(--text-color, #374151);
+  }
+
+  .score-value {
+    font-weight: 600;
+    color: var(--heading-color, #1e293b);
+  }
+
+  .timing-stats {
+    background: var(--card-bg, #fff);
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    border: 1px solid var(--border-color, #e2e8f0);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  }
+
+  .timing-stats h3 {
+    margin-bottom: 1rem;
+    color: var(--heading-color, #1e293b);
+    font-size: 1.25rem;
+  }
+
+  .timing-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0;
+  }
+
+  .completion-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .completion-actions .btn {
+    min-width: 150px;
+  }
+
+  /* Dark mode styles */
   body.dark-mode .question-pair {
-    background: #23272b;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+    background: #1e293b;
+    border-color: #334155;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
   }
+
+  body.dark-mode .question p {
+    background: #334155;
+    color: #e2e8f0;
+  }
+
   body.dark-mode button.option {
-    background: #23272b;
-    color: #e6e6e6;
-    border-color: #444;
+    background: #334155;
+    color: #e2e8f0;
+    border-color: #475569;
   }
-  body.dark-mode button.option.correct {
-    background: #1a7f37 !important;
-    color: #fff;
-    border-color: #1a7f37;
+
+  body.dark-mode button.option:hover:not(:disabled) {
+    background: #475569;
   }
-  body.dark-mode button.option.incorrect {
-    background: #b30000 !important;
-    color: #fff;
-    border-color: #b30000;
+
+  body.dark-mode .detailed-score,
+  body.dark-mode .timing-stats {
+    background: #1e293b;
+    border-color: #334155;
   }
-  body.dark-mode {
-    --border-color: #444;
+
+  body.dark-mode .score-label,
+  body.dark-mode .score-value {
+    color: #e2e8f0;
   }
-  body:not(.dark-mode) {
-    --border-color: #ddd;
+
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    .question-pair {
+      padding: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .question p {
+      font-size: 1rem;
+      padding: 0.75rem;
+    }
+
+    button.option {
+      padding: 0.875rem 1rem;
+      font-size: 0.95rem;
+    }
+
+    .score {
+      font-size: 1.25rem;
+      padding: 1.5rem;
+    }
+
+    .completion-actions {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .completion-actions .btn {
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .question-pair {
+      padding: 0.75rem;
+    }
+
+    .section-heading {
+      font-size: 1rem;
+    }
+
+    .question p {
+      font-size: 0.95rem;
+      padding: 0.5rem;
+    }
+
+    button.option {
+      padding: 0.75rem;
+      font-size: 0.9rem;
+    }
+
+    .score {
+      font-size: 1.1rem;
+      padding: 1rem;
+    }
+  }
+
+  /* Animation for answers summary */
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Dark mode styles for answers summary */
+  body.dark-mode .answers-summary {
+    background: #1e293b;
+    border-color: #334155;
+  }
+
+  body.dark-mode .answers-summary h3 {
+    color: #e2e8f0;
+  }
+
+  body.dark-mode .answers-summary .correct-answer {
+    background: #334155;
+    border-color: #4f46e5;
+  }
+
+  body.dark-mode .answers-summary .correct-answer .type-label {
+    color: #e2e8f0;
   }
 `;
 document.head.appendChild(style);
@@ -327,6 +572,7 @@ startBtn.addEventListener('click', () => {
         // Clear any existing status indicator
         const statusIndicator = document.getElementById('status-indicator');
         if (statusIndicator) {
+          statusIndicator.style.display = 'block';
           statusIndicator.innerHTML = `📁 Loaded ${newData.length} questions from file`;
         }
       } catch (err) {
@@ -384,6 +630,7 @@ startBtn.addEventListener('click', () => {
           // Clear any existing status indicator
           const statusIndicator = document.getElementById('status-indicator');
           if (statusIndicator) {
+            statusIndicator.style.display = 'block';
             statusIndicator.innerHTML = `📁 Loaded ${allQuestions.length} questions from ${files.length} files`;
           }
           // Build document name set
@@ -423,6 +670,7 @@ function startQuiz() {
   // Update status indicator
   const statusIndicator = document.getElementById('status-indicator');
   if (statusIndicator) {
+    statusIndicator.style.display = 'block';
     statusIndicator.innerHTML = `📝 Quiz started with ${selectedQuestions.length} questions from ${quizData.length} total questions`;
   }
   
@@ -439,15 +687,36 @@ function startQuiz() {
   contentCheck.disabled = true;
   container.innerHTML = '';
   reviewContainer.style.display = 'none';
+  
+  // Hide progress bar initially
+  const progressBar = document.querySelector('.progress-bar');
+  if (progressBar) {
+    progressBar.style.display = 'none';
+  }
+  
   showDocumentQuestion();
   updateProgress();
 }
 
 function updateProgress() {
-  progressIndicator.textContent =
-    currentIndex < selectedQuestions.length
-      ? `Question ${currentIndex + 1} of ${selectedQuestions.length}`
-      : '';
+  const progressIndicator = document.getElementById('progress-indicator');
+  const progressBar = document.querySelector('.progress-bar');
+  const progressFill = document.querySelector('.progress-fill');
+  
+  if (currentIndex < selectedQuestions.length) {
+    const progress = ((currentIndex + 1) / selectedQuestions.length) * 100;
+    progressIndicator.textContent = `Question ${currentIndex + 1} of ${selectedQuestions.length}`;
+    
+    if (progressBar && progressFill) {
+      progressBar.style.display = 'block';
+      progressFill.style.width = `${progress}%`;
+    }
+  } else {
+    progressIndicator.textContent = '';
+    if (progressBar) {
+      progressBar.style.display = 'none';
+    }
+  }
 }
 
 // Show the document selection step for the current question
@@ -466,11 +735,19 @@ function showDocumentQuestion() {
   const pairWrapper = document.createElement('div');
   pairWrapper.className = 'question-pair';
   
-  // If document question is not selected, skip to next question
+  // If document question is not selected, check if we should show content directly
   if (!selectedQuestionTypes.document) {
-    currentIndex += 1;
-    showDocumentQuestion();
-    return;
+    if (selectedQuestionTypes.content) {
+      // Skip to content question directly
+      showContentQuestion(pairWrapper, q, false, null, false, null);
+      container.appendChild(pairWrapper);
+      return;
+    } else {
+      // Skip to next question if no question types are selected
+      currentIndex += 1;
+      showDocumentQuestion();
+      return;
+    }
   }
   
   // Section heading
@@ -479,8 +756,8 @@ function showDocumentQuestion() {
   docHeading.textContent = 'Step 1: Select the Document';
   pairWrapper.appendChild(docHeading);
   // Render document selection
-  // Use allDocumentNames as options, shuffle for this question
-  const docOptions = shuffleArray(allDocumentNames.slice());
+  // Use allDocumentNames as options, sort alphabetically for this question
+  const docOptions = allDocumentNames.slice().sort();
   const docDiv = createQuestion(
     q.question,
     docOptions,
@@ -531,7 +808,16 @@ function showLocationQuestion(pairWrapper, q, docCorrect, docUserAnswer) {
 function showContentQuestion(pairWrapper, q, docCorrect, docUserAnswer, locCorrect, locUserAnswer) {
   const contHeading = document.createElement('div');
   contHeading.className = 'section-heading';
-  contHeading.textContent = 'Step 3: Answer the Question';
+  // Update heading based on whether this is shown directly or as part of a sequence
+  if (!selectedQuestionTypes.document && !selectedQuestionTypes.location) {
+    contHeading.textContent = 'Answer the Question';
+  } else if (!selectedQuestionTypes.document) {
+    contHeading.textContent = 'Step 2: Answer the Question';
+  } else if (!selectedQuestionTypes.location) {
+    contHeading.textContent = 'Step 2: Answer the Question';
+  } else {
+    contHeading.textContent = 'Step 3: Answer the Question';
+  }
   pairWrapper.appendChild(contHeading);
   const contentDiv = createQuestion(
     q.question,
@@ -549,6 +835,13 @@ function showContentQuestion(pairWrapper, q, docCorrect, docUserAnswer, locCorre
 // Show completion summary
 function showCompletion() {
   container.innerHTML = '';
+  
+  // Hide progress bar
+  const progressBar = document.querySelector('.progress-bar');
+  if (progressBar) {
+    progressBar.style.display = 'none';
+  }
+  
   progressIndicator.textContent = '';
   
   // Calculate total possible score based on selected question types
@@ -564,68 +857,48 @@ function showCompletion() {
   
   // Display separate scores for each question type
   const detailedScoreDiv = document.createElement('div');
-  detailedScoreDiv.style.textAlign = 'center';
-  detailedScoreDiv.style.margin = '1em 0';
-  detailedScoreDiv.style.padding = '1em';
-  detailedScoreDiv.style.backgroundColor = 'var(--card-bg, #f5f5f5)';
-  detailedScoreDiv.style.borderRadius = '8px';
-  detailedScoreDiv.style.border = '1px solid var(--border-color, #ddd)';
-  
-  let detailedScoreHTML = '<h3>Detailed Scores</h3>';
-  
-  if (selectedQuestionTypes.document) {
-    const docPercentage = documentTotal > 0 ? Math.round((documentScore / documentTotal) * 100) : 0;
-    detailedScoreHTML += `<p><strong>Document Questions:</strong> ${documentScore} / ${documentTotal} (${docPercentage}%)</p>`;
-  }
-  
-  if (selectedQuestionTypes.location) {
-    const locPercentage = locationTotal > 0 ? Math.round((locationScore / locationTotal) * 100) : 0;
-    detailedScoreHTML += `<p><strong>Location Questions:</strong> ${locationScore} / ${locationTotal} (${locPercentage}%)</p>`;
-  }
-  
-  if (selectedQuestionTypes.content) {
-    const contPercentage = contentTotal > 0 ? Math.round((contentScore / contentTotal) * 100) : 0;
-    detailedScoreHTML += `<p><strong>Content Questions:</strong> ${contentScore} / ${contentTotal} (${contPercentage}%)</p>`;
-  }
-  
-  detailedScoreDiv.innerHTML = detailedScoreHTML;
+  detailedScoreDiv.className = 'detailed-score';
+  detailedScoreDiv.innerHTML = `
+    <h3>Detailed Scores</h3>
+    ${selectedQuestionTypes.document ? `<p class="score-item"><span class="score-label">Document Questions:</span> <span class="score-value">${documentScore} / ${documentTotal}</span></p>` : ''}
+    ${selectedQuestionTypes.location ? `<p class="score-item"><span class="score-label">Location Questions:</span> <span class="score-value">${locationScore} / ${locationTotal}</span></p>` : ''}
+    ${selectedQuestionTypes.content ? `<p class="score-item"><span class="score-label">Content Questions:</span> <span class="score-value">${contentScore} / ${contentTotal}</span></p>` : ''}
+  `;
   container.appendChild(detailedScoreDiv);
   
   // Display timing statistics
   if (questionTimes.length > 0) {
     const timingDiv = document.createElement('div');
-    timingDiv.style.textAlign = 'center';
-    timingDiv.style.margin = '1em 0';
-    timingDiv.style.padding = '1em';
-    timingDiv.style.backgroundColor = 'var(--card-bg, #f5f5f5)';
-    timingDiv.style.borderRadius = '8px';
-    timingDiv.style.border = '1px solid var(--border-color, #ddd)';
-    
-    const shortest = Math.min(...questionTimes);
-    const longest = Math.max(...questionTimes);
-    const average = questionTimes.reduce((sum, time) => sum + time, 0) / questionTimes.length;
-    
+    timingDiv.className = 'timing-stats';
     timingDiv.innerHTML = `
       <h3>Timing Statistics</h3>
-      <p><strong>Shortest time:</strong> ${formatTime(shortest)}</p>
-      <p><strong>Longest time:</strong> ${formatTime(longest)}</p>
-      <p><strong>Average time:</strong> ${formatTime(average)}</p>
-      <p><strong>Total questions:</strong> ${questionTimes.length}</p>
+      <div class="timing-item"><span>Shortest time:</span><span>${formatTime(Math.min(...questionTimes))}</span></div>
+      <div class="timing-item"><span>Longest time:</span><span>${formatTime(Math.max(...questionTimes))}</span></div>
+      <div class="timing-item"><span>Average time:</span><span>${formatTime(questionTimes.reduce((sum, time) => sum + time, 0) / questionTimes.length)}</span></div>
+      <div class="timing-item"><span>Total questions:</span><span>${questionTimes.length}</span></div>
     `;
-    
     container.appendChild(timingDiv);
   }
   
   const done = document.createElement('h2');
   done.textContent = 'Quiz complete!';
+  done.style.textAlign = 'center';
+  done.style.margin = '2rem 0 1rem 0';
+  done.style.color = 'var(--heading-color, #1e293b)';
   container.appendChild(done);
+  
+  const completionActions = document.createElement('div');
+  completionActions.className = 'completion-actions';
+  
   const reviewBtn = document.createElement('button');
-  reviewBtn.textContent = 'Review Answers';
-  reviewBtn.style.marginRight = '1em';
+  reviewBtn.textContent = '📋 Review Answers';
+  reviewBtn.className = 'btn btn-primary';
   reviewBtn.onclick = showReview;
-  container.appendChild(reviewBtn);
+  completionActions.appendChild(reviewBtn);
+  
   const newBtn = document.createElement('button');
-  newBtn.textContent = 'New Quiz';
+  newBtn.textContent = '🔄 New Quiz';
+  newBtn.className = 'btn btn-secondary';
   newBtn.onclick = () => {
     // Reset controls
     fileInput.disabled = false;
@@ -639,12 +912,15 @@ function showCompletion() {
     // Reset status indicator
     const statusIndicator = document.getElementById('status-indicator');
     if (statusIndicator && typeof defaultQuizData !== 'undefined' && defaultQuizData.length > 0) {
+      statusIndicator.style.display = 'block';
       statusIndicator.innerHTML = `✅ Default questions loaded (${defaultQuizData.length} questions available)`;
     }
     
     location.reload();
   };
-  container.appendChild(newBtn);
+  completionActions.appendChild(newBtn);
+  
+  container.appendChild(completionActions);
 }
 
 // Review mode: show all questions and user's answers
@@ -763,11 +1039,91 @@ function handleQuestionComplete(q, docCorrect, docUserAnswer, locCorrect, locUse
     }
   }
   
+  // Show answers summary after content question is answered
+  showAnswersSummary(q, docCorrect, docUserAnswer, locCorrect, locUserAnswer, contentCorrect, contentUserAnswer);
+  
   setTimeout(() => {
     currentIndex += 1;
     showDocumentQuestion();
     updateProgress();
-  }, 2000);
+  }, 4000); // Increased delay to give time to read the answers
+}
+
+// Show answers summary for the current question set
+function showAnswersSummary(q, docCorrect, docUserAnswer, locCorrect, locUserAnswer, contentCorrect, contentUserAnswer) {
+  const answersContainer = document.createElement('div');
+  answersContainer.className = 'answers-summary';
+  answersContainer.style.cssText = `
+    background: var(--card-bg, #fff);
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    border: 1px solid var(--border-color, #e2e8f0);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    animation: slideIn 0.5s ease;
+  `;
+  
+  const summaryHeading = document.createElement('h3');
+  summaryHeading.textContent = '📋 All Correct Answers';
+  summaryHeading.style.cssText = `
+    margin-bottom: 1rem;
+    color: var(--heading-color, #1e293b);
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  `;
+  answersContainer.appendChild(summaryHeading);
+  
+  // Always show Document answer (even if not selected for quiz)
+  const docAnswer = createCorrectAnswerDisplay('📄 Document', q.document_answer);
+  answersContainer.appendChild(docAnswer);
+  
+  // Always show Location answer (even if not selected for quiz)
+  const locAnswer = createCorrectAnswerDisplay('📍 Location', q.location_answer);
+  answersContainer.appendChild(locAnswer);
+  
+  // Always show Content answer (even if not selected for quiz)
+  const contAnswer = createCorrectAnswerDisplay('❓ Content', q.content_answer);
+  answersContainer.appendChild(contAnswer);
+  
+  // Add to the current question container
+  const currentQuestionContainer = document.querySelector('.question-pair');
+  if (currentQuestionContainer) {
+    currentQuestionContainer.appendChild(answersContainer);
+  }
+}
+
+// Create individual correct answer display
+function createCorrectAnswerDisplay(type, correctAnswer) {
+  const answerDiv = document.createElement('div');
+  answerDiv.style.cssText = `
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 8px;
+    border-left: 4px solid #4f46e5;
+    background: #f8fafc;
+  `;
+  
+  const typeSpan = document.createElement('div');
+  typeSpan.textContent = type;
+  typeSpan.style.cssText = `
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #1e293b;
+  `;
+  
+  const correctAnswerDiv = document.createElement('div');
+  correctAnswerDiv.innerHTML = `<strong>Correct answer:</strong> ${correctAnswer}`;
+  correctAnswerDiv.style.cssText = `
+    color: var(--text-color, #374151);
+    font-size: 1.1rem;
+  `;
+  
+  answerDiv.appendChild(typeSpan);
+  answerDiv.appendChild(correctAnswerDiv);
+  
+  return answerDiv;
 }
 
 // Format time in seconds and milliseconds
@@ -789,9 +1145,14 @@ function shuffleArray(arr) {
 function createQuestion(text, options, answer, onDone, part, correctAnswer) {
   const wrapper = document.createElement('div');
   wrapper.className = 'question';
+  
   const p = document.createElement('p');
   p.textContent = text;
   wrapper.appendChild(p);
+  
+  const optionsContainer = document.createElement('div');
+  optionsContainer.className = 'options-container';
+  
   let userAnswer = null;
   options.forEach(opt => {
     const btn = document.createElement('button');
@@ -801,22 +1162,30 @@ function createQuestion(text, options, answer, onDone, part, correctAnswer) {
       // Disable all options
       wrapper.querySelectorAll('button.option').forEach(b => b.disabled = true);
       userAnswer = opt;
+      
       // Show feedback
       const isCorrect = opt === answer;
       btn.classList.add(isCorrect ? 'correct' : 'incorrect');
+      
       const feedback = document.createElement('div');
-      feedback.className = 'feedback';
+      feedback.className = `feedback ${isCorrect ? 'correct' : 'incorrect'}`;
+      
       if (isCorrect) {
-        feedback.innerHTML = '<span style="color:#1a7f37;">✔️ Correct!</span>';
+        feedback.innerHTML = '✅ <span>Correct!</span>';
       } else {
-        feedback.innerHTML = `<span style="color:#b30000;">❌ Incorrect. Correct answer: ${answer}</span>`;
+        feedback.innerHTML = `❌ <span>Incorrect. Correct answer: ${answer}</span>`;
       }
+      
       wrapper.appendChild(feedback);
+      
       setTimeout(() => {
         onDone(isCorrect, userAnswer);
-      }, 1200);
+      }, 1500);
     }, { once: true });
-    wrapper.appendChild(btn);
+    
+    optionsContainer.appendChild(btn);
   });
+  
+  wrapper.appendChild(optionsContainer);
   return wrapper;
 }
