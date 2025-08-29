@@ -501,531 +501,6 @@ const defaultQuizData = [
     "document_answer": "SPS-387"
   },
   {
-    "bucket": "Water distribution sizing (SPS 382)",
-    "difficulty": "easy",
-    "question": "According to the code, what is the maximum allowable flow velocity in water distribution piping (other than combination sprinkler distribution piping)? ",
-    "location_options": [
-      "382.40(7)(e)",
-      "382.40(7)(g)",
-      "382.41(2)",
-      "382.36(5)"
-    ],
-    "location_answer": "382.40(7)(e)",
-    "content_options": [
-      "8 feet per second",
-      "6 feet per second",
-      "10 feet per second",
-      "There is no velocity limit"
-    ],
-    "content_answer": "8 feet per second",
-    "meta": {
-      "document": "SPS-382",
-      "page_start": null,
-      "page_end": null
-    },
-    "document_answer": "SPS-382"
-  },
-  {
-    "bucket": "Water distribution sizing (SPS 382)",
-    "difficulty": "easy",
-    "question": "What is the minimum diameter for the fixture supply serving a flushometer-type water closet? ",
-    "location_options": [
-      "382.40(7)(g)2.",
-      "382.40(7)(f)1.",
-      "382.40(8)(a)",
-      "382.41(4)"
-    ],
-    "location_answer": "382.40(7)(g)2.",
-    "content_options": [
-      "1 inch",
-      "3/4 inch",
-      "1/2 inch",
-      "5/8 inch"
-    ],
-    "content_answer": "1 inch",
-    "meta": {
-      "document": "SPS-382",
-      "page_start": null,
-      "page_end": null
-    },
-    "document_answer": "SPS-382"
-  },
-  {
-    "bucket": "Water distribution sizing (SPS 382)",
-    "difficulty": "easy",
-    "question": "What is the minimum diameter for the fixture supply serving a syphon jet type urinal? ",
-    "location_options": [
-      "382.40(7)(g)1.",
-      "382.40(7)(g)2.",
-      "382.40(7)(f)1.",
-      "382.41(3)"
-    ],
-    "location_answer": "382.40(7)(g)1.",
-    "content_options": [
-      "3/4 inch",
-      "1 inch",
-      "1/2 inch",
-      "5/8 inch"
-    ],
-    "content_answer": "3/4 inch",
-    "meta": {
-      "document": "SPS-382",
-      "page_start": null,
-      "page_end": null
-    },
-    "document_answer": "SPS-382"
-  },
-  {
-    "bucket": "Water distribution sizing (SPS 382)",
-    "difficulty": "easy",
-    "question": "A 1/2-inch water distribution pipe serves two or more fixtures. What is the maximum total load allowed on that pipe? ",
-    "location_options": [
-      "382.40(7)(f)1.",
-      "382.40(7)(g)4.",
-      "382.40(8)(b)1.",
-      "382.41(2)(a)"
-    ],
-    "location_answer": "382.40(7)(f)1.",
-    "content_options": [
-      "2 water supply fixture units",
-      "3 water supply fixture units",
-      "4 water supply fixture units",
-      "There is no limit when serving multiple fixtures"
-    ],
-    "content_answer": "2 water supply fixture units",
-    "meta": {
-      "document": "SPS-382",
-      "page_start": null,
-      "page_end": null
-    },
-    "document_answer": "SPS-382"
-  },
-  {
-    "bucket": "Water distribution sizing (SPS 382)",
-    "difficulty": "easy",
-    "question": "At what pressure does the code require a pressure reducing valve (with strainer if not integral) to be installed in the water distribution system? ",
-    "location_options": [
-      "382.40(7)(d)2.a.",
-      "382.40(7)(e)",
-      "382.40(5)(b)",
-      "382.36(7)(a)"
-    ],
-    "location_answer": "382.40(7)(d)2.a.",
-    "content_options": [
-      "Over 80 psig",
-      "Over 60 psig",
-      "Over 100 psig",
-      "Over 50 psig"
-    ],
-    "content_answer": "Over 80 psig",
-    "meta": {
-      "document": "SPS-382",
-      "page_start": null,
-      "page_end": null
-    },
-    "document_answer": "SPS-382"
-  },
-  {
-    "bucket": "Water distribution sizing (SPS 382)",
-    "difficulty": "easy",
-    "question": "According to the code, may water supply fixture units (WSFUs) be converted to gallons per minute (GPM) for sizing?  ",
-    "location_options": [
-      "382.40(6)(a)",
-      "382.40(7)(a)",
-      "382.41(1)",
-      "382.36(4)"
-    ],
-    "location_answer": "382.40(6)(a)",
-    "content_options": [
-      "Yes—use Table 382.40-3 (or 382.40-3e for certain treatment devices).",
-      "No—WSFUs may not be converted to GPM under any circumstances.",
-      "Only with manufacturer’s written approval.",
-      "Only for public buildings."
-    ],
-    "content_answer": "Yes—use Table 382.40-3 (or 382.40-3e for certain treatment devices).",
-    "meta": {
-      "document": "SPS-382",
-      "page_start": null,
-      "page_end": null
-    },
-    "document_answer": "SPS-382"
-  },
-  {
-    "bucket": "Water distribution sizing (SPS 382)",
-    "difficulty": "easy",
-    "question": "Using the conversion table, 40 WSFU with predominately flush tank–type water closets corresponds to what demand in GPM? ",
-    "location_options": [
-      "382.40(6)(a)",
-      "382.40(7)(f)",
-      "382.40(8)(a)",
-      "382.41(4)"
-    ],
-    "location_answer": "382.40(6)(a)",
-    "content_options": [
-      "24 GPM",
-      "46 GPM",
-      "20 GPM",
-      "68 GPM"
-    ],
-    "content_answer": "24 GPM",
-    "meta": {
-      "document": "SPS-382",
-      "page_start": null,
-      "page_end": null
-    },
-    "document_answer": "SPS-382"
-  },
-  {
-    "bucket": "Water distribution sizing (SPS 382)",
-    "difficulty": "easy",
-    "question": "Using the conversion table, 10 WSFU with predominately flush tank–type water closets corresponds to what demand in GPM? ",
-    "location_options": [
-      "382.40(6)(a)",
-      "382.40(7)(e)",
-      "382.40(7)(g)",
-      "382.36(5)"
-    ],
-    "location_answer": "382.40(6)(a)",
-    "content_options": [
-      "8 GPM",
-      "27 GPM",
-      "10 GPM",
-      "14 GPM"
-    ],
-    "content_answer": "8 GPM",
-    "meta": {
-      "document": "SPS-382",
-      "page_start": null,
-      "page_end": null
-    },
-    "document_answer": "SPS-382"
-  },
-  {
-    "bucket": "Water distribution sizing (SPS 382)",
-    "difficulty": "medium",
-    "question": "When the developed length of hot water distribution piping from the source to a fixture exceeds 100 feet, what does the code require to maintain temperature? ",
-    "location_options": [
-      "382.40(5)(b)",
-      "382.40(7)(a)",
-      "382.41(2)",
-      "382.36(7)"
-    ],
-    "location_answer": "382.40(5)(b)",
-    "content_options": [
-      "Provide a circulation system or a self-regulating electric heating cable.",
-      "Increase pipe size by one nominal diameter.",
-      "Install a pressure reducing valve.",
-      "Insulate piping to R-10 only."
-    ],
-    "content_answer": "Provide a circulation system or a self-regulating electric heating cable.",
-    "meta": {
-      "document": "SPS-382",
-      "page_start": null,
-      "page_end": null
-    },
-    "document_answer": "SPS-382"
-  },
-  {
-    "bucket": "Water distribution sizing (SPS 382)",
-    "difficulty": "medium",
-    "question": "If a hot water circulation system is used for temperature maintenance, what is the maximum developed length allowed for any uncirculated hot water distribution piping? ",
-    "location_options": [
-      "382.40(5)(b)1.",
-      "382.40(5)(bm)2.",
-      "382.40(7)(e)",
-      "382.36(3)(b)"
-    ],
-    "location_answer": "382.40(5)(b)1.",
-    "content_options": [
-      "25 feet",
-      "50 feet",
-      "12.5 feet",
-      "100 feet"
-    ],
-    "content_answer": "25 feet",
-    "meta": {
-      "document": "SPS-382",
-      "page_start": null,
-      "page_end": null
-    },
-    "document_answer": "SPS-382"
-  },
-  {
-    "bucket": "Water distribution sizing (SPS 382)",
-    "difficulty": "medium",
-    "question": "Under the maximum allowable volume method for public lavatories, what is the maximum allowable volume of water between a hot water source and the lavatory? ",
-    "location_options": [
-      "382.40(5)(bm)2.",
-      "382.40(5)(b)1.",
-      "382.40(7)(h)1.b.",
-      "382.41(3)"
-    ],
-    "location_answer": "382.40(5)(bm)2.",
-    "content_options": [
-      "8 ounces",
-      "4 ounces",
-      "12 ounces",
-      "16 ounces"
-    ],
-    "content_answer": "8 ounces",
-    "meta": {
-      "document": "SPS-382",
-      "page_start": null,
-      "page_end": null
-    },
-    "document_answer": "SPS-382"
-  },
-  {
-    "bucket": "Water distribution sizing (SPS 382)",
-    "difficulty": "medium",
-    "question": "A cold water branch in a dwelling serves one bathroom group with flush tank WC (FT) and one kitchen sink. What is the cold-side WSFU load on that branch? (Use the nonpublic fixture table.)  ",
-    "location_options": [
-      "382.40(6)(a)",
-      "382.40(7)(f)",
-      "382.41(2)",
-      "382.36(4)"
-    ],
-    "location_answer": "382.40(6)(a)",
-    "content_options": [
-      "4.5 wsfu (3.5 cold for FT group + 1.0 cold for kitchen sink)",
-      "5.0 wsfu",
-      "3.5 wsfu",
-      "2.5 wsfu"
-    ],
-    "content_answer": "4.5 wsfu (3.5 cold for FT group + 1.0 cold for kitchen sink)",
-    "meta": {
-      "document": "SPS-382",
-      "page_start": null,
-      "page_end": null
-    },
-    "document_answer": "SPS-382"
-  },
-  {
-    "bucket": "Water distribution sizing (SPS 382)",
-    "difficulty": "medium",
-    "question": "A school restroom bank totals 70 WSFU with predominately flushometer-type water closets. What is the corresponding demand in GPM for sizing? ",
-    "location_options": [
-      "382.40(6)(a)",
-      "382.40(7)(a)",
-      "382.40(7)(e)",
-      "382.41(2)"
-    ],
-    "location_answer": "382.40(6)(a)",
-    "content_options": [
-      "58 GPM",
-      "62 GPM",
-      "35 GPM",
-      "83 GPM"
-    ],
-    "content_answer": "58 GPM",
-    "meta": {
-      "document": "SPS-382",
-      "page_start": null,
-      "page_end": null
-    },
-    "document_answer": "SPS-382"
-  },
-  {
-    "bucket": "Water distribution sizing (SPS 382)",
-    "difficulty": "medium",
-    "question": "Which of the following is NOT listed among the calculations required when sizing a water distribution system?  ",
-    "location_options": [
-      "382.40(7)(a)",
-      "382.40(6)(a)",
-      "382.40(8)",
-      "382.41(1)"
-    ],
-    "location_answer": "382.40(7)(a)",
-    "content_options": [
-      "Wind load on the building structure",
-      "Load factor in WSFU or GPM",
-      "Minimum pressure available from the main or tank",
-      "Pressure loss due to elevation changes"
-    ],
-    "content_answer": "Wind load on the building structure",
-    "meta": {
-      "document": "SPS-382",
-      "page_start": null,
-      "page_end": null
-    },
-    "document_answer": "SPS-382"
-  },
-  {
-    "bucket": "Water distribution sizing (SPS 382)",
-    "difficulty": "medium",
-    "question": "For WSFU values not listed exactly in the WSFU→GPM conversion table, what does the code permit? ",
-    "location_options": [
-      "382.40(6)(a)",
-      "382.40(7)(e)",
-      "382.40(7)(f)",
-      "382.41(2)"
-    ],
-    "location_answer": "382.40(6)(a)",
-    "content_options": [
-      "Interpolate between table values.",
-      "Round down to the next lower WSFU row.",
-      "Round up to the next higher WSFU row.",
-      "Use Hazen-Williams calculations instead of the table."
-    ],
-    "content_answer": "Interpolate between table values.",
-    "meta": {
-      "document": "SPS-382",
-      "page_start": null,
-      "page_end": null
-    },
-    "document_answer": "SPS-382"
-  },
-  {
-    "bucket": "Water distribution sizing (SPS 382)",
-    "difficulty": "medium",
-    "question": "What is the required minimum flow pressure at fixture supplies serving blowout-type urinals and blowout-type water closets? ",
-    "location_options": [
-      "382.40(7)(d)1.c.",
-      "382.40(7)(e)",
-      "382.40(7)(f)2.",
-      "382.41(3)"
-    ],
-    "location_answer": "382.40(7)(d)1.c.",
-    "content_options": [
-      "25 psig",
-      "20 psig",
-      "35 psig",
-      "15 psig"
-    ],
-    "content_answer": "25 psig",
-    "meta": {
-      "document": "SPS-382",
-      "page_start": null,
-      "page_end": null
-    },
-    "document_answer": "SPS-382"
-  },
-  {
-    "bucket": "Water distribution sizing (SPS 382)",
-    "difficulty": "medium",
-    "question": "A building has 95 psig available from the utility. Which pressure control measure and placement does the code require? ",
-    "location_options": [
-      "382.40(7)(d)2.b.",
-      "382.40(7)(e)",
-      "382.40(5)(b)",
-      "382.41(2)"
-    ],
-    "location_answer": "382.40(7)(d)2.b.",
-    "content_options": [
-      "Install a pressure reducing valve upstream of all fixtures and downstream of the water meter.",
-      "Install pressure reducing valves at each fixture only.",
-      "No action required until pressure exceeds 100 psig.",
-      "Install a booster pump upstream of the meter."
-    ],
-    "content_answer": "Install a pressure reducing valve upstream of all fixtures and downstream of the water meter.",
-    "meta": {
-      "document": "SPS-382",
-      "page_start": null,
-      "page_end": null
-    },
-    "document_answer": "SPS-382"
-  },
-  {
-    "bucket": "Water distribution sizing (SPS 382)",
-    "difficulty": "medium",
-    "question": "What is the rule for maximum length of fixture supply connectors upstream of a plumbing fixture or faucet (general case)? ",
-    "location_options": [
-      "382.40(7)(h)1.a.",
-      "382.40(7)(g)4.",
-      "382.40(5)(bm)1.",
-      "382.41(4)"
-    ],
-    "location_answer": "382.40(7)(h)1.a.",
-    "content_options": [
-      "Not more than 24 inches of developed length",
-      "Not more than 10 feet of developed length",
-      "Not more than 36 inches of developed length",
-      "No specific limit if 1/2 inch diameter or larger"
-    ],
-    "content_answer": "Not more than 24 inches of developed length",
-    "meta": {
-      "document": "SPS-382",
-      "page_start": null,
-      "page_end": null
-    },
-    "document_answer": "SPS-382"
-  },
-  {
-    "bucket": "Water distribution sizing (SPS 382)",
-    "difficulty": "hard",
-    "question": "A whole-house water treatment device is serving an individual dwelling and is assigned 35 WSFU. According to the code, what GPM should be used for sizing that device?  ",
-    "location_options": [
-      "382.40(6)(a)",
-      "382.40(7)(a)",
-      "382.40(7)(e)",
-      "382.36(5)"
-    ],
-    "location_answer": "382.40(6)(a)",
-    "content_options": [
-      "8 GPM (per Table 382.40-3e)",
-      "7 GPM (per Table 382.40-3e)",
-      "9 GPM (per Table 382.40-3)",
-      "10 GPM (manufacturer default)"
-    ],
-    "content_answer": "8 GPM (per Table 382.40-3e)",
-    "meta": {
-      "document": "SPS-382",
-      "page_start": null,
-      "page_end": null
-    },
-    "document_answer": "SPS-382"
-  },
-  {
-    "bucket": "Water distribution sizing (SPS 382)",
-    "difficulty": "hard",
-    "question": "A 1/2-inch distribution branch is proposed to serve three bathroom fixtures with a combined load of 2.5 WSFU. Is this allowed, and why? ",
-    "location_options": [
-      "382.40(7)(f)1.",
-      "382.40(7)(g)1.",
-      "382.40(5)(b)",
-      "382.41(2)"
-    ],
-    "location_answer": "382.40(7)(f)1.",
-    "content_options": [
-      "No—1/2 inch distribution serving 2 or more fixtures may not carry more than 2 WSFU.",
-      "Yes—1/2 inch may carry up to 3 WSFU for bathroom groups.",
-      "Yes—WSFU limits do not apply to branches shorter than 25 feet.",
-      "No—the limit is 1.5 WSFU for any 1/2 inch line."
-    ],
-    "content_answer": "No—1/2 inch distribution serving 2 or more fixtures may not carry more than 2 WSFU.",
-    "meta": {
-      "document": "SPS-382",
-      "page_start": null,
-      "page_end": null
-    },
-    "document_answer": "SPS-382"
-  },
-  {
-    "bucket": "Water distribution sizing (SPS 382)",
-    "difficulty": "hard",
-    "question": "A small tenant space has these nonpublic fixtures on one branch: one FT bathroom group, one kitchen sink, one lavatory, and one bar sink. What total WSFU should be used, and what is the equivalent GPM (predominately flush tank)?     ",
-    "location_options": [
-      "382.40(6)(a)",
-      "382.40(7)(a)",
-      "382.41(2)",
-      "382.36(7)"
-    ],
-    "location_answer": "382.40(6)(a)",
-    "content_options": [
-      "8.0 WSFU → 6.5 GPM",
-      "7.5 WSFU → 6.0 GPM",
-      "6.5 WSFU → 5.0 GPM",
-      "10.0 WSFU → 8.0 GPM"
-    ],
-    "content_answer": "8.0 WSFU → 6.5 GPM",
-    "meta": {
-      "document": "SPS-382",
-      "page_start": null,
-      "page_end": null
-    },
-    "document_answer": "SPS-382"
-  },
-  {
     "bucket": "Sanitary drainage sizing (SPS 382)",
     "difficulty": "easy",
     "question": "According to the code, how are drainage fixture units (dfu) assigned to an unlisted intermittent-flow device that discharges 7 gpm?",
@@ -1576,531 +1051,6 @@ const defaultQuizData = [
     "document_answer": "SPS-382"
   },
   {
-    "bucket": "Construction details & special systems",
-    "difficulty": "easy",
-    "question": "According to the code, when grease is introduced into the drain system in occupancies other than dwelling units, what must be provided?",
-    "location_options": [
-      "382.34(5)(a)",
-      "382.33(4)(a)",
-      "382.36(3)(b)",
-      "382.35(3)(h)"
-    ],
-    "location_answer": "382.34(5)(a)",
-    "content_options": [
-      "One or more grease interceptors",
-      "Only a solids interceptor",
-      "No treatment if connected to a municipal sewer",
-      "A dilution basin followed by a sand interceptor only"
-    ],
-    "content_answer": "One or more grease interceptors",
-    "meta": {
-      "document": "SPS-382",
-      "page_start": 28,
-      "page_end": 28
-    },
-    "document_answer": "SPS-382"
-  },
-  {
-    "bucket": "Construction details & special systems",
-    "difficulty": "easy",
-    "question": "For new or replacement exterior grease interceptors, what compartmentation is required?",
-    "location_options": [
-      "382.34(5)(g)",
-      "382.34(5)2.a",
-      "382.34(4)(b)",
-      "382.35(8)(b)"
-    ],
-    "location_answer": "382.34(5)(g)",
-    "content_options": [
-      "At least two compartments",
-      "A single compartment only",
-      "Three compartments minimum",
-      "No compartment requirement"
-    ],
-    "content_answer": "At least two compartments",
-    "meta": {
-      "document": "SPS-382",
-      "page_start": 29,
-      "page_end": 29
-    },
-    "document_answer": "SPS-382"
-  },
-  {
-    "bucket": "Construction details & special systems",
-    "difficulty": "easy",
-    "question": "What is the minimum manhole diameter, and minimum access opening size, required for manholes serving plumbing systems?",
-    "location_options": [
-      "382.35(8)(a)",
-      "382.35(6)(a)",
-      "382.30(11)(e)",
-      "382.33(7)"
-    ],
-    "location_answer": "382.35(8)(a)",
-    "content_options": [
-      "42-inch diameter manhole; 23-inch access opening",
-      "36-inch diameter manhole; 18-inch access opening",
-      "48-inch diameter manhole; 24-inch access opening",
-      "30-inch diameter manhole; 20-inch access opening"
-    ],
-    "content_answer": "42-inch diameter manhole; 23-inch access opening",
-    "meta": {
-      "document": "SPS-382",
-      "page_start": 33,
-      "page_end": 34
-    },
-    "document_answer": "SPS-382"
-  },
-  {
-    "bucket": "Construction details & special systems",
-    "difficulty": "easy",
-    "question": "Where must the cleanout serving the junction of the building drain and building sewer be located?",
-    "location_options": [
-      "382.35(3)(e)1.",
-      "382.35(5)(a)1.",
-      "382.30(11)(b)1.",
-      "382.33(5)(d)"
-    ],
-    "location_answer": "382.35(3)(e)1.",
-    "content_options": [
-      "Within 5 feet of the building drain–building sewer connection",
-      "Within 10 feet of the building drain–building sewer connection",
-      "Anywhere within the basement",
-      "At the most downstream cleanout"
-    ],
-    "content_answer": "Within 5 feet of the building drain–building sewer connection",
-    "meta": {
-      "document": "SPS-382",
-      "page_start": 33,
-      "page_end": 33
-    },
-    "document_answer": "SPS-382"
-  },
-  {
-    "bucket": "Construction details & special systems",
-    "difficulty": "easy",
-    "question": "If a cleanout is provided in a drain stack, what is the maximum height it may be located above the lowest floor penetrated by the stack?",
-    "location_options": [
-      "382.35(3)(f)",
-      "382.35(5)(b)",
-      "382.30(13)(a)4.",
-      "382.35(7)"
-    ],
-    "location_answer": "382.35(3)(f)",
-    "content_options": [
-      "60 inches",
-      "48 inches",
-      "72 inches",
-      "36 inches"
-    ],
-    "content_answer": "60 inches",
-    "meta": {
-      "document": "SPS-382",
-      "page_start": 33,
-      "page_end": 33
-    },
-    "document_answer": "SPS-382"
-  },
-  {
-    "bucket": "Construction details & special systems",
-    "difficulty": "easy",
-    "question": "How must a building drain that is subject to backflow or backwater be protected?",
-    "location_options": [
-      "382.30(11)(b)2.",
-      "382.21(2)(a)",
-      "382.35(3)(k)",
-      "382.34(5)(a)"
-    ],
-    "location_answer": "382.30(11)(b)2.",
-    "content_options": [
-      "By a backwater valve or by a sump with pumping equipment",
-      "By increasing pipe size one nominal diameter",
-      "By installing a floor drain upstream of the fixture",
-      "By providing a cleanout within 10 feet"
-    ],
-    "content_answer": "By a backwater valve or by a sump with pumping equipment",
-    "meta": {
-      "document": "SPS-382",
-      "page_start": 12,
-      "page_end": 12
-    },
-    "document_answer": "SPS-382"
-  },
-  {
-    "bucket": "Construction details & special systems",
-    "difficulty": "easy",
-    "question": "When water testing a plumbing system with a head test, what head and duration are required before inspection starts?",
-    "location_options": [
-      "382.21(2)(c)1.",
-      "382.21(2)(b)",
-      "382.22(3)(a)",
-      "382.30(11)(d)3."
-    ],
-    "location_answer": "382.21(2)(c)1.",
-    "content_options": [
-      "At least a 10-foot head of water for at least 15 minutes",
-      "A 5-foot head of water for at least 5 minutes",
-      "A 10-inch head of water for at least 30 minutes",
-      "At least a 15-foot head of water for 10 minutes"
-    ],
-    "content_answer": "At least a 10-foot head of water for at least 15 minutes",
-    "meta": {
-      "document": "SPS-382",
-      "page_start": 6,
-      "page_end": 6
-    },
-    "document_answer": "SPS-382"
-  },
-  {
-    "bucket": "Construction details & special systems",
-    "difficulty": "easy",
-    "question": "What uniform gauge pressure is required when air testing a plumbing system?",
-    "location_options": [
-      "382.21(2)(c)2.",
-      "382.21(2)(a)",
-      "382.22(3)(b)",
-      "382.30(11)(g)"
-    ],
-    "location_answer": "382.21(2)(c)2.",
-    "content_options": [
-      "5 psi",
-      "2 psi",
-      "10 psi",
-      "15 psi"
-    ],
-    "content_answer": "5 psi",
-    "meta": {
-      "document": "SPS-382",
-      "page_start": 6,
-      "page_end": 6
-    },
-    "document_answer": "SPS-382"
-  },
-  {
-    "bucket": "Construction details & special systems",
-    "difficulty": "medium",
-    "question": "What are the absolute minimum grease interceptor capacities based on where the interceptor discharges?",
-    "location_options": [
-      "382.34(5)2.",
-      "382.34(5)(d)1.",
-      "382.34(4)(a)2.",
-      "382.36(2)(a)"
-    ],
-    "location_answer": "382.34(5)2.",
-    "content_options": [
-      "1000 gallons to a POWTS; 750 gallons to a municipal sewer",
-      "750 gallons to a POWTS; 500 gallons to a municipal sewer",
-      "500 gallons to a POWTS; 1000 gallons to a municipal sewer",
-      "No minimum; based solely on formula C"
-    ],
-    "content_answer": "1000 gallons to a POWTS; 750 gallons to a municipal sewer",
-    "meta": {
-      "document": "SPS-382",
-      "page_start": 29,
-      "page_end": 29
-    },
-    "document_answer": "SPS-382"
-  },
-  {
-    "bucket": "Construction details & special systems",
-    "difficulty": "hard",
-    "question": "Which setback combination is required for exterior grease interceptor tank placement?",
-    "location_options": [
-      "382.34(5)3.a",
-      "382.34(5)(g)",
-      "382.35(5)(a)2.",
-      "382.30(13)(a)1."
-    ],
-    "location_answer": "382.34(5)3.a",
-    "content_options": [
-      "≥5 ft from a building, ≥10 ft from a water service, ≥2 ft from a lot line, and ≥10 ft from a cistern or high water mark",
-      "≥3 ft from a building, ≥10 ft from a water service, ≥5 ft from a lot line, and ≥10 ft from a cistern",
-      "≥5 ft from a building, ≥5 ft from a water service, ≥2 ft from a lot line, and ≥5 ft from a cistern",
-      "≥10 ft from a building, ≥10 ft from a water service, ≥2 ft from a lot line, and ≥15 ft from a cistern"
-    ],
-    "content_answer": "≥5 ft from a building, ≥10 ft from a water service, ≥2 ft from a lot line, and ≥10 ft from a cistern or high water mark",
-    "meta": {
-      "document": "SPS-382",
-      "page_start": 29,
-      "page_end": 29
-    },
-    "document_answer": "SPS-382"
-  },
-  {
-    "bucket": "Construction details & special systems",
-    "difficulty": "medium",
-    "question": "For interior grease interceptors, what is required regarding flow and flow control?",
-    "location_options": [
-      "382.34(5)(d)1.",
-      "382.34(5)2.a",
-      "382.34(5)3.c",
-      "382.35(3)(m)"
-    ],
-    "location_answer": "382.34(5)(d)1.",
-    "content_options": [
-      "Interceptor must accommodate at least the maximum flow rate of connected fixtures, and a flow control device must be installed and accessible",
-      "Interceptor may be undersized if a bypass is provided",
-      "No flow control device is permitted on interior units",
-      "Only a sediment bucket is required upstream of the interceptor"
-    ],
-    "content_answer": "Interceptor must accommodate at least the maximum flow rate of connected fixtures, and a flow control device must be installed and accessible",
-    "meta": {
-      "document": "SPS-382",
-      "page_start": 30,
-      "page_end": 30
-    },
-    "document_answer": "SPS-382"
-  },
-  {
-    "bucket": "Construction details & special systems",
-    "difficulty": "medium",
-    "question": "In areas where vehicles are serviced, how shall the wastewater discharge be arranged?",
-    "location_options": [
-      "382.34(4)(a)2.",
-      "382.33(4)(c)",
-      "382.35(3)(h)",
-      "382.36(6)(a)"
-    ],
-    "location_answer": "382.34(4)(a)2.",
-    "content_options": [
-      "Through a garage catch basin or oil interceptor to a municipal sewer or holding tank approved to receive industrial wastewater",
-      "Directly to a sanitary drain without treatment",
-      "To a sand interceptor only",
-      "To an exterior grease interceptor only"
-    ],
-    "content_answer": "Through a garage catch basin or oil interceptor to a municipal sewer or holding tank approved to receive industrial wastewater",
-    "meta": {
-      "document": "SPS-382",
-      "page_start": 27,
-      "page_end": 27
-    },
-    "document_answer": "SPS-382"
-  },
-  {
-    "bucket": "Construction details & special systems",
-    "difficulty": "medium",
-    "question": "What is required for cleanouts installed in underground drain piping?",
-    "location_options": [
-      "382.35(5)(a)",
-      "382.35(3)(e)",
-      "382.30(11)(g)",
-      "382.33(7)(a)"
-    ],
-    "location_answer": "382.35(5)(a)",
-    "content_options": [
-      "They shall be extended vertically to or above the finish grade",
-      "They shall terminate flush with the pipe crown",
-      "They are prohibited in exterior locations",
-      "They must be located below the pipe springline"
-    ],
-    "content_answer": "They shall be extended vertically to or above the finish grade",
-    "meta": {
-      "document": "SPS-382",
-      "page_start": 33,
-      "page_end": 33
-    },
-    "document_answer": "SPS-382"
-  },
-  {
-    "bucket": "Construction details & special systems",
-    "difficulty": "medium",
-    "question": "When a cleanout is located in an area subject to vehicular traffic, how must the top of the frost sleeve be finished?",
-    "location_options": [
-      "382.35(5)(a)2.b",
-      "382.35(5)(a)2.c",
-      "382.30(11)(c)2.",
-      "382.35(8)(a)"
-    ],
-    "location_answer": "382.35(5)(a)2.b",
-    "content_options": [
-      "Terminate in a concrete pad at least 4 inches thick, extending at least 9 inches on all sides, sloped away from the sleeve",
-      "Terminate flush with the pavement with no pad required",
-      "Be covered by a removable metal plate with no concrete",
-      "Extend 12 inches above grade with no pad"
-    ],
-    "content_answer": "Terminate in a concrete pad at least 4 inches thick, extending at least 9 inches on all sides, sloped away from the sleeve",
-    "meta": {
-      "document": "SPS-382",
-      "page_start": 33,
-      "page_end": 33
-    },
-    "document_answer": "SPS-382"
-  },
-  {
-    "bucket": "Construction details & special systems",
-    "difficulty": "medium",
-    "question": "Which statement about using cleanout openings is correct?",
-    "location_options": [
-      "382.35(7)",
-      "382.35(3)(j)1.",
-      "382.30(13)(a)4.",
-      "382.34(5)(h)"
-    ],
-    "location_answer": "382.35(7)",
-    "content_options": [
-      "Cleanout openings shall not be used to install fixtures or make drain connections unless an equal cleanout of equal access and capacity is provided",
-      "Cleanout openings may be permanently capped and used for fixture installation",
-      "Cleanout openings may be converted to floor drains without restriction",
-      "Cleanout openings may be used as trap primers"
-    ],
-    "content_answer": "Cleanout openings shall not be used to install fixtures or make drain connections unless an equal cleanout of equal access and capacity is provided",
-    "meta": {
-      "document": "SPS-382",
-      "page_start": 33,
-      "page_end": 33
-    },
-    "document_answer": "SPS-382"
-  },
-  {
-    "bucket": "Construction details & special systems",
-    "difficulty": "medium",
-    "question": "In areas where food, ice, or potable liquids are prepared, handled, stored, or displayed, how must pipe openings through floors be detailed?",
-    "location_options": [
-      "382.30(13)(a)1.",
-      "382.30(11)(b)3.",
-      "382.35(5)(b)",
-      "382.34(5)(j)"
-    ],
-    "location_answer": "382.30(13)(a)1.",
-    "content_options": [
-      "Provide sleeves bonded to the floor construction, protruding ≥1 inch above finished floor, with the sleeve–pipe annulus sealed",
-      "Provide sleeves terminating flush with finished floor; sealing optional",
-      "No sleeves required if the opening is caulked",
-      "Sleeves required only for pipes ≥3 inches in diameter"
-    ],
-    "content_answer": "Provide sleeves bonded to the floor construction, protruding ≥1 inch above finished floor, with the sleeve–pipe annulus sealed",
-    "meta": {
-      "document": "SPS-382",
-      "page_start": 15,
-      "page_end": 15
-    },
-    "document_answer": "SPS-382"
-  },
-  {
-    "bucket": "Construction details & special systems",
-    "difficulty": "medium",
-    "question": "For catch basins and interceptors designed under s. 382.34, where must the cleanout be located on the fixture drain?",
-    "location_options": [
-      "382.35(3)(m)",
-      "382.34(5)(g)",
-      "382.30(11)(e)",
-      "382.35(6)(a)"
-    ],
-    "location_answer": "382.35(3)(m)",
-    "content_options": [
-      "Outside the basin and not more than 15 inches from the weir of the trap",
-      "Inside the basin, immediately downstream of the weir",
-      "Anywhere along the fixture drain within 10 feet",
-      "At the building drain–building sewer junction"
-    ],
-    "content_answer": "Outside the basin and not more than 15 inches from the weir of the trap",
-    "meta": {
-      "document": "SPS-382",
-      "page_start": 33,
-      "page_end": 33
-    },
-    "document_answer": "SPS-382"
-  },
-  {
-    "bucket": "Construction details & special systems",
-    "difficulty": "medium",
-    "question": "A participating governmental unit must include which inspection element in its POWTS replacement/rehabilitation program?",
-    "location_options": [
-      "387.04(2)(c)",
-      "387.10(1)",
-      "387.21(2)",
-      "387.30(4)"
-    ],
-    "location_answer": "387.04(2)(c)",
-    "content_options": [
-      "At least one inspection during installation of a POWTS",
-      "Only a post-installation paperwork review",
-      "Monthly inspections for the first year after installation",
-      "No inspections are required if a licensed plumber signs off"
-    ],
-    "content_answer": "At least one inspection during installation of a POWTS",
-    "meta": {
-      "document": "SPS-387",
-      "page_start": 2,
-      "page_end": 2
-    },
-    "document_answer": "SPS-387"
-  },
-  {
-    "bucket": "Construction details & special systems",
-    "difficulty": "medium",
-    "question": "How long must a participating governmental unit retain records under the POWTS replacement/rehabilitation financial assistance program?",
-    "location_options": [
-      "387.04(2)(e)",
-      "387.21(3)",
-      "387.30(6)",
-      "387.40(2)"
-    ],
-    "location_answer": "387.04(2)(e)",
-    "content_options": [
-      "Not less than six years from the date of POWTS installation",
-      "Two years from the date of permit issuance",
-      "Ten years from the date of owner reimbursement",
-      "Indefinitely"
-    ],
-    "content_answer": "Not less than six years from the date of POWTS installation",
-    "meta": {
-      "document": "SPS-387",
-      "page_start": 2,
-      "page_end": 2
-    },
-    "document_answer": "SPS-387"
-  },
-  {
-    "bucket": "Construction details & special systems",
-    "difficulty": "hard",
-    "question": "For establishments with all paper service, how may the minimum grease interceptor capacity determined under 382.34(5)2.a or 2.b be adjusted, and what lower bound applies when discharging to a municipal sewer?",
-    "location_options": [
-      "382.34(5)2.c",
-      "382.34(5)3.b",
-      "382.34(4)(a)2.",
-      "382.36(2)(a)"
-    ],
-    "location_answer": "382.34(5)2.c",
-    "content_options": [
-      "Capacity may be halved, but not reduced below 750 gallons",
-      "Capacity may be reduced by one-third, no lower bound",
-      "Capacity may be halved, with no lower bound",
-      "Capacity may be reduced to 500 gallons if hours of operation are limited"
-    ],
-    "content_answer": "Capacity may be halved, but not reduced below 750 gallons",
-    "meta": {
-      "document": "SPS-382",
-      "page_start": 29,
-      "page_end": 29
-    },
-    "document_answer": "SPS-382"
-  },
-  {
-    "bucket": "Construction details & special systems",
-    "difficulty": "hard",
-    "question": "A building sewer runs under a landscaped area where snow will NOT be cleared. The top of the pipe is 45 inches below grade. What does the code require regarding frost protection for this sewer?",
-    "location_options": [
-      "382.30(11)(c)2.b",
-      "382.30(11)(c)2.a",
-      "382.30(11)(c)2.c",
-      "382.30(13)(a)1."
-    ],
-    "location_answer": "382.30(11)(c)2.b",
-    "content_options": [
-      "No frost protection is required because the top of pipe is ≥42 inches below a surface where snow is not cleared",
-      "Frost protection is required unless the pipe is ≥60 inches deep",
-      "Frost protection is required regardless of depth in areas where snow is not cleared",
-      "Frost protection is required only if the pipe is within 30 feet of the building"
-    ],
-    "content_answer": "No frost protection is required because the top of pipe is ≥42 inches below a surface where snow is not cleared",
-    "meta": {
-      "document": "SPS-382",
-      "page_start": 12,
-      "page_end": 12
-    },
-    "document_answer": "SPS-382"
-  },
-  {
     "bucket": "Plan-reading & scaling",
     "difficulty": "easy",
     "question": "Which section governs plumbing plan review and cross-connection control assembly registration?",
@@ -2599,506 +1549,6 @@ const defaultQuizData = [
       "page_end": null
     },
     "document_answer": "SPS-382"
-  },
-  {
-    "bucket": "Private fire mains & multipurpose systems (NFPA 24; NFPA 13D + MPP manual)",
-    "difficulty": "easy",
-    "question": "According to the Wisconsin plumbing code definition cited in the MPP Design Manual, what is a “multipurpose piping system” intended to serve?",
-    "location_options": [
-      "381.01(156)",
-      "382.40(3)(e)",
-      "384.30(5)",
-      "382.60(1)"
-    ],
-    "location_answer": "381.01(156)",
-    "content_options": [
-      "Both domestic plumbing fixtures/appliances and automatic fire sprinklers",
-      "Only automatic fire sprinklers (stand-alone 13D system)",
-      "Only domestic plumbing fixtures and appliances",
-      "Fire department hose connections only"
-    ],
-    "content_answer": "Both domestic plumbing fixtures/appliances and automatic fire sprinklers",
-    "meta": {
-      "document": "MPP-DesignManual",
-      "page_start": 3,
-      "page_end": 3
-    },
-    "document_answer": "MPP-DesignManual"
-  },
-  {
-    "bucket": "Private fire mains & multipurpose systems (NFPA 24; NFPA 13D + MPP manual)",
-    "difficulty": "easy",
-    "question": "Per the MPP Design Manual, piping that conveys water to sprinklers in a multipurpose system must conform to which material approvals?",
-    "location_options": [
-      "384.30",
-      "382.40(7)",
-      "382.60",
-      "381.01(156)"
-    ],
-    "location_answer": "384.30",
-    "content_options": [
-      "SPS 384.30 table approvals AND NFPA 13D listings for sprinkler piping",
-      "Any material allowed for sanitary drainage in SPS 382.30",
-      "Only copper tube Type L per SPS 384.30",
-      "Only CPVC pipe per ASTM F441 without listing"
-    ],
-    "content_answer": "SPS 384.30 table approvals AND NFPA 13D listings for sprinkler piping",
-    "meta": {
-      "document": "MPP-DesignManual",
-      "page_start": 7,
-      "page_end": 7
-    },
-    "document_answer": "MPP-DesignManual"
-  },
-  {
-    "bucket": "Private fire mains & multipurpose systems (NFPA 24; NFPA 13D + MPP manual)",
-    "difficulty": "easy",
-    "question": "What is the minimum permitted diameter for galvanized steel pipe used to serve sprinklers in an MPP system?",
-    "location_options": [
-      "8.4.3",
-      "7.4.3",
-      "8.2.4",
-      "6.3(1)"
-    ],
-    "location_answer": "8.4.3",
-    "content_options": [
-      "1 inch",
-      "3/4 inch",
-      "1/2 inch",
-      "1-1/4 inch"
-    ],
-    "content_answer": "1 inch",
-    "meta": {
-      "document": "MPP-DesignManual",
-      "page_start": 8,
-      "page_end": 8
-    },
-    "document_answer": "MPP-DesignManual"
-  },
-  {
-    "bucket": "Private fire mains & multipurpose systems (NFPA 24; NFPA 13D + MPP manual)",
-    "difficulty": "easy",
-    "question": "Hangers and supports for multipurpose piping are required to comply with which Wisconsin Administrative Code section?",
-    "location_options": [
-      "382.60",
-      "382.61",
-      "384.30(5)",
-      "381.20"
-    ],
-    "location_answer": "382.60",
-    "content_options": [
-      "SPS 382.60 (including Table 382.60 spacing)",
-      "SPS 382.61 (siphonic roof drainage)",
-      "SPS 384.30(5) (valves)",
-      "SPS 381.20 (definitions)"
-    ],
-    "content_answer": "SPS 382.60 (including Table 382.60 spacing)",
-    "meta": {
-      "document": "MPP-DesignManual",
-      "page_start": 8,
-      "page_end": 8
-    },
-    "document_answer": "MPP-DesignManual"
-  },
-  {
-    "bucket": "Private fire mains & multipurpose systems (NFPA 24; NFPA 13D + MPP manual)",
-    "difficulty": "easy",
-    "question": "In an unventilated concealed space under an uninsulated roof—or under glass/plastic skylights exposed to direct sun—what temperature classification of residential sprinklers is required?",
-    "location_options": [
-      "7.5.5.3",
-      "8.2",
-      "7.5.6",
-      "8.6.2"
-    ],
-    "location_answer": "7.5.5.3",
-    "content_options": [
-      "Intermediate temperature-rated sprinklers (approx. 175–225 °F)",
-      "Ordinary temperature-rated sprinklers (approx. 135–170 °F)",
-      "High temperature-rated sprinklers (≥ 286 °F)",
-      "No sprinklers are permitted in these locations"
-    ],
-    "content_answer": "Intermediate temperature-rated sprinklers (approx. 175–225 °F)",
-    "meta": {
-      "document": "MPP-DesignManual",
-      "page_start": 8,
-      "page_end": 9
-    },
-    "document_answer": "MPP-DesignManual"
-  },
-  {
-    "bucket": "Private fire mains & multipurpose systems (NFPA 24; NFPA 13D + MPP manual)",
-    "difficulty": "easy",
-    "question": "According to the MPP Design Manual (citing NFPA 13D), what minimum design discharge must a system provide to any single sprinkler (unless the listed sprinkler requires otherwise)?",
-    "location_options": [
-      "8.1.1.2.2",
-      "8.1.1",
-      "8.1.4",
-      "7.2.1"
-    ],
-    "location_answer": "8.1.1.2.2",
-    "content_options": [
-      "18 gpm to any single sprinkler",
-      "13 gpm to any single sprinkler",
-      "10 gpm to any single sprinkler",
-      "23 gpm to any single sprinkler"
-    ],
-    "content_answer": "18 gpm to any single sprinkler",
-    "meta": {
-      "document": "MPP-DesignManual",
-      "page_start": 10,
-      "page_end": 10
-    },
-    "document_answer": "MPP-DesignManual"
-  },
-  {
-    "bucket": "Private fire mains & multipurpose systems (NFPA 24; NFPA 13D + MPP manual)",
-    "difficulty": "easy",
-    "question": "What is the minimum operating pressure for any sprinkler in an MPP system when the manufacturer’s listing does not require a higher value?",
-    "location_options": [
-      "8.1.4",
-      "8.2.4",
-      "7.1.1",
-      "6.2"
-    ],
-    "location_answer": "8.1.4",
-    "content_options": [
-      "7 psi",
-      "10 psi",
-      "12 psi",
-      "15 psi"
-    ],
-    "content_answer": "7 psi",
-    "meta": {
-      "document": "MPP-DesignManual",
-      "page_start": 11,
-      "page_end": 11
-    },
-    "document_answer": "MPP-DesignManual"
-  },
-  {
-    "bucket": "Private fire mains & multipurpose systems (NFPA 24; NFPA 13D + MPP manual)",
-    "difficulty": "easy",
-    "question": "Which of the following is identified as a reliable water source for an MPP system?",
-    "location_options": [
-      "6.2",
-      "6.3(5)",
-      "8.4.4",
-      "7.3.2"
-    ],
-    "location_answer": "6.2",
-    "content_options": [
-      "Stored water with an automatically operated pump",
-      "Swimming pool with portable pump",
-      "Irrigation pond without a pump",
-      "Rain barrel connected to roof leaders"
-    ],
-    "content_answer": "Stored water with an automatically operated pump",
-    "meta": {
-      "document": "MPP-DesignManual",
-      "page_start": 11,
-      "page_end": 12
-    },
-    "document_answer": "MPP-DesignManual"
-  },
-  {
-    "bucket": "Private fire mains & multipurpose systems (NFPA 24; NFPA 13D + MPP manual)",
-    "difficulty": "hard",
-    "question": "For a stored water supply serving an MPP system, what minimum duration must the available quantity satisfy under typical conditions, and what exception applies for certain small dwellings?",
-    "location_options": [
-      "6.2",
-      "6.3(1)",
-      "8.6.5",
-      "7.2.1"
-    ],
-    "location_answer": "6.2",
-    "content_options": [
-      "10 minutes; 7 minutes allowed for one-story or manufactured dwellings ≤ 2000 ft²",
-      "20 minutes; 10 minutes allowed for one-story dwellings ≤ 4000 ft²",
-      "7 minutes; 5 minutes allowed for manufactured dwellings ≤ 2000 ft²",
-      "15 minutes; 10 minutes allowed for one-story dwellings ≤ 3000 ft²"
-    ],
-    "content_answer": "10 minutes; 7 minutes allowed for one-story or manufactured dwellings ≤ 2000 ft²",
-    "meta": {
-      "document": "MPP-DesignManual",
-      "page_start": 12,
-      "page_end": 12
-    },
-    "document_answer": "MPP-DesignManual"
-  },
-  {
-    "bucket": "Private fire mains & multipurpose systems (NFPA 24; NFPA 13D + MPP manual)",
-    "difficulty": "medium",
-    "question": "When sizing piping common to both dwelling units in a two-family MPP installation, what additional flow must be included in the design unless domestic flow is automatically shut off upon sprinkler operation?",
-    "location_options": [
-      "6.3(1)",
-      "6.3(5)",
-      "8.1.1",
-      "8.4.4"
-    ],
-    "location_answer": "6.3(1)",
-    "content_options": [
-      "Add 5 gpm to the sprinkler demand",
-      "Add 10 gpm to the sprinkler demand",
-      "No additional flow is added",
-      "Add the full domestic wsfu demand of both units"
-    ],
-    "content_answer": "Add 5 gpm to the sprinkler demand",
-    "meta": {
-      "document": "MPP-DesignManual",
-      "page_start": 12,
-      "page_end": 12
-    },
-    "document_answer": "MPP-DesignManual"
-  },
-  {
-    "bucket": "Private fire mains & multipurpose systems (NFPA 24; NFPA 13D + MPP manual)",
-    "difficulty": "medium",
-    "question": "What does the required warning sign adjacent to the building control valve in an MPP system have to communicate, per the MPP Design Manual?",
-    "location_options": [
-      "6.3(5)",
-      "8.6.2",
-      "7.5.6",
-      "7.1.1"
-    ],
-    "location_answer": "6.3(5)",
-    "content_options": [
-      "That the system supplies fire sprinklers and devices that restrict flow/pressure must not be added without review",
-      "That the system is exempt from all municipal backflow requirements",
-      "That only the domestic side is affected by the control valve",
-      "That all sprinklers are high-temperature rated unless labeled otherwise"
-    ],
-    "content_answer": "That the system supplies fire sprinklers and devices that restrict flow/pressure must not be added without review",
-    "meta": {
-      "document": "MPP-DesignManual",
-      "page_start": 12,
-      "page_end": 12
-    },
-    "document_answer": "MPP-DesignManual"
-  },
-  {
-    "bucket": "Private fire mains & multipurpose systems (NFPA 24; NFPA 13D + MPP manual)",
-    "difficulty": "medium",
-    "question": "Which statement about the building control valve in an MPP system is correct?",
-    "location_options": [
-      "7.1.1",
-      "7.2.1",
-      "7.3.2",
-      "8.2"
-    ],
-    "location_answer": "7.1.1",
-    "content_options": [
-      "It must shut off both domestic water distribution and the sprinklers; a separate branch valve to sprinklers, if installed, must be locked open",
-      "It must shut off sprinklers only; domestic water must not be affected",
-      "It may be closed automatically by water softeners during low pressure events",
-      "It is optional when the system is supplied by a municipal main"
-    ],
-    "content_answer": "It must shut off both domestic water distribution and the sprinklers; a separate branch valve to sprinklers, if installed, must be locked open",
-    "meta": {
-      "document": "MPP-DesignManual",
-      "page_start": 13,
-      "page_end": 13
-    },
-    "document_answer": "MPP-DesignManual"
-  },
-  {
-    "bucket": "Private fire mains & multipurpose systems (NFPA 24; NFPA 13D + MPP manual)",
-    "difficulty": "medium",
-    "question": "For testing, maintenance, and repairs in an MPP system, where must a drain valve be installed?",
-    "location_options": [
-      "7.2.1",
-      "7.1.1",
-      "8.1.4",
-      "8.2.4"
-    ],
-    "location_answer": "7.2.1",
-    "content_options": [
-      "Downstream of the building control valve",
-      "Upstream of the water meter only",
-      "Only at the most remote sprinkler",
-      "No drain valve is required if a pressure tank is used"
-    ],
-    "content_answer": "Downstream of the building control valve",
-    "meta": {
-      "document": "MPP-DesignManual",
-      "page_start": 13,
-      "page_end": 13
-    },
-    "document_answer": "MPP-DesignManual"
-  },
-  {
-    "bucket": "Private fire mains & multipurpose systems (NFPA 24; NFPA 13D + MPP manual)",
-    "difficulty": "medium",
-    "question": "What instrumentation is required when a pressure tank is used as part of the MPP water supply?",
-    "location_options": [
-      "7.3.2",
-      "6.2",
-      "6.3(1)",
-      "8.6.5"
-    ],
-    "location_answer": "7.3.2",
-    "content_options": [
-      "Pressure gauges are required",
-      "Flow switches are required",
-      "A local waterflow alarm is required",
-      "No instrumentation is required"
-    ],
-    "content_answer": "Pressure gauges are required",
-    "meta": {
-      "document": "MPP-DesignManual",
-      "page_start": 13,
-      "page_end": 13
-    },
-    "document_answer": "MPP-DesignManual"
-  },
-  {
-    "bucket": "Private fire mains & multipurpose systems (NFPA 24; NFPA 13D + MPP manual)",
-    "difficulty": "medium",
-    "question": "What clearances from ceiling fans/lights must be maintained for residential sprinklers in an MPP system, and what is the remedy if they cannot be met?",
-    "location_options": [
-      "8.2",
-      "7.5.5.3",
-      "8.6.2",
-      "7.5.6"
-    ],
-    "location_answer": "8.2",
-    "content_options": [
-      "3 ft to a pendant sprinkler and 5 ft to a sidewall; add an additional sprinkler if not met",
-      "2 ft to any sprinkler; remove the obstruction if not met",
-      "5 ft to any sprinkler; use high-temperature sprinklers if not met",
-      "No clearance required if the fixture is under 200 W"
-    ],
-    "content_answer": "3 ft to a pendant sprinkler and 5 ft to a sidewall; add an additional sprinkler if not met",
-    "meta": {
-      "document": "MPP-DesignManual",
-      "page_start": 14,
-      "page_end": 14
-    },
-    "document_answer": "MPP-DesignManual"
-  },
-  {
-    "bucket": "Private fire mains & multipurpose systems (NFPA 24; NFPA 13D + MPP manual)",
-    "difficulty": "medium",
-    "question": "Where are sprinklers NOT required in an MPP system per NFPA 13D as cited in the manual?",
-    "location_options": [
-      "8.6.2",
-      "8.6.3",
-      "8.6.5",
-      "7.5.6"
-    ],
-    "location_answer": "8.6.2",
-    "content_options": [
-      "Bathrooms of 55 ft² or less",
-      "Any bedroom with a smoke alarm",
-      "Kitchens under 120 ft²",
-      "Hallways less than 4 ft wide"
-    ],
-    "content_answer": "Bathrooms of 55 ft² or less",
-    "meta": {
-      "document": "MPP-DesignManual",
-      "page_start": 14,
-      "page_end": 14
-    },
-    "document_answer": "MPP-DesignManual"
-  },
-  {
-    "bucket": "Private fire mains & multipurpose systems (NFPA 24; NFPA 13D + MPP manual)",
-    "difficulty": "medium",
-    "question": "Under what conditions are sprinklers NOT required in closets, pantries, and similar spaces in an MPP system?",
-    "location_options": [
-      "8.6.3",
-      "8.6.2",
-      "8.6.5",
-      "8.2.4"
-    ],
-    "location_answer": "8.6.3",
-    "content_options": [
-      "If the area does not exceed 24 ft² and the least dimension is under 3 ft and surfaces are non/limited-combustible",
-      "If the area does not exceed 40 ft² and has a self-closing door",
-      "If the area is ventilated and has no electrical outlets",
-      "If the area is lined with Type X gypsum board"
-    ],
-    "content_answer": "If the area does not exceed 24 ft² and the least dimension is under 3 ft and surfaces are non/limited-combustible",
-    "meta": {
-      "document": "MPP-DesignManual",
-      "page_start": 12,
-      "page_end": 12
-    },
-    "document_answer": "MPP-DesignManual"
-  },
-  {
-    "bucket": "Private fire mains & multipurpose systems (NFPA 24; NFPA 13D + MPP manual)",
-    "difficulty": "medium",
-    "question": "Which statement about garages and similar spaces in relation to MPP sprinklers is correct?",
-    "location_options": [
-      "8.6.5",
-      "8.6.2",
-      "8.2.4",
-      "7.1.1"
-    ],
-    "location_answer": "8.6.5",
-    "content_options": [
-      "Sprinklers are not required in garages, carports, and similar structures; unheated entries/porches need no sprinklers when another means of exit is available",
-      "Sprinklers are required in all garages regardless of construction",
-      "Sprinklers are not required in any exterior space larger than 200 ft²",
-      "Sprinklers may be omitted in garages only if the garage has no fuel-fired equipment"
-    ],
-    "content_answer": "Sprinklers are not required in garages, carports, and similar structures; unheated entries/porches need no sprinklers when another means of exit is available",
-    "meta": {
-      "document": "MPP-DesignManual",
-      "page_start": 12,
-      "page_end": 12
-    },
-    "document_answer": "MPP-DesignManual"
-  },
-  {
-    "bucket": "Private fire mains & multipurpose systems (NFPA 24; NFPA 13D + MPP manual)",
-    "difficulty": "hard",
-    "question": "When a listed sidewall sprinkler is used at a 14 ft × 14 ft coverage, what is the maximum allowable distance from the sprinkler to the adjacent side wall before a larger coverage criterion must be used?",
-    "location_options": [
-      "8.1.3.1.1",
-      "8.2.2.1",
-      "8.6.2",
-      "7.5.6"
-    ],
-    "location_answer": "8.1.3.1.1",
-    "content_options": [
-      "7 ft to the side wall",
-      "8 ft to the side wall",
-      "6 ft to the side wall",
-      "10 ft to the side wall"
-    ],
-    "content_answer": "7 ft to the side wall",
-    "meta": {
-      "document": "MPP-DesignManual",
-      "page_start": 11,
-      "page_end": 11
-    },
-    "document_answer": "MPP-DesignManual"
-  },
-  {
-    "bucket": "Private fire mains & multipurpose systems (NFPA 24; NFPA 13D + MPP manual)",
-    "difficulty": "hard",
-    "question": "Hydraulic calculations per NFPA 13 must be performed for which MPP system configurations per the MPP Design Manual?",
-    "location_options": [
-      "8.4.4",
-      "7.4.3",
-      "8.6.5",
-      "6.3(5)"
-    ],
-    "location_answer": "8.4.4",
-    "content_options": [
-      "Looped or grid systems and any system connected to a municipal main smaller than 4 inches",
-      "Only tree systems connected to 4-inch or larger mains",
-      "Any system served by a private well regardless of layout",
-      "Only systems with more than two sprinklers in a compartment"
-    ],
-    "content_answer": "Looped or grid systems and any system connected to a municipal main smaller than 4 inches",
-    "meta": {
-      "document": "MPP-DesignManual",
-      "page_start": 12,
-      "page_end": 12
-    },
-    "document_answer": "MPP-DesignManual"
   },
   {
     "bucket": "Venting (SPS 382)",
@@ -4401,954 +2851,2504 @@ const defaultQuizData = [
     "document_answer": "SPS-383"
   },
   {
-    "bucket": "Plumbing products & approvals (SPS 384)",
+    "bucket": "Drain & vent systems — scope",
     "difficulty": "easy",
-    "question": "According to the code, which section requires Department approval for products in the categories listed in Table 384.10 before they may be sold or installed?",
+    "question": "What does SPS 382.30 specify as the scope of sanitary drain systems?",
     "location_options": [
-      "384.10(2)(a)1",
-      "384.12",
-      "384.30(1)",
-      "384.50(2)"
+      "382.30(1)",
+      "382.31(1)",
+      "382.36(1)",
+      "382.21(1)"
     ],
-    "location_answer": "384.10(2)(a)1",
+    "location_answer": "382.30(1)",
     "content_options": [
-      "The Department must approve each product type in Table 384.10 prior to sale or installation",
-      "Products may be installed first and submitted for approval within 30 days",
-      "Only health care appliances require prior approval",
-      "Only products with moving parts require prior approval"
+      "Requirements for design and installation of sanitary drain systems, including building drains and building sewers.",
+      "Requirements for materials and product approvals for plumbing fixtures.",
+      "Requirements for storm and clear water drain systems only.",
+      "Requirements for inspection procedures for plumbing installations."
     ],
-    "content_answer": "The Department must approve each product type in Table 384.10 prior to sale or installation",
+    "content_answer": "Requirements for design and installation of sanitary drain systems, including building drains and building sewers.",
     "meta": {
-      "document": "SPS-384",
+      "document": "SPS-382",
       "page_start": null,
       "page_end": null
     },
-    "document_answer": "SPS-384"
+    "document_answer": "SPS-382"
   },
   {
-    "bucket": "Plumbing products & approvals (SPS 384)",
+    "bucket": "Materials & references",
     "difficulty": "easy",
-    "question": "Which section governs the listing of appurtenances, devices, fixtures, materials, and methods for plumbing products?",
+    "question": "According to SPS 382.30(2), sanitary drain systems shall be constructed of materials approved in which chapter?",
     "location_options": [
-      "384.11",
-      "384.01",
-      "384.12",
-      "384.25"
+      "382.30(2)",
+      "382.31(2)",
+      "382.40",
+      "384.40"
     ],
-    "location_answer": "384.11",
+    "location_answer": "382.30(2)",
     "content_options": [
-      "SPS 384.11",
-      "SPS 382.20",
-      "SPS 381.20",
-      "SPS 383.60"
+      "ch. SPS 384",
+      "ch. SPS 381",
+      "ch. SPS 383",
+      "ch. SPS 302"
     ],
-    "content_answer": "SPS 384.11",
+    "content_answer": "ch. SPS 384",
     "meta": {
-      "document": "SPS-384",
+      "document": "SPS-382",
       "page_start": null,
       "page_end": null
     },
-    "document_answer": "SPS-384"
+    "document_answer": "SPS-382"
   },
   {
-    "bucket": "Plumbing products & approvals (SPS 384)",
+    "bucket": "Drainage fixture units (DFU)",
+    "difficulty": "medium",
+    "question": "For intermittent flow devices not listed in Table 382.30-1, how are drainage fixture unit values computed?",
+    "location_options": [
+      "382.30(3)(a)2",
+      "382.30(3)(b)",
+      "382.31(3)(a)",
+      "382.30(4)(a)1"
+    ],
+    "location_answer": "382.30(3)(a)2",
+    "content_options": [
+      "One fixture unit equals one gallon per minute of flow.",
+      "Two fixture units equal one gallon per minute of flow.",
+      "One fixture unit equals two gallons per minute of flow.",
+      "Fixture unit values must be determined by the local authority."
+    ],
+    "content_answer": "One fixture unit equals one gallon per minute of flow.",
+    "meta": {
+      "document": "SPS-382",
+      "page_start": null,
+      "page_end": null
+    },
+    "document_answer": "SPS-382"
+  },
+  {
+    "bucket": "Drainage fixture units (DFU)",
+    "difficulty": "medium",
+    "question": "How are DFUs assigned for continuous flow devices such as pumps that discharge continuously?",
+    "location_options": [
+      "382.30(3)(b)",
+      "382.30(3)(a)1",
+      "382.31(9)",
+      "382.30(5)"
+    ],
+    "location_answer": "382.30(3)(b)",
+    "content_options": [
+      "Two fixture units for each one gallon per minute of flow.",
+      "One fixture unit for each one gallon per minute of flow.",
+      "Three fixture units for each one gallon per minute of flow.",
+      "DFU assignment is prohibited for continuous flow devices."
+    ],
+    "content_answer": "Two fixture units for each one gallon per minute of flow.",
+    "meta": {
+      "document": "SPS-382",
+      "page_start": null,
+      "page_end": null
+    },
+    "document_answer": "SPS-382"
+  },
+  {
+    "bucket": "Sizing & loading",
+    "difficulty": "medium",
+    "question": "What limits the total drainage load in any portion of drain piping?",
+    "location_options": [
+      "382.30(4)(a)1",
+      "382.30(5)(b)",
+      "382.31(4)",
+      "382.36(3)"
+    ],
+    "location_answer": "382.30(4)(a)1",
+    "content_options": [
+      "Tables 382.30-2 and 382.30-3, unless reduced by an approved alternate standard or analysis.",
+      "Table 382.31-1 exclusively.",
+      "Local ordinance only; state tables are advisory.",
+      "The number of fixture traps connected to the branch."
+    ],
+    "content_answer": "Tables 382.30-2 and 382.30-3, unless reduced by an approved alternate standard or analysis.",
+    "meta": {
+      "document": "SPS-382",
+      "page_start": null,
+      "page_end": null
+    },
+    "document_answer": "SPS-382"
+  },
+  {
+    "bucket": "Minimum sizes — building sewers",
     "difficulty": "easy",
-    "question": "Which section requires each pipe, fitting, trap, fixture, material, device, and product used in plumbing to be properly identified/marked?",
+    "question": "What is the minimum diameter for a gravity flow sanitary building sewer?",
     "location_options": [
-      "384.12",
-      "384.10",
-      "384.30(1)",
-      "384.40(1)"
+      "382.30(4)(b)1",
+      "382.30(5)(b)1",
+      "382.31(3)(b)",
+      "382.30(11)(c)1"
     ],
-    "location_answer": "384.12",
+    "location_answer": "382.30(4)(b)1",
     "content_options": [
-      "SPS 384.12",
-      "SPS 382.34",
-      "SPS 383.25",
-      "SPS 381.01"
+      "4 inches",
+      "3 inches",
+      "2 inches",
+      "6 inches"
     ],
-    "content_answer": "SPS 384.12",
+    "content_answer": "4 inches",
     "meta": {
-      "document": "SPS-384",
+      "document": "SPS-382",
       "page_start": null,
       "page_end": null
     },
-    "document_answer": "SPS-384"
+    "document_answer": "SPS-382"
   },
   {
-    "bucket": "Plumbing products & approvals (SPS 384)",
+    "bucket": "Pressurized sewers",
+    "difficulty": "medium",
+    "question": "Pressurized building sewers shall be sized to maintain at least what flow velocity?",
+    "location_options": [
+      "382.30(4)(b)2.a",
+      "382.30(5)",
+      "382.31(3)(a)",
+      "382.30(11)(f)2"
+    ],
+    "location_answer": "382.30(4)(b)2.a",
+    "content_options": [
+      "2 feet per second",
+      "1 foot per second",
+      "3 feet per second",
+      "0.5 foot per second"
+    ],
+    "content_answer": "2 feet per second",
+    "meta": {
+      "document": "SPS-382",
+      "page_start": null,
+      "page_end": null
+    },
+    "document_answer": "SPS-382"
+  },
+  {
+    "bucket": "Pressurized sewers",
+    "difficulty": "medium",
+    "question": "What is the minimum pipe diameter for pressurized building sewers serving sewage ejectors and sewage pumps (non-grinder)?",
+    "location_options": [
+      "382.30(4)(b)2.b",
+      "382.30(10)(b)3.a",
+      "382.31(8)",
+      "382.30(11)(f)2"
+    ],
+    "location_answer": "382.30(4)(b)2.b",
+    "content_options": [
+      "2 inches",
+      "1.5 inches",
+      "1.25 inches",
+      "3 inches"
+    ],
+    "content_answer": "2 inches",
+    "meta": {
+      "document": "SPS-382",
+      "page_start": null,
+      "page_end": null
+    },
+    "document_answer": "SPS-382"
+  },
+  {
+    "bucket": "Pressurized sewers",
+    "difficulty": "medium",
+    "question": "What is the minimum pipe diameter for pressurized building sewers serving sewage grinder pumps?",
+    "location_options": [
+      "382.30(4)(b)2.b",
+      "382.30(10)(b)3.a",
+      "382.31(8)",
+      "382.30(5)(b)2"
+    ],
+    "location_answer": "382.30(4)(b)2.b",
+    "content_options": [
+      "1.25 inches",
+      "1.5 inches",
+      "2 inches",
+      "1 inch"
+    ],
+    "content_answer": "1.25 inches",
+    "meta": {
+      "document": "SPS-382",
+      "page_start": null,
+      "page_end": null
+    },
+    "document_answer": "SPS-382"
+  },
+  {
+    "bucket": "Private interceptor main sewers",
     "difficulty": "easy",
-    "question": "Where are the general design and construction performance requirements for plumbing fixtures, appliances, and equipment stated?",
+    "question": "What is the minimum diameter for a gravity flow private interceptor main sewer (unless enlarged by ordinance)?",
     "location_options": [
-      "384.20(1)",
-      "384.30(1)",
-      "384.11",
-      "384.50(1)"
+      "382.30(4)(c)1",
+      "382.30(4)(b)1",
+      "382.30(11)(c)1",
+      "382.31(4)"
     ],
-    "location_answer": "384.20(1)",
+    "location_answer": "382.30(4)(c)1",
     "content_options": [
-      "SPS 384.20(1)",
-      "SPS 381.20",
-      "SPS 382.40(5)",
-      "SPS 384.25(1)"
+      "4 inches",
+      "3 inches",
+      "6 inches",
+      "2 inches"
     ],
-    "content_answer": "SPS 384.20(1)",
+    "content_answer": "4 inches",
     "meta": {
-      "document": "SPS-384",
+      "document": "SPS-382",
       "page_start": null,
       "page_end": null
     },
-    "document_answer": "SPS-384"
+    "document_answer": "SPS-382"
   },
   {
-    "bucket": "Plumbing products & approvals (SPS 384)",
+    "bucket": "Private interceptor main sewers",
+    "difficulty": "medium",
+    "question": "Private interceptor main sewers 8 inches or larger must conform to which design criteria?",
+    "location_options": [
+      "382.30(4)(c)5",
+      "382.30(11)(f)2",
+      "382.31(4)",
+      "382.36(3)"
+    ],
+    "location_answer": "382.30(4)(c)5",
+    "content_options": [
+      "s. NR 110.13",
+      "s. NR 811.02",
+      "s. SPS 381.20(2)",
+      "s. SPS 384.20"
+    ],
+    "content_answer": "s. NR 110.13",
+    "meta": {
+      "document": "SPS-382",
+      "page_start": null,
+      "page_end": null
+    },
+    "document_answer": "SPS-382"
+  },
+  {
+    "bucket": "Future provisions",
     "difficulty": "easy",
-    "question": "Which section governs the selection of plumbing materials by application (e.g., sanitary drain, sewer, storm, water service)?",
+    "question": "When provisions are made for future fixtures, what must be done regarding sizing and terminations?",
     "location_options": [
-      "384.30",
-      "384.20",
-      "384.40",
-      "384.50"
+      "382.30(4)(d)",
+      "382.31(3)(a)",
+      "382.30(11)(b)",
+      "382.31(10)"
     ],
-    "location_answer": "384.30",
+    "location_answer": "382.30(4)(d)",
     "content_options": [
-      "SPS 384.30",
-      "SPS 381.60",
-      "SPS 382.30",
-      "SPS 383.30"
+      "Include future fixture DFUs in sizing and terminate with a plugged fitting.",
+      "Exclude future fixtures from sizing and cap with threaded plugs only.",
+      "Size only vents for future fixtures and leave drains open for inspection.",
+      "No special requirements; future fixtures are ignored until installed."
     ],
-    "content_answer": "SPS 384.30",
+    "content_answer": "Include future fixture DFUs in sizing and terminate with a plugged fitting.",
     "meta": {
-      "document": "SPS-384",
+      "document": "SPS-382",
       "page_start": null,
       "page_end": null
     },
-    "document_answer": "SPS-384"
+    "document_answer": "SPS-382"
   },
   {
-    "bucket": "Plumbing products & approvals (SPS 384)",
-    "difficulty": "easy",
-    "question": "What section contains the rules that all plumbing joints and connections must satisfy?",
-    "location_options": [
-      "384.40",
-      "384.30(2)",
-      "384.20(4)",
-      "384.11"
-    ],
-    "location_answer": "384.40",
-    "content_options": [
-      "SPS 384.40",
-      "SPS 382.41",
-      "SPS 381.01",
-      "SPS 384.50"
-    ],
-    "content_answer": "SPS 384.40",
-    "meta": {
-      "document": "SPS-384",
-      "page_start": null,
-      "page_end": null
-    },
-    "document_answer": "SPS-384"
-  },
-  {
-    "bucket": "Plumbing products & approvals (SPS 384)",
-    "difficulty": "easy",
-    "question": "Which section addresses alternate approvals and experimental approvals for plumbing products?",
-    "location_options": [
-      "384.50",
-      "384.10",
-      "384.12",
-      "384.25"
-    ],
-    "location_answer": "384.50",
-    "content_options": [
-      "SPS 384.50",
-      "SPS 381.60",
-      "SPS 383.22",
-      "SPS 382.20"
-    ],
-    "content_answer": "SPS 384.50",
-    "meta": {
-      "document": "SPS-384",
-      "page_start": null,
-      "page_end": null
-    },
-    "document_answer": "SPS-384"
-  },
-  {
-    "bucket": "Plumbing products & approvals (SPS 384)",
-    "difficulty": "easy",
-    "question": "According to SPS 384, which table lists standards for ABOVE-GROUND sanitary drain and vent pipe and tubing?",
-    "location_options": [
-      "384.30(2)(a)",
-      "384.30(2)(b)",
-      "384.30(3)(d)",
-      "384.20(4)(b)"
-    ],
-    "location_answer": "384.30(2)(a)",
-    "content_options": [
-      "Table 384.30-1",
-      "Table 384.30-2",
-      "Table 384.30-3",
-      "Table 384.30-6"
-    ],
-    "content_answer": "Table 384.30-1",
-    "meta": {
-      "document": "SPS-384",
-      "page_start": null,
-      "page_end": null
-    },
-    "document_answer": "SPS-384"
-  },
-  {
-    "bucket": "Plumbing products & approvals (SPS 384)",
-    "difficulty": "easy",
-    "question": "Which table governs UNDERGROUND sanitary drain and vent pipe and tubing?",
-    "location_options": [
-      "384.30(2)(b)",
-      "384.30(2)(c)",
-      "384.30(2)(a)",
-      "384.30(3)(c)"
-    ],
-    "location_answer": "384.30(2)(b)",
-    "content_options": [
-      "Table 384.30-2",
-      "Table 384.30-1",
-      "Table 384.30-3",
-      "Table 384.30-7"
-    ],
-    "content_answer": "Table 384.30-2",
-    "meta": {
-      "document": "SPS-384",
-      "page_start": null,
-      "page_end": null
-    },
-    "document_answer": "SPS-384"
-  },
-  {
-    "bucket": "Plumbing products & approvals (SPS 384)",
-    "difficulty": "easy",
-    "question": "Which table specifies standards for SANITARY building sewer pipe and tubing?",
-    "location_options": [
-      "384.30(2)(c)",
-      "384.30(3)(c)",
-      "384.30(2)(b)",
-      "384.30(3)(d)"
-    ],
-    "location_answer": "384.30(2)(c)",
-    "content_options": [
-      "Table 384.30-3",
-      "Table 384.30-2",
-      "Table 384.30-6",
-      "Table 384.30-7"
-    ],
-    "content_answer": "Table 384.30-3",
-    "meta": {
-      "document": "SPS-384",
-      "page_start": null,
-      "page_end": null
-    },
-    "document_answer": "SPS-384"
-  },
-  {
-    "bucket": "Plumbing products & approvals (SPS 384)",
-    "difficulty": "easy",
-    "question": "Which table governs STORM building sewer pipe and tubing?",
-    "location_options": [
-      "384.30(3)(c)",
-      "384.30(2)(c)",
-      "384.30(3)(d)",
-      "384.30(2)(a)"
-    ],
-    "location_answer": "384.30(3)(c)",
-    "content_options": [
-      "Table 384.30-6",
-      "Table 384.30-3",
-      "Table 384.30-7",
-      "Table 384.30-2"
-    ],
-    "content_answer": "Table 384.30-6",
-    "meta": {
-      "document": "SPS-384",
-      "page_start": null,
-      "page_end": null
-    },
-    "document_answer": "SPS-384"
-  },
-  {
-    "bucket": "Plumbing products & approvals (SPS 384)",
-    "difficulty": "easy",
-    "question": "Which table applies to SUBSOIL drain pipe materials?",
-    "location_options": [
-      "384.30(3)(d)",
-      "384.30(2)(b)",
-      "384.30(2)(a)",
-      "384.30(3)(e)"
-    ],
-    "location_answer": "384.30(3)(d)",
-    "content_options": [
-      "Table 384.30-7",
-      "Table 384.30-6",
-      "Table 384.30-2",
-      "Table 384.30-1"
-    ],
-    "content_answer": "Table 384.30-7",
-    "meta": {
-      "document": "SPS-384",
-      "page_start": null,
-      "page_end": null
-    },
-    "document_answer": "SPS-384"
-  },
-  {
-    "bucket": "Plumbing products & approvals (SPS 384)",
+    "bucket": "Pitch requirements",
     "difficulty": "medium",
-    "question": "According to SPS 384, caulked joints are permitted for which parts of a plumbing system?",
+    "question": "What is the minimum pitch for horizontal branch drains 2 inches or less in diameter?",
     "location_options": [
-      "384.40",
-      "384.30(4)",
-      "384.20(4)",
-      "384.11"
+      "382.30(5)(a)1",
+      "382.30(5)(a)2",
+      "382.30(5)(b)1",
+      "382.31(9)"
     ],
-    "location_answer": "384.40",
+    "location_answer": "382.30(5)(a)1",
     "content_options": [
-      "Drain or vent piping only",
-      "Potable water distribution piping",
-      "Any piping provided the hub-and-spigot method is used",
-      "Storm building sewers only"
+      "1/4 inch per foot",
+      "1/8 inch per foot",
+      "1/16 inch per foot",
+      "As required by local code only"
     ],
-    "content_answer": "Drain or vent piping only",
+    "content_answer": "1/4 inch per foot",
     "meta": {
-      "document": "SPS-384",
+      "document": "SPS-382",
       "page_start": null,
       "page_end": null
     },
-    "document_answer": "SPS-384"
+    "document_answer": "SPS-382"
   },
   {
-    "bucket": "Plumbing products & approvals (SPS 384)",
+    "bucket": "Pitch requirements",
     "difficulty": "medium",
-    "question": "What joint performance is required by the code regardless of test or system design?",
+    "question": "What is the minimum pitch for horizontal branch drains larger than 2 inches in diameter?",
     "location_options": [
-      "384.40(4)(a)",
-      "384.30(1)",
-      "384.12",
-      "384.50(2)(c)"
+      "382.30(5)(a)2",
+      "382.30(5)(a)1",
+      "382.30(5)(b)1",
+      "382.30(5)"
     ],
-    "location_answer": "384.40(4)(a)",
+    "location_answer": "382.30(5)(a)2",
     "content_options": [
-      "Joints must be watertight and gastight",
-      "Joints must be solvent welded only",
-      "Joints must be mechanically restrained only",
-      "Joints must be lead-caulked in underground locations"
+      "1/8 inch per foot",
+      "1/4 inch per foot",
+      "1/16 inch per foot",
+      "No minimum pitch is specified"
     ],
-    "content_answer": "Joints must be watertight and gastight",
+    "content_answer": "1/8 inch per foot",
     "meta": {
-      "document": "SPS-384",
+      "document": "SPS-382",
       "page_start": null,
       "page_end": null
     },
-    "document_answer": "SPS-384"
+    "document_answer": "SPS-382"
   },
   {
-    "bucket": "Plumbing products & approvals (SPS 384)",
+    "bucket": "Pitch requirements",
     "difficulty": "medium",
-    "question": "A service suction line serving a holding tank for cleaning must use joints that comply with which section?",
+    "question": "All horizontal drain piping 4 inches or larger shall be installed at a pitch that produces what computed velocity when flowing half full?",
     "location_options": [
-      "384.30(2)(i)",
-      "384.30(2)(h)",
-      "384.20(4)",
-      "384.25(2)"
+      "382.30(5)",
+      "382.30(5)(b)1",
+      "382.31(3)(a)",
+      "382.30(4)"
     ],
-    "location_answer": "384.30(2)(i)",
+    "location_answer": "382.30(5)",
     "content_options": [
-      "SPS 384.40",
-      "SPS 382.33",
-      "SPS 384.12",
-      "SPS 383.22"
+      "At least 2 feet per second",
+      "At least 1 foot per second",
+      "At least 3 feet per second",
+      "At least 0.5 foot per second"
     ],
-    "content_answer": "SPS 384.40",
+    "content_answer": "At least 2 feet per second",
     "meta": {
-      "document": "SPS-384",
+      "document": "SPS-382",
       "page_start": null,
       "page_end": null
     },
-    "document_answer": "SPS-384"
+    "document_answer": "SPS-382"
   },
   {
-    "bucket": "Plumbing products & approvals (SPS 384)",
-    "difficulty": "medium",
-    "question": "Which statement best reflects the code’s allowance for fiberglass manholes in traffic areas?",
-    "location_options": [
-      "384.30(2)(h)",
-      "384.30(2)(g)",
-      "384.30(3)(f)",
-      "384.20(4)(b)"
-    ],
-    "location_answer": "384.30(2)(h)",
-    "content_options": [
-      "Fiberglass manholes may be used if the top section in traffic areas is not fiberglass",
-      "Fiberglass manholes are prohibited in all traffic areas",
-      "Fiberglass manholes are permitted in traffic areas only if fully encased in concrete",
-      "Fiberglass manholes require a separate experimental approval for traffic areas"
-    ],
-    "content_answer": "Fiberglass manholes may be used if the top section in traffic areas is not fiberglass",
-    "meta": {
-      "document": "SPS-384",
-      "page_start": null,
-      "page_end": null
-    },
-    "document_answer": "SPS-384"
-  },
-  {
-    "bucket": "Plumbing products & approvals (SPS 384)",
-    "difficulty": "medium",
-    "question": "Which material is specifically permitted for catch basins, interceptors, and sumps?",
-    "location_options": [
-      "384.30(2)(g)",
-      "384.30(2)(h)",
-      "384.30(3)(c)",
-      "384.20(2)"
-    ],
-    "location_answer": "384.30(2)(g)",
-    "content_options": [
-      "Coated 12-gauge steel",
-      "Uncoated 22-gauge steel",
-      "Wood forms with liner",
-      "Unreinforced concrete block without mortar"
-    ],
-    "content_answer": "Coated 12-gauge steel",
-    "meta": {
-      "document": "SPS-384",
-      "page_start": null,
-      "page_end": null
-    },
-    "document_answer": "SPS-384"
-  },
-  {
-    "bucket": "Plumbing products & approvals (SPS 384)",
-    "difficulty": "medium",
-    "question": "What does SPS 384 require for chemical drain and vent systems with respect to material selection?",
-    "location_options": [
-      "384.30(2)(f)",
-      "384.20(2)",
-      "384.40(16)",
-      "384.11"
-    ],
-    "location_answer": "384.30(2)(f)",
-    "content_options": [
-      "Use approved corrosion-resistant materials; manufacturer must indicate suitability for chemical concentrations",
-      "Use Schedule 80 PVC for all chemical waste regardless of chemical",
-      "Use stainless steel only when temperature exceeds 140°F",
-      "Use glass piping only when pH is below 3.0"
-    ],
-    "content_answer": "Use approved corrosion-resistant materials; manufacturer must indicate suitability for chemical concentrations",
-    "meta": {
-      "document": "SPS-384",
-      "page_start": null,
-      "page_end": null
-    },
-    "document_answer": "SPS-384"
-  },
-  {
-    "bucket": "Plumbing products & approvals (SPS 384)",
-    "difficulty": "medium",
-    "question": "What does SPS 384 require for roof drains regarding strainers?",
-    "location_options": [
-      "384.30(3)(e)1",
-      "384.30(2)(e)",
-      "384.20(4)(b)1",
-      "384.40(4)(a)"
-    ],
-    "location_answer": "384.30(3)(e)1",
-    "content_options": [
-      "Roof drains must have removable strainers of sufficient strength for anticipated loads",
-      "Roof drains must have fixed strainers that cannot be removed",
-      "Roof drains may omit strainers if gutters are present",
-      "Strainers are required only on secondary drains"
-    ],
-    "content_answer": "Roof drains must have removable strainers of sufficient strength for anticipated loads",
-    "meta": {
-      "document": "SPS-384",
-      "page_start": null,
-      "page_end": null
-    },
-    "document_answer": "SPS-384"
-  },
-  {
-    "bucket": "Plumbing products & approvals (SPS 384)",
-    "difficulty": "medium",
-    "question": "For cold water distribution pipe installed underground, what minimum working pressure and standards apply?",
-    "location_options": [
-      "384.30(4)",
-      "384.30(2)(b)",
-      "384.20(1)",
-      "384.40(1)"
-    ],
-    "location_answer": "384.30(4)",
-    "content_options": [
-      "≥150 psig at 73.4°F; conform to Table 384.30-7 or 384.30-8",
-      "≥125 psig at 80°F; conform to Table 384.30-5",
-      "≥200 psig at 60°F; conform to Table 384.30-6",
-      "≥100 psig at 70°F; conform to Table 384.30-2"
-    ],
-    "content_answer": "≥150 psig at 73.4°F; conform to Table 384.30-7 or 384.30-8",
-    "meta": {
-      "document": "SPS-384",
-      "page_start": null,
-      "page_end": null
-    },
-    "document_answer": "SPS-384"
-  },
-  {
-    "bucket": "Plumbing products & approvals (SPS 384)",
-    "difficulty": "medium",
-    "question": "Flexible fixture supply connectors must be permanently and legibly marked. Which of the following markings is required by SPS 384?",
-    "location_options": [
-      "384.20(6)(c)2",
-      "384.20(4)(b)3",
-      "384.12",
-      "384.11"
-    ],
-    "location_answer": "384.20(6)(c)2",
-    "content_options": [
-      "Manufacturer’s name or trademark",
-      "Date of installation",
-      "Installer’s license number",
-      "Local jurisdiction name"
-    ],
-    "content_answer": "Manufacturer’s name or trademark",
-    "meta": {
-      "document": "SPS-384",
-      "page_start": null,
-      "page_end": null
-    },
-    "document_answer": "SPS-384"
-  },
-  {
-    "bucket": "Plumbing products & approvals (SPS 384)",
-    "difficulty": "medium",
-    "question": "Hand-held showers, faucets, and fixture fittings with integral backflow protection hose connection outlets must comply with which requirement?",
-    "location_options": [
-      "384.20(6)(d)",
-      "384.30(2)(f)",
-      "384.40(4)(a)",
-      "384.10(3)"
-    ],
-    "location_answer": "384.20(6)(d)",
-    "content_options": [
-      "Conform to ASME A112.18.1/CSA B125.1 or have an ASME A112.18.3 backflow prevention device",
-      "Be listed to NSF 61, Section 9",
-      "Be constructed of stainless steel only",
-      "Use only vacuum breaker type backflow preventers"
-    ],
-    "content_answer": "Conform to ASME A112.18.1/CSA B125.1 or have an ASME A112.18.3 backflow prevention device",
-    "meta": {
-      "document": "SPS-384",
-      "page_start": null,
-      "page_end": null
-    },
-    "document_answer": "SPS-384"
-  },
-  {
-    "bucket": "Plumbing products & approvals (SPS 384)",
-    "difficulty": "medium",
-    "question": "What is the maximum discharge rate for lavatory faucets under SPS 384’s water-conserving requirements?",
-    "location_options": [
-      "384.20(3)(b)2.a",
-      "384.20(3)(b)4",
-      "384.20(3)(b)3",
-      "384.20(1)"
-    ],
-    "location_answer": "384.20(3)(b)2.a",
-    "content_options": [
-      "2.2 gpm at 60 psig",
-      "2.5 gpm at 80 psig",
-      "1.6 gpf",
-      "1.0 gpf at 80 psig"
-    ],
-    "content_answer": "2.2 gpm at 60 psig",
-    "meta": {
-      "document": "SPS-384",
-      "page_start": null,
-      "page_end": null
-    },
-    "document_answer": "SPS-384"
-  },
-  {
-    "bucket": "Plumbing products & approvals (SPS 384)",
-    "difficulty": "medium",
-    "question": "Under SPS 384, what is the maximum discharge rate for shower heads?",
-    "location_options": [
-      "384.20(3)(b)3",
-      "384.20(3)(b)2.a",
-      "384.20(3)(b)5",
-      "384.20(3)(b)7"
-    ],
-    "location_answer": "384.20(3)(b)3",
-    "content_options": [
-      "2.5 gpm at 80 psig",
-      "2.2 gpm at 60 psig",
-      "1.6 gpf",
-      "1.0 gpf at 80 psig"
-    ],
-    "content_answer": "2.5 gpm at 80 psig",
-    "meta": {
-      "document": "SPS-384",
-      "page_start": null,
-      "page_end": null
-    },
-    "document_answer": "SPS-384"
-  },
-  {
-    "bucket": "Plumbing products & approvals (SPS 384)",
-    "difficulty": "medium",
-    "question": "What is the maximum flush volume for urinals under SPS 384’s water-conserving requirements?",
-    "location_options": [
-      "384.20(3)(b)5",
-      "384.20(3)(b)7",
-      "384.20(3)(b)6",
-      "384.20(3)(b)2.a"
-    ],
-    "location_answer": "384.20(3)(b)5",
-    "content_options": [
-      "1.0 gallon per flush at 80 psig",
-      "1.28 gallons per flush",
-      "2.5 gallons per flush",
-      "0.5 gallon per flush at 80 psig"
-    ],
-    "content_answer": "1.0 gallon per flush at 80 psig",
-    "meta": {
-      "document": "SPS-384",
-      "page_start": null,
-      "page_end": null
-    },
-    "document_answer": "SPS-384"
-  },
-  {
-    "bucket": "Plumbing products & approvals (SPS 384)",
+    "bucket": "Offsets in vertical drains",
     "difficulty": "hard",
-    "question": "For a nonpressurized soil absorption system using PVC effluent distribution piping, what perforation arrangement does SPS 384 require?",
+    "question": "Where a horizontal branch connects within 2 feet above or below a 30°–45° stack offset located 5 or more branch intervals below the top, what is generally required?",
     "location_options": [
-      "384.30(2)(d)2",
-      "384.30(2)(c)",
-      "384.30(3)(c)",
-      "384.30(2)(a)"
+      "382.30(6)(a)2",
+      "382.30(6)(c)",
+      "382.31(5)(a)",
+      "382.30(7)(a)"
     ],
-    "location_answer": "384.30(2)(d)2",
+    "location_answer": "382.30(6)(a)2",
     "content_options": [
-      "Two rows of perforations, 120° ± 5° apart, at the nominal 4 and 8 o’clock positions",
-      "Three rows of perforations evenly spaced at 120°",
-      "Two rows of perforations at 3 and 9 o’clock",
-      "Perforations optional if pipe is SDR 26 or less"
+      "The offset must be vented per SPS 382.31(5)(a), unless excepted.",
+      "No venting is allowed within this region.",
+      "The offset must be increased by two pipe sizes.",
+      "Install a cleanout on both sides of the offset."
     ],
-    "content_answer": "Two rows of perforations, 120° ± 5° apart, at the nominal 4 and 8 o’clock positions",
+    "content_answer": "The offset must be vented per SPS 382.31(5)(a), unless excepted.",
     "meta": {
-      "document": "SPS-384",
+      "document": "SPS-382",
       "page_start": null,
       "page_end": null
     },
-    "document_answer": "SPS-384"
+    "document_answer": "SPS-382"
   },
   {
-    "bucket": "Plumbing products & approvals (SPS 384)",
+    "bucket": "Offsets in vertical drains",
     "difficulty": "hard",
-    "question": "A designer specifies Type 304 stainless steel for an UNDERGROUND sanitary drain line. According to SPS 384 material tables, is this acceptable?",
+    "question": "For a drain stack with an offset >45° from vertical, how is the portion of the offset between the fittings sized?",
     "location_options": [
-      "384.30(2)(b)",
-      "384.30(2)(a)",
-      "384.30(3)(c)",
-      "384.30(2)(e)"
+      "382.30(6)(b)2",
+      "382.30(6)(b)1",
+      "382.31(4)",
+      "382.30(5)(b)1"
     ],
-    "location_answer": "384.30(2)(b)",
+    "location_answer": "382.30(6)(b)2",
     "content_options": [
-      "No; Type 304 stainless may not be installed underground",
-      "Yes; Type 304 stainless is allowed underground without limitation",
-      "Yes, if solvent-cemented joints are used",
-      "Yes, but only for storm sewers"
+      "As building drain piping in accordance with 382.30(4).",
+      "As stack vent piping in accordance with 382.31.",
+      "As building sewer piping per Table 382.30-3 only.",
+      "As trap arm per Table 382.31-1."
     ],
-    "content_answer": "No; Type 304 stainless may not be installed underground",
+    "content_answer": "As building drain piping in accordance with 382.30(4).",
     "meta": {
-      "document": "SPS-384",
+      "document": "SPS-382",
       "page_start": null,
       "page_end": null
     },
-    "document_answer": "SPS-384"
+    "document_answer": "SPS-382"
   },
   {
-    "bucket": "Plumbing products & approvals (SPS 384)",
+    "bucket": "Offsets in vertical drains",
     "difficulty": "hard",
-    "question": "An engineer proposes Type M copper for an UNDERGROUND sanitary building sewer. What does SPS 384 require?",
+    "question": "When an offset >45° is located more than four branch intervals below the top of a drain stack, which connection is prohibited?",
     "location_options": [
-      "384.30(2)(b)",
-      "384.30(2)(c)",
-      "384.30(2)(a)",
-      "384.30(3)(c)"
+      "382.30(6)(b)4",
+      "382.30(7)(a)",
+      "382.31(6)(a)",
+      "382.30(9)(c)1"
     ],
-    "location_answer": "384.30(2)(b)",
+    "location_answer": "382.30(6)(b)4",
     "content_options": [
-      "Type M copper may not be installed underground; select an allowed material/standard",
-      "Type M copper is required for all underground copper installations",
-      "Type M copper is permitted only if sleeved in PVC",
-      "Type M copper is permitted for storm sewers only"
+      "Connecting a horizontal branch within the offset or within 2 feet above or below it.",
+      "Connecting a relief vent above the offset.",
+      "Connecting a yoke vent to the lower section of the stack.",
+      "Connecting a vent header to the stack vent."
     ],
-    "content_answer": "Type M copper may not be installed underground; select an allowed material/standard",
+    "content_answer": "Connecting a horizontal branch within the offset or within 2 feet above or below it.",
     "meta": {
-      "document": "SPS-384",
+      "document": "SPS-382",
       "page_start": null,
       "page_end": null
     },
-    "document_answer": "SPS-384"
+    "document_answer": "SPS-382"
   },
   {
-    "bucket": "Plumbing products & approvals (SPS 384)",
+    "bucket": "Offsets in vertical drains",
     "difficulty": "hard",
-    "question": "For an experimental approval issued under SPS 384, which of the following submittals is explicitly required with the plans?",
+    "question": "When can the venting for an offset >45° be omitted for stacks below 5 or more branch intervals?",
     "location_options": [
-      "384.50(3)(g)3",
-      "384.50(2)(c)",
-      "384.10(2)(a)1",
-      "384.11"
+      "382.30(6)(b)5.b",
+      "382.31(5)(b)",
+      "382.30(6)(c)",
+      "382.31(4)(b)2.c"
     ],
-    "location_answer": "384.50(3)(g)3",
+    "location_answer": "382.30(6)(b)5.b",
     "content_options": [
-      "A letter of consent from the owner acknowledging receipt of the experimental approval and s. SPS 384.50",
-      "Proof of insurance from the installing contractor",
-      "A peer-review letter from a registered engineer",
-      "A notarized affidavit from the product manufacturer"
+      "When the stack including the offset is sized one pipe size larger than required and meets cross-sectional area criteria.",
+      "When the stack has a cleanout at the base and head.",
+      "When the building has fewer than 10 branch intervals.",
+      "When the offset is located two feet below the lowest branch drain."
     ],
-    "content_answer": "A letter of consent from the owner acknowledging receipt of the experimental approval and s. SPS 384.50",
+    "content_answer": "When the stack including the offset is sized one pipe size larger than required and meets cross-sectional area criteria.",
     "meta": {
-      "document": "SPS-384",
+      "document": "SPS-382",
       "page_start": null,
       "page_end": null
     },
-    "document_answer": "SPS-384"
+    "document_answer": "SPS-382"
   },
   {
-    "bucket": "Plumbing products & approvals (SPS 384)",
+    "bucket": "Offsets in vertical drains",
+    "difficulty": "medium",
+    "question": "What exception eliminates venting requirements where an offset is at least two feet below the lowest branch drain connection?",
+    "location_options": [
+      "382.30(6)(c)",
+      "382.31(5)(b)",
+      "382.30(6)(a)2",
+      "382.31(4)(b)4"
+    ],
+    "location_answer": "382.30(6)(c)",
+    "content_options": [
+      "No venting is required for that offset.",
+      "A relief vent must be added at the next lower branch.",
+      "A yoke vent must be installed to the lower section.",
+      "Offset must be increased by one pipe size."
+    ],
+    "content_answer": "No venting is required for that offset.",
+    "meta": {
+      "document": "SPS-382",
+      "page_start": null,
+      "page_end": null
+    },
+    "document_answer": "SPS-382"
+  },
+  {
+    "bucket": "Base of stack connections",
+    "difficulty": "medium",
+    "question": "How close may a horizontal branch drain connect downstream from the base fitting of a drain stack (≥2 in.)?",
+    "location_options": [
+      "382.30(7)(a)",
+      "382.30(7)(b)",
+      "382.31(7)",
+      "382.30(8)(a)"
+    ],
+    "location_answer": "382.30(7)(a)",
+    "content_options": [
+      "Not within a distance equal to 10 pipe diameters of the drain.",
+      "Not within a distance equal to 5 pipe diameters of the drain.",
+      "Not within a distance equal to 20 pipe diameters of the drain.",
+      "It may connect immediately downstream if vented."
+    ],
+    "content_answer": "Not within a distance equal to 10 pipe diameters of the drain.",
+    "meta": {
+      "document": "SPS-382",
+      "page_start": null,
+      "page_end": null
+    },
+    "document_answer": "SPS-382"
+  },
+  {
+    "bucket": "Base of stack connections",
+    "difficulty": "medium",
+    "question": "How close may a building drain branch connect to a building drain downstream from the base of a stack (≥2 in.)?",
+    "location_options": [
+      "382.30(7)(b)",
+      "382.30(7)(a)",
+      "382.31(7)",
+      "382.30(11)(b)2"
+    ],
+    "location_answer": "382.30(7)(b)",
+    "content_options": [
+      "Not within a distance equal to 20 pipe diameters of the building drain.",
+      "Not within a distance equal to 10 pipe diameters of the building drain.",
+      "Not within a distance equal to 5 pipe diameters of the building drain.",
+      "It may connect immediately downstream if oversized."
+    ],
+    "content_answer": "Not within a distance equal to 20 pipe diameters of the building drain.",
+    "meta": {
+      "document": "SPS-382",
+      "page_start": null,
+      "page_end": null
+    },
+    "document_answer": "SPS-382"
+  },
+  {
+    "bucket": "Fittings & changes of direction",
+    "difficulty": "medium",
+    "question": "Which fitting types are generally required for changes of direction in drain piping?",
+    "location_options": [
+      "382.30(8)(a)",
+      "382.30(9)(c)",
+      "382.31(4)",
+      "382.30(5)"
+    ],
+    "location_answer": "382.30(8)(a)",
+    "content_options": [
+      "45° wyes, long/short sweep quarter bends, sixth/eighth/sixteenth bends, or equivalent.",
+      "Sanitary tees for all horizontal turns.",
+      "Running thread elbows and heel inlet bends only.",
+      "Drilled and tapped side connections for tight spaces."
+    ],
+    "content_answer": "45° wyes, long/short sweep quarter bends, sixth/eighth/sixteenth bends, or equivalent.",
+    "meta": {
+      "document": "SPS-382",
+      "page_start": null,
+      "page_end": null
+    },
+    "document_answer": "SPS-382"
+  },
+  {
+    "bucket": "Fittings & changes of direction",
+    "difficulty": "medium",
+    "question": "What is the minimum radius for the first 90° fitting downstream of a 1-1/2 in. lavatory or sink trap?",
+    "location_options": [
+      "382.30(8)(a)1",
+      "382.30(8)(a)2",
+      "382.30(8)(a)3",
+      "382.31(9)"
+    ],
+    "location_answer": "382.30(8)(a)1",
+    "content_options": [
+      "1-3/4 inches (tee or quarter bend)",
+      "2-1/2 inches (long sweep only)",
+      "3 inches (tee-wye required)",
+      "1-1/4 inches (sanitary tee permitted)"
+    ],
+    "content_answer": "1-3/4 inches (tee or quarter bend)",
+    "meta": {
+      "document": "SPS-382",
+      "page_start": null,
+      "page_end": null
+    },
+    "document_answer": "SPS-382"
+  },
+  {
+    "bucket": "Fittings & changes of direction",
+    "difficulty": "medium",
+    "question": "What is the minimum radius for the first 90° bend downstream of a 4-inch water closet outlet?",
+    "location_options": [
+      "382.30(8)(a)3",
+      "382.30(8)(a)2",
+      "382.31(9)",
+      "382.30(8)(a)1"
+    ],
+    "location_answer": "382.30(8)(a)3",
+    "content_options": [
+      "3 inches",
+      "2-1/2 inches",
+      "1-3/4 inches",
+      "4 inches"
+    ],
+    "content_answer": "3 inches",
+    "meta": {
+      "document": "SPS-382",
+      "page_start": null,
+      "page_end": null
+    },
+    "document_answer": "SPS-382"
+  },
+  {
+    "bucket": "Prohibited fittings & connections",
+    "difficulty": "easy",
+    "question": "Which of the following is prohibited for drain piping?",
+    "location_options": [
+      "382.30(9)(c)",
+      "382.30(9)(a)",
+      "382.30(9)(b)",
+      "382.31(3)"
+    ],
+    "location_answer": "382.30(9)(c)",
+    "content_options": [
+      "Drilling and tapping a drain or vent pipe (unless otherwise approved).",
+      "Using a 4×3 closet bend reduction.",
+      "Using a wye pattern fitting for discharge connection.",
+      "Using a tee or quarter bend downstream of a sink trap."
+    ],
+    "content_answer": "Drilling and tapping a drain or vent pipe (unless otherwise approved).",
+    "meta": {
+      "document": "SPS-382",
+      "page_start": null,
+      "page_end": null
+    },
+    "document_answer": "SPS-382"
+  },
+  {
+    "bucket": "Sumps & ejectors — general",
+    "difficulty": "medium",
+    "question": "Where must sanitary building subdrains discharge?",
+    "location_options": [
+      "382.30(10)(a)1",
+      "382.30(11)(b)2",
+      "382.31(8)(a)",
+      "382.36(3)"
+    ],
+    "location_answer": "382.30(10)(a)1",
+    "content_options": [
+      "Into an approved, vented sump with an airtight cover.",
+      "Directly to the building sewer if below grade.",
+      "Into a storm drain via approved air gap.",
+      "Into a floor drain equipped with a trap primer."
+    ],
+    "content_answer": "Into an approved, vented sump with an airtight cover.",
+    "meta": {
+      "document": "SPS-382",
+      "page_start": null,
+      "page_end": null
+    },
+    "document_answer": "SPS-382"
+  },
+  {
+    "bucket": "Sumps & ejectors — duplex",
+    "difficulty": "medium",
+    "question": "When is duplex ejector or pumping equipment required for sanitary sumps in a public building?",
+    "location_options": [
+      "382.30(10)(b)2.a",
+      "382.30(10)(b)2.b",
+      "382.31(6)",
+      "382.30(10)(a)2"
+    ],
+    "location_answer": "382.30(10)(b)2.a",
+    "content_options": [
+      "When 3 or more water closets or more than 20 DFUs discharge into a sump.",
+      "When two water closets discharge into a sump.",
+      "Whenever a sump is located outdoors.",
+      "Only when grinder pumps are used."
+    ],
+    "content_answer": "When 3 or more water closets or more than 20 DFUs discharge into a sump.",
+    "meta": {
+      "document": "SPS-382",
+      "page_start": null,
+      "page_end": null
+    },
+    "document_answer": "SPS-382"
+  },
+  {
+    "bucket": "Sumps & ejectors — alarms",
+    "difficulty": "medium",
+    "question": "What alarm requirement applies where duplex pumping equipment is installed?",
+    "location_options": [
+      "382.30(10)(b)2.d",
+      "382.30(10)(b)2.c",
+      "382.31(8)",
+      "382.30(10)(a)5"
+    ],
+    "location_answer": "382.30(10)(b)2.d",
+    "content_options": [
+      "An audible or visual alarm with manual reset to indicate pump failure.",
+      "A remote dialer alarm to local authorities.",
+      "No alarm is needed if pumps alternate automatically.",
+      "A pressure gauge must be installed at the discharge."
+    ],
+    "content_answer": "An audible or visual alarm with manual reset to indicate pump failure.",
+    "meta": {
+      "document": "SPS-382",
+      "page_start": null,
+      "page_end": null
+    },
+    "document_answer": "SPS-382"
+  },
+  {
+    "bucket": "Sumps & ejectors — pump discharge",
+    "difficulty": "medium",
+    "question": "How must the ejector or pump discharge connect to the gravity drain?",
+    "location_options": [
+      "382.30(10)(b)4.a",
+      "382.30(10)(b)4.b",
+      "382.31(4)(b)",
+      "382.30(9)(d)"
+    ],
+    "location_answer": "382.30(10)(b)4.a",
+    "content_options": [
+      "By means of a wye pattern fitting, with the bottom of the wye branch above the horizontal centerline when connecting to a horizontal drain.",
+      "By means of a sanitary tee in the horizontal run.",
+      "By means of a side inlet bend positioned horizontally.",
+      "By means of a drilled-and-tapped connection with reinforcement."
+    ],
+    "content_answer": "By means of a wye pattern fitting, with the bottom of the wye branch above the horizontal centerline when connecting to a horizontal drain.",
+    "meta": {
+      "document": "SPS-382",
+      "page_start": null,
+      "page_end": null
+    },
+    "document_answer": "SPS-382"
+  },
+  {
+    "bucket": "Sumps & ejectors — check valves",
+    "difficulty": "easy",
+    "question": "What valve must be installed in the discharge piping from each interior ejector or pump (except exterior sumps)?",
+    "location_options": [
+      "382.30(10)(b)4.b",
+      "382.30(10)(b)4.c",
+      "382.31(8)",
+      "382.30(9)(a)"
+    ],
+    "location_answer": "382.30(10)(b)4.b",
+    "content_options": [
+      "A full flow check valve",
+      "A vacuum relief valve",
+      "A foot valve",
+      "A pressure reducing valve"
+    ],
+    "content_answer": "A full flow check valve",
+    "meta": {
+      "document": "SPS-382",
+      "page_start": null,
+      "page_end": null
+    },
+    "document_answer": "SPS-382"
+  },
+  {
+    "bucket": "Prefabricated systems",
+    "difficulty": "medium",
+    "question": "Macerating toilet systems and waste pumping systems for fixtures must conform to which standard?",
+    "location_options": [
+      "382.30(10)(c)",
+      "382.31(3)",
+      "382.30(10)(b)3",
+      "382.30(9)(b)"
+    ],
+    "location_answer": "382.30(10)(c)",
+    "content_options": [
+      "ASME A112.3.4-2018/CSA B45.9-18",
+      "ASME A112.14.1-2018",
+      "ASTM D2665-20",
+      "NFPA 20-2019"
+    ],
+    "content_answer": "ASME A112.3.4-2018/CSA B45.9-18",
+    "meta": {
+      "document": "SPS-382",
+      "page_start": null,
+      "page_end": null
+    },
+    "document_answer": "SPS-382"
+  },
+  {
+    "bucket": "Limitations — building sewers",
+    "difficulty": "medium",
+    "question": "When may a building sewer pass through or under a building to serve another building?",
+    "location_options": [
+      "382.30(11)(a)",
+      "382.31(4)",
+      "382.30(11)(c)",
+      "382.30(12)(f)"
+    ],
+    "location_answer": "382.30(11)(a)",
+    "content_options": [
+      "Only when serving farm buildings/farm houses on one property or buildings on the same property with recorded documentation.",
+      "Any time the slope allows gravity flow and a cleanout is provided.",
+      "Only with a backwater valve and tracer wire installed.",
+      "Never; this is prohibited in all cases."
+    ],
+    "content_answer": "Only when serving farm buildings/farm houses on one property or buildings on the same property with recorded documentation.",
+    "meta": {
+      "document": "SPS-382",
+      "page_start": null,
+      "page_end": null
+    },
+    "document_answer": "SPS-382"
+  },
+  {
+    "bucket": "Backwater protection",
+    "difficulty": "easy",
+    "question": "How must a building drain subject to backflow or backwater be protected?",
+    "location_options": [
+      "382.30(11)(b)2",
+      "382.31(8)",
+      "382.31(7)",
+      "382.30(7)(b)"
+    ],
+    "location_answer": "382.30(11)(b)2",
+    "content_options": [
+      "With a backwater valve or with a sump and pumping equipment.",
+      "With a larger vent and cleanout only.",
+      "By increasing pipe size one nominal diameter.",
+      "By installing a trap primer."
+    ],
+    "content_answer": "With a backwater valve or with a sump and pumping equipment.",
+    "meta": {
+      "document": "SPS-382",
+      "page_start": null,
+      "page_end": null
+    },
+    "document_answer": "SPS-382"
+  },
+  {
+    "bucket": "Floor drains below grade",
+    "difficulty": "easy",
+    "question": "When is a floor drain required for rooms with fixtures below grade?",
+    "location_options": [
+      "382.30(11)(b)3.a",
+      "382.31(9)",
+      "382.30(5)(b)1",
+      "382.30(9)(b)"
+    ],
+    "location_answer": "382.30(11)(b)3.a",
+    "content_options": [
+      "Whenever a plumbing fixture or appliance is located on a floor entirely below grade.",
+      "Only when more than 20 DFUs are present.",
+      "Only if a sump is not installed.",
+      "Only for public toilet rooms adjacent to pools."
+    ],
+    "content_answer": "Whenever a plumbing fixture or appliance is located on a floor entirely below grade.",
+    "meta": {
+      "document": "SPS-382",
+      "page_start": null,
+      "page_end": null
+    },
+    "document_answer": "SPS-382"
+  },
+  {
+    "bucket": "Depth of building sewers",
+    "difficulty": "medium",
+    "question": "What is the minimum depth from finished grade to the top of a building sewer?",
+    "location_options": [
+      "382.30(11)(c)1.a",
+      "382.30(11)(c)1.b",
+      "382.30(11)(c)2",
+      "382.31(3)"
+    ],
+    "location_answer": "382.30(11)(c)1.a",
+    "content_options": [
+      "42 inches (except as provided).",
+      "36 inches (except as provided).",
+      "24 inches (except as provided).",
+      "18 inches (except as provided)."
+    ],
+    "content_answer": "42 inches (except as provided).",
+    "meta": {
+      "document": "SPS-382",
+      "page_start": null,
+      "page_end": null
+    },
+    "document_answer": "SPS-382"
+  },
+  {
+    "bucket": "Depth to tanks/interceptors",
+    "difficulty": "medium",
+    "question": "What is the minimum depth for a building sewer that discharges to a septic tank, holding tank, or grease interceptor?",
+    "location_options": [
+      "382.30(11)(c)1.b",
+      "382.30(11)(c)1.a",
+      "382.30(11)(c)2.d",
+      "382.31(3)"
+    ],
+    "location_answer": "382.30(11)(c)1.b",
+    "content_options": [
+      "18 inches below finished grade",
+      "24 inches below finished grade",
+      "30 inches below finished grade",
+      "42 inches below finished grade"
+    ],
+    "content_answer": "18 inches below finished grade",
+    "meta": {
+      "document": "SPS-382",
+      "page_start": null,
+      "page_end": null
+    },
+    "document_answer": "SPS-382"
+  },
+  {
+    "bucket": "Frost protection — trigger",
     "difficulty": "hard",
-    "question": "Under SPS 384’s alternate approval process, within what time must the Department determine an application after receiving all required information and fees?",
+    "question": "When must a building sewer or private interceptor main sewer be protected from frost?",
     "location_options": [
-      "384.50(2)(c)",
-      "384.50(3)(e)",
-      "384.10(1)",
-      "384.20(4)"
+      "382.30(11)(c)2.a-b",
+      "382.30(11)(c)3",
+      "382.31(16)",
+      "382.30(13)"
     ],
-    "location_answer": "384.50(2)(c)",
+    "location_answer": "382.30(11)(c)2.a-b",
     "content_options": [
-      "Within 3 months",
-      "Within 10 business days",
-      "Within 6 months",
-      "Within 1 month"
+      "When the top of the pipe is less than 60 in. below a cleared surface or less than 42 in. below a surface where snow will not be cleared.",
+      "Only when soil is classified as Zone D.",
+      "Whenever the sewer is 4 in. diameter or smaller.",
+      "Only for public buildings occupied year-round."
     ],
-    "content_answer": "Within 3 months",
+    "content_answer": "When the top of the pipe is less than 60 in. below a cleared surface or less than 42 in. below a surface where snow will not be cleared.",
     "meta": {
-      "document": "SPS-384",
+      "document": "SPS-382",
       "page_start": null,
       "page_end": null
     },
-    "document_answer": "SPS-384"
+    "document_answer": "SPS-382"
   },
   {
-    "bucket": "Plumbing products & approvals (SPS 384)",
+    "bucket": "Frost protection — methods",
+    "difficulty": "hard",
+    "question": "Which is an acceptable frost protection method for building sewers per SPS 382.30?",
+    "location_options": [
+      "382.30(11)(c)3",
+      "382.30(11)(c)2",
+      "382.31(16)",
+      "382.30(13)"
+    ],
+    "location_answer": "382.30(11)(c)3",
+    "content_options": [
+      "Extruded polystyrene foam insulation installed per specified thickness/width or box method.",
+      "Placing heat tape directly on pipe without insulation.",
+      "Burying with sand only to a depth of 24 inches.",
+      "Adding a tracer wire of any color directly on pipe."
+    ],
+    "content_answer": "Extruded polystyrene foam insulation installed per specified thickness/width or box method.",
+    "meta": {
+      "document": "SPS-382",
+      "page_start": null,
+      "page_end": null
+    },
+    "document_answer": "SPS-382"
+  },
+  {
+    "bucket": "Separation from wells",
     "difficulty": "medium",
-    "question": "Which section specifically governs plumbing fixtures, appliances, and equipment (as opposed to materials or joints)?",
+    "question": "Which references govern separation distances between building sewers/private interceptor main sewers and water wells?",
     "location_options": [
-      "384.20",
-      "384.30",
-      "384.40",
-      "384.11"
+      "382.30(11)(d)",
+      "382.31(3)",
+      "382.30(11)(f)",
+      "382.36(3)"
     ],
-    "location_answer": "384.20",
+    "location_answer": "382.30(11)(d)",
     "content_options": [
-      "SPS 384.20",
-      "SPS 384.30",
-      "SPS 384.40",
-      "SPS 384.50"
+      "chs. NR 811 and 812 (or as approved by DNR).",
+      "ch. SPS 381 exclusively.",
+      "s. NR 110.13 only.",
+      "Local ordinance only."
     ],
-    "content_answer": "SPS 384.20",
+    "content_answer": "chs. NR 811 and 812 (or as approved by DNR).",
     "meta": {
-      "document": "SPS-384",
+      "document": "SPS-382",
       "page_start": null,
       "page_end": null
     },
-    "document_answer": "SPS-384"
+    "document_answer": "SPS-382"
   },
   {
-    "bucket": "Plumbing products & approvals (SPS 384)",
-    "difficulty": "easy",
-    "question": "Which section addresses POWTS holding components or treatment components?",
+    "bucket": "Trenching & bedding",
+    "difficulty": "hard",
+    "question": "When stone >1 in. or bedrock is encountered, how must the trench be prepared before bedding?",
     "location_options": [
-      "384.25",
-      "384.20",
-      "384.15",
-      "384.30"
+      "382.30(11)(e)2.b",
+      "382.30(11)(e)2.a",
+      "382.30(11)(e)3.b",
+      "382.31(3)"
     ],
-    "location_answer": "384.25",
+    "location_answer": "382.30(11)(e)2.b",
     "content_options": [
-      "SPS 384.25",
-      "SPS 383.60",
-      "SPS 382.36",
-      "SPS 384.11"
+      "Excavate at least 3 inches below grade elevation and bring back to grade with sand, gravel, or crushed stone passing a 1/2-in. sieve.",
+      "Excavate exactly to grade and place pipe on native soil.",
+      "Install concrete cradle regardless of soil conditions.",
+      "Use any granular material with particles up to 2 inches."
     ],
-    "content_answer": "SPS 384.25",
+    "content_answer": "Excavate at least 3 inches below grade elevation and bring back to grade with sand, gravel, or crushed stone passing a 1/2-in. sieve.",
     "meta": {
-      "document": "SPS-384",
+      "document": "SPS-382",
       "page_start": null,
       "page_end": null
     },
-    "document_answer": "SPS-384"
+    "document_answer": "SPS-382"
   },
   {
-    "bucket": "Plumbing products & approvals (SPS 384)",
-    "difficulty": "easy",
-    "question": "Which section addresses health care plumbing appliances?",
-    "location_options": [
-      "384.15",
-      "384.20",
-      "384.11",
-      "384.01"
-    ],
-    "location_answer": "384.15",
-    "content_options": [
-      "SPS 384.15",
-      "SPS 384.20",
-      "SPS 383.50",
-      "SPS 382.60"
-    ],
-    "content_answer": "SPS 384.15",
-    "meta": {
-      "document": "SPS-384",
-      "page_start": null,
-      "page_end": null
-    },
-    "document_answer": "SPS-384"
-  },
-  {
-    "bucket": "Plumbing products & approvals (SPS 384)",
+    "bucket": "Backfill",
     "difficulty": "medium",
-    "question": "According to SPS 384, fixtures must be installed to afford easy access for cleaning. Where is this requirement stated?",
+    "question": "What minimum cover is required over the top of pipe before wheel-loading the trench?",
     "location_options": [
-      "384.20(4)(b)1",
-      "384.20(1)",
-      "384.30(1)",
-      "384.40(4)(a)"
+      "382.30(11)(e)4",
+      "382.30(11)(e)2.d",
+      "382.31(3)",
+      "382.30(11)(e)5"
     ],
-    "location_answer": "384.20(4)(b)1",
+    "location_answer": "382.30(11)(e)4",
     "content_options": [
-      "SPS 384.20(4)(b)1",
-      "SPS 384.30(2)(a)",
-      "SPS 384.11",
-      "SPS 381.01(2)"
+      "At least 36 inches of backfill cover",
+      "At least 24 inches of backfill cover",
+      "At least 12 inches of backfill cover",
+      "At least 48 inches of backfill cover"
     ],
-    "content_answer": "SPS 384.20(4)(b)1",
+    "content_answer": "At least 36 inches of backfill cover",
     "meta": {
-      "document": "SPS-384",
+      "document": "SPS-382",
       "page_start": null,
       "page_end": null
     },
-    "document_answer": "SPS-384"
+    "document_answer": "SPS-382"
   },
   {
-    "bucket": "Plumbing products & approvals (SPS 384)",
-    "difficulty": "medium",
-    "question": "Under SPS 384’s water-conserving requirements, what is the maximum flush volume for water closets?",
+    "bucket": "Connection to public sewer",
+    "difficulty": "hard",
+    "question": "If a building sewer connection is not found within 3 feet of the designated point on a gravity public sewer, which is an acceptable method?",
     "location_options": [
-      "384.20(3)(b)7",
-      "384.20(3)(b)5",
-      "384.20(3)(b)3",
-      "384.20(1)"
+      "382.30(11)(f)1.a",
+      "382.30(11)(f)1.c",
+      "382.31(4)",
+      "382.36(3)"
     ],
-    "location_answer": "384.20(3)(b)7",
+    "location_answer": "382.30(11)(f)1.a",
     "content_options": [
-      "1.6 gallons per flush",
-      "1.28 gallons per flush",
-      "2.5 gallons per flush",
-      "1.0 gallon per flush"
+      "Install a saddle fitting approved by the department and acceptable to the municipality/sanitary district.",
+      "Drill and tap into the side of the main without encasement.",
+      "Insert a sanitary tee and run it vertically downward.",
+      "Use a side inlet bend placed horizontally."
     ],
-    "content_answer": "1.6 gallons per flush",
+    "content_answer": "Install a saddle fitting approved by the department and acceptable to the municipality/sanitary district.",
     "meta": {
-      "document": "SPS-384",
+      "document": "SPS-382",
       "page_start": null,
       "page_end": null
     },
-    "document_answer": "SPS-384"
+    "document_answer": "SPS-382"
   },
   {
-    "bucket": "Plumbing products & approvals (SPS 384)",
+    "bucket": "Pressurized public sewer connections",
+    "difficulty": "hard",
+    "question": "For a forced building sewer discharging to a pressurized public sewer, which device is required on the property near the connection?",
+    "location_options": [
+      "382.30(11)(f)2.a",
+      "382.30(11)(f)2.b",
+      "382.31(4)",
+      "382.30(9)(d)"
+    ],
+    "location_answer": "382.30(11)(f)2.a",
+    "content_options": [
+      "A curb stop",
+      "A vacuum breaker",
+      "A backflow preventer with relief port",
+      "An air admittance valve"
+    ],
+    "content_answer": "A curb stop",
+    "meta": {
+      "document": "SPS-382",
+      "page_start": null,
+      "page_end": null
+    },
+    "document_answer": "SPS-382"
+  },
+  {
+    "bucket": "Prohibited discharges",
     "difficulty": "easy",
-    "question": "Which table applies to perforated effluent distribution piping for NONPRESSURIZED soil absorption systems?",
+    "question": "Which discharge is prohibited to public sewers via building drains?",
     "location_options": [
-      "384.30(2)(d)2",
-      "384.30(3)(d)",
-      "384.30(2)(c)",
-      "384.30(2)(a)"
+      "382.30(11)(g)1",
+      "382.36(3)",
+      "382.31(8)",
+      "382.30(9)(c)4"
     ],
-    "location_answer": "384.30(2)(d)2",
+    "location_answer": "382.30(11)(g)1",
     "content_options": [
-      "Table 384.30-4",
-      "Table 384.30-5",
-      "Table 384.30-2",
-      "Table 384.30-7"
+      "Any substance likely to cause undue corrosion, obstruction, nuisance, explosion, or interference with treatment.",
+      "Clear water from dehumidifiers when air gapped.",
+      "Condensate from HVAC systems when indirectly wasted.",
+      "Stormwater when authorized by local ordinance."
     ],
-    "content_answer": "Table 384.30-4",
+    "content_answer": "Any substance likely to cause undue corrosion, obstruction, nuisance, explosion, or interference with treatment.",
     "meta": {
-      "document": "SPS-384",
+      "document": "SPS-382",
       "page_start": null,
       "page_end": null
     },
-    "document_answer": "SPS-384"
+    "document_answer": "SPS-382"
   },
   {
-    "bucket": "Plumbing products & approvals (SPS 384)",
-    "difficulty": "medium",
-    "question": "If a product’s approval could adversely affect health or waters of the state, what may the Department require under SPS 384?",
-    "location_options": [
-      "384.10(1)",
-      "384.11",
-      "384.20(1)",
-      "384.50(2)(c)"
-    ],
-    "location_answer": "384.10(1)",
-    "content_options": [
-      "Submission under the alternate or experimental approval process in SPS 384.50",
-      "Immediate installation with post-approval testing",
-      "Approval by the local plumbing inspector only",
-      "Listing by any non-ANSI laboratory"
-    ],
-    "content_answer": "Submission under the alternate or experimental approval process in SPS 384.50",
-    "meta": {
-      "document": "SPS-384",
-      "page_start": null,
-      "page_end": null
-    },
-    "document_answer": "SPS-384"
-  },
-  {
-    "bucket": "Plumbing products & approvals (SPS 384)",
+    "bucket": "Storm & clear water to sanitary",
     "difficulty": "easy",
-    "question": "Where would you look for the required standards for PRESSURIZED drain pipe used in plumbing systems?",
+    "question": "May storm drain piping or clear water drain piping discharge to a sanitary building drain connected to a publicly-owned treatment works?",
     "location_options": [
-      "384.30(2)(e)",
-      "384.30(2)(a)",
-      "384.30(3)(c)",
-      "384.30(4)"
+      "382.30(11)(g)2",
+      "382.36(3)",
+      "382.31(3)",
+      "382.30(5)"
     ],
-    "location_answer": "384.30(2)(e)",
+    "location_answer": "382.30(11)(g)2",
     "content_options": [
-      "Table 384.30-5",
-      "Table 384.30-1",
-      "Table 384.30-6",
-      "Table 384.30-7"
+      "No, except as provided in SPS 382.36(3).",
+      "Yes, if DFUs are accounted for.",
+      "Yes, if the pipe size is increased one diameter.",
+      "Only if the building is residential."
     ],
-    "content_answer": "Table 384.30-5",
+    "content_answer": "No, except as provided in SPS 382.36(3).",
     "meta": {
-      "document": "SPS-384",
+      "document": "SPS-382",
       "page_start": null,
       "page_end": null
     },
-    "document_answer": "SPS-384"
+    "document_answer": "SPS-382"
+  },
+  {
+    "bucket": "Locating non-metallic sewers",
+    "difficulty": "medium",
+    "question": "What color insulation must tracer wire have for non-metallic sewer pipe?",
+    "location_options": [
+      "382.30(11)(h)1.h",
+      "382.30(11)(h)1.g",
+      "382.31(3)",
+      "382.30(11)(h)3"
+    ],
+    "location_answer": "382.30(11)(h)1.h",
+    "content_options": [
+      "Green",
+      "Blue",
+      "Red",
+      "Yellow"
+    ],
+    "content_answer": "Green",
+    "meta": {
+      "document": "SPS-382",
+      "page_start": null,
+      "page_end": null
+    },
+    "document_answer": "SPS-382"
+  },
+  {
+    "bucket": "Private interceptor main sewers — pass through buildings",
+    "difficulty": "medium",
+    "question": "Under what conditions may a private interceptor main sewer pass through or under a building to serve another building?",
+    "location_options": [
+      "382.30(12)(f)",
+      "382.30(11)(a)",
+      "382.31(4)",
+      "382.30(12)(d)"
+    ],
+    "location_answer": "382.30(12)(f)",
+    "content_options": [
+      "When serving farm buildings/houses on one property; or buildings on one property with recorded documentation; or with recorded easement and maintenance agreement.",
+      "Only when pipe is 8 inches or larger.",
+      "Only when vented with a relief vent at each floor.",
+      "Never; this is always prohibited."
+    ],
+    "content_answer": "When serving farm buildings/houses on one property; or buildings on one property with recorded documentation; or with recorded easement and maintenance agreement.",
+    "meta": {
+      "document": "SPS-382",
+      "page_start": null,
+      "page_end": null
+    },
+    "document_answer": "SPS-382"
+  },
+  {
+    "bucket": "Food/ice/potable areas",
+    "difficulty": "hard",
+    "question": "Which requirement applies to drain piping located below ceilings of areas where food, ice, or potable liquids are prepared, handled, stored, or displayed?",
+    "location_options": [
+      "382.30(13)(a)",
+      "382.30(13)(b)",
+      "382.31(3)",
+      "382.30(11)(d)"
+    ],
+    "location_answer": "382.30(13)(a)",
+    "content_options": [
+      "Pipe openings through floors must have sleeves bonded to the floor protruding ≥1 in. above finish floor and sealed between sleeve and piping.",
+      "All piping must be concealed within walls regardless of access.",
+      "Only copper tube is permitted in these areas.",
+      "Exposed piping is allowed without restriction."
+    ],
+    "content_answer": "Pipe openings through floors must have sleeves bonded to the floor protruding ≥1 in. above finish floor and sealed between sleeve and piping.",
+    "meta": {
+      "document": "SPS-382",
+      "page_start": null,
+      "page_end": null
+    },
+    "document_answer": "SPS-382"
+  },
+  {
+    "bucket": "Vacuum waste systems — standards",
+    "difficulty": "medium",
+    "question": "Vacuum waste collection systems must conform to which standard?",
+    "location_options": [
+      "382.30(14)(a)1",
+      "382.31(3)",
+      "382.30(10)(c)",
+      "382.30(14)(h)2"
+    ],
+    "location_answer": "382.30(14)(a)1",
+    "content_options": [
+      "CSA B45.13:19/IAPMO Z1700-2019",
+      "ASME A112.14.1-2018",
+      "ASTM F1417-13",
+      "NFPA 13D-2019"
+    ],
+    "content_answer": "CSA B45.13:19/IAPMO Z1700-2019",
+    "meta": {
+      "document": "SPS-382",
+      "page_start": null,
+      "page_end": null
+    },
+    "document_answer": "SPS-382"
+  },
+  {
+    "bucket": "Vacuum waste systems — design",
+    "difficulty": "hard",
+    "question": "Which is required for vacuum generating systems?",
+    "location_options": [
+      "382.30(14)(b)",
+      "382.30(14)(d)",
+      "382.31(4)",
+      "382.30(14)(g)"
+    ],
+    "location_answer": "382.30(14)(b)",
+    "content_options": [
+      "Automated controls for pumps, collection tanks, and alarms, and an exhaust vent capable of handling total air volume.",
+      "Gravity drains serving as emergency bypass.",
+      "Air admittance valves on each branch line.",
+      "Use of PVC only for all vacuum piping."
+    ],
+    "content_answer": "Automated controls for pumps, collection tanks, and alarms, and an exhaust vent capable of handling total air volume.",
+    "meta": {
+      "document": "SPS-382",
+      "page_start": null,
+      "page_end": null
+    },
+    "document_answer": "SPS-382"
+  },
+  {
+    "bucket": "Vacuum water closets",
+    "difficulty": "easy",
+    "question": "What WSFU value is assigned to vacuum water closets?",
+    "location_options": [
+      "382.30(14)(h)2",
+      "382.30(14)(h)1",
+      "382.31(10)",
+      "382.30(10)(c)1"
+    ],
+    "location_answer": "382.30(14)(h)2",
+    "content_options": [
+      "1",
+      "2",
+      "4 (public)",
+      "6 (public)"
+    ],
+    "content_answer": "1",
+    "meta": {
+      "document": "SPS-382",
+      "page_start": null,
+      "page_end": null
+    },
+    "document_answer": "SPS-382"
+  },
+  {
+    "bucket": "Vents — scope & materials",
+    "difficulty": "easy",
+    "question": "What is the scope of SPS 382.31?",
+    "location_options": [
+      "382.31(1)",
+      "382.30(1)",
+      "382.31(4)",
+      "382.36(1)"
+    ],
+    "location_answer": "382.31(1)",
+    "content_options": [
+      "Requirements for the design and installation of vents and venting systems.",
+      "Requirements for water supply sizing.",
+      "Requirements for storm water systems only.",
+      "Requirements for product approvals."
+    ],
+    "content_answer": "Requirements for the design and installation of vents and venting systems.",
+    "meta": {
+      "document": "SPS-382",
+      "page_start": null,
+      "page_end": null
+    },
+    "document_answer": "SPS-382"
+  },
+  {
+    "bucket": "Vents — general requirement",
+    "difficulty": "medium",
+    "question": "What maximum pneumatic pressure differential may the water seal of a trap be subjected to?",
+    "location_options": [
+      "382.31(3)(a)",
+      "382.31(2)",
+      "382.31(4)",
+      "382.30(5)"
+    ],
+    "location_answer": "382.31(3)(a)",
+    "content_options": [
+      "Equal to one inch of water column.",
+      "Equal to two inches of water column.",
+      "Equal to 0.5 inch of water column.",
+      "No specific limit is given."
+    ],
+    "content_answer": "Equal to one inch of water column.",
+    "meta": {
+      "document": "SPS-382",
+      "page_start": null,
+      "page_end": null
+    },
+    "document_answer": "SPS-382"
+  },
+  {
+    "bucket": "Main stack",
+    "difficulty": "medium",
+    "question": "What is the minimum diameter for the main stack from the building drain to the vent terminal or header for a gravity sanitary building sewer?",
+    "location_options": [
+      "382.31(3)(b)",
+      "382.31(4)",
+      "382.30(4)(b)",
+      "382.31(5)"
+    ],
+    "location_answer": "382.31(3)(b)",
+    "content_options": [
+      "3 inches",
+      "2 inches",
+      "4 inches",
+      "1.5 inches"
+    ],
+    "content_answer": "3 inches",
+    "meta": {
+      "document": "SPS-382",
+      "page_start": null,
+      "page_end": null
+    },
+    "document_answer": "SPS-382"
+  },
+  {
+    "bucket": "Vent stacks & stack vents",
+    "difficulty": "medium",
+    "question": "For which drain stacks are a vent stack and a stack vent required?",
+    "location_options": [
+      "382.31(4)(a)",
+      "382.31(6)(a)",
+      "382.31(5)(a)",
+      "382.31(9)"
+    ],
+    "location_answer": "382.31(4)(a)",
+    "content_options": [
+      "Drain stacks of 5 or more branch intervals.",
+      "All drain stacks regardless of intervals.",
+      "Stacks serving only a single branch interval.",
+      "Stacks larger than 4 inches only."
+    ],
+    "content_answer": "Drain stacks of 5 or more branch intervals.",
+    "meta": {
+      "document": "SPS-382",
+      "page_start": null,
+      "page_end": null
+    },
+    "document_answer": "SPS-382"
+  },
+  {
+    "bucket": "Vent stack connection elevation",
+    "difficulty": "hard",
+    "question": "At what elevation must the vent stack connect to the drain stack?",
+    "location_options": [
+      "382.31(4)(b)1",
+      "382.31(4)(b)4",
+      "382.31(5)(b)2",
+      "382.31(7)(a)"
+    ],
+    "location_answer": "382.31(4)(b)1",
+    "content_options": [
+      "At or below the lowest branch drain connection to the drain stack, using a wye in a vertical portion.",
+      "Above the highest branch drain connection to minimize pressure.",
+      "At the base of the stack with a sanitary tee.",
+      "Anywhere on the horizontal run provided a cleanout is installed."
+    ],
+    "content_answer": "At or below the lowest branch drain connection to the drain stack, using a wye in a vertical portion.",
+    "meta": {
+      "document": "SPS-382",
+      "page_start": null,
+      "page_end": null
+    },
+    "document_answer": "SPS-382"
+  },
+  {
+    "bucket": "Relief/yoke vents for offsets",
+    "difficulty": "hard",
+    "question": "How must an offset >45° in a drain stack be vented when 5 or more branch intervals are located above the offset?",
+    "location_options": [
+      "382.31(5)(b)",
+      "382.31(5)(a)",
+      "382.30(6)(b)5",
+      "382.31(6)(a)"
+    ],
+    "location_answer": "382.31(5)(b)",
+    "content_options": [
+      "By venting the upper section with a vent stack and the lower section with a yoke vent.",
+      "By installing a single circuit vent on the top floor.",
+      "By increasing the stack size by two diameters.",
+      "No venting is required if a cleanout is provided."
+    ],
+    "content_answer": "By venting the upper section with a vent stack and the lower section with a yoke vent.",
+    "meta": {
+      "document": "SPS-382",
+      "page_start": null,
+      "page_end": null
+    },
+    "document_answer": "SPS-382"
+  },
+  {
+    "bucket": "Stacks with >10 branch intervals",
+    "difficulty": "medium",
+    "question": "What additional venting is required for drain stacks of more than 10 branch intervals?",
+    "location_options": [
+      "382.31(6)(a)",
+      "382.31(4)(a)",
+      "382.31(7)",
+      "382.31(9)"
+    ],
+    "location_answer": "382.31(6)(a)",
+    "content_options": [
+      "A relief vent at each tenth interval.",
+      "A stack vent at every floor.",
+      "A circuit vent for the top four fixtures.",
+      "No additional venting is required."
+    ],
+    "content_answer": "A relief vent at each tenth interval.",
+    "meta": {
+      "document": "SPS-382",
+      "page_start": null,
+      "page_end": null
+    },
+    "document_answer": "SPS-382"
+  },
+  {
+    "bucket": "Building drains — elevation change",
+    "difficulty": "hard",
+    "question": "When must a building drain be provided with a relief vent due to elevation change?",
+    "location_options": [
+      "382.31(7)",
+      "382.31(6)(a)",
+      "382.31(5)(a)",
+      "382.30(7)"
+    ],
+    "location_answer": "382.31(7)",
+    "content_options": [
+      "When there is a change in elevation of 12 feet or more at an angle of 45° or more from horizontal.",
+      "Whenever any vertical offset is present.",
+      "Only when the drain diameter exceeds 4 inches.",
+      "When the slope is flatter than 1/8 in. per foot."
+    ],
+    "content_answer": "When there is a change in elevation of 12 feet or more at an angle of 45° or more from horizontal.",
+    "meta": {
+      "document": "SPS-382",
+      "page_start": null,
+      "page_end": null
+    },
+    "document_answer": "SPS-382"
+  },
+  {
+    "bucket": "Vents for sanitary sumps",
+    "difficulty": "easy",
+    "question": "Where must the vent connect for an interior sanitary sump?",
+    "location_options": [
+      "382.31(8)(a)",
+      "382.30(10)(a)3",
+      "382.31(16)",
+      "382.30(10)(b)4"
+    ],
+    "location_answer": "382.31(8)(a)",
+    "content_options": [
+      "To the sump above the drain inlet or to the drain inlet within 12 inches of the sump.",
+      "Anywhere on the discharge pipe downstream of the check valve.",
+      "Only to a separate dedicated roof vent.",
+      "To the building sewer at the curb stop."
+    ],
+    "content_answer": "To the sump above the drain inlet or to the drain inlet within 12 inches of the sump.",
+    "meta": {
+      "document": "SPS-382",
+      "page_start": null,
+      "page_end": null
+    },
+    "document_answer": "SPS-382"
+  },
+  {
+    "bucket": "Fixture venting — developed length",
+    "difficulty": "hard",
+    "question": "What is the maximum developed length between vent and trap for a 1-1/2 in. fixture drain when the vent connects to horizontal piping and the drain is pitched 1/4 in./ft?",
+    "location_options": [
+      "382.31-Table 382.31-1",
+      "382.31(9)(a)1",
+      "382.31(9)(b)",
+      "382.30-Table 382.30-4"
+    ],
+    "location_answer": "382.31-Table 382.31-1",
+    "content_options": [
+      "6.0 feet (NP at 1/8 in./ft.)",
+      "5.0 feet",
+      "3.0 feet",
+      "8.0 feet"
+    ],
+    "content_answer": "6.0 feet (NP at 1/8 in./ft.)",
+    "meta": {
+      "document": "SPS-382",
+      "page_start": null,
+      "page_end": null
+    },
+    "document_answer": "SPS-382"
+  },
+  {
+    "bucket": "Fixture venting — minimum distance",
+    "difficulty": "medium",
+    "question": "A vent may not connect to a fixture drain within what minimum distance from the trap weir?",
+    "location_options": [
+      "382.31(9)(b)",
+      "382.31(9)(a)1",
+      "382.31(10)",
+      "382.30(8)(a)"
+    ],
+    "location_answer": "382.31(9)(b)",
+    "content_options": [
+      "A distance equal to two diameters of the drain piping.",
+      "A distance equal to one diameter of the drain piping.",
+      "At least 12 inches regardless of size.",
+      "At least 6 inches regardless of size."
+    ],
+    "content_answer": "A distance equal to two diameters of the drain piping.",
+    "meta": {
+      "document": "SPS-382",
+      "page_start": null,
+      "page_end": null
+    },
+    "document_answer": "SPS-382"
+  },
+  {
+    "bucket": "Circuit venting — applicability",
+    "difficulty": "medium",
+    "question": "Circuit venting may be used for a horizontal drain serving how many wall-outlet or floor-outlet fixtures (other than blowout type and carrier type water closets)?",
+    "location_options": [
+      "382.31(10)",
+      "382.31(4)",
+      "382.31(6)",
+      "382.31(7)"
+    ],
+    "location_answer": "382.31(10)",
+    "content_options": [
+      "At least 2 but not more than 8 fixtures",
+      "At least 2 but not more than 6 fixtures",
+      "At least 3 but not more than 10 fixtures",
+      "Exactly 8 fixtures only"
+    ],
+    "content_answer": "At least 2 but not more than 8 fixtures",
+    "meta": {
+      "document": "SPS-382",
+      "page_start": null,
+      "page_end": null
+    },
+    "document_answer": "SPS-382"
+  },
+  {
+    "bucket": "DFU table recall",
+    "difficulty": "easy",
+    "question": "According to Table 382.30-1, what is the DFU value assigned to a residential lavatory?",
+    "location_options": [
+      "382.30-Table 382.30-1",
+      "382.31-Table 382.31-1",
+      "382.30(3)(a)",
+      "382.30(4)(a)1"
+    ],
+    "location_answer": "382.30-Table 382.30-1",
+    "content_options": [
+      "1",
+      "2",
+      "3",
+      "1/2"
+    ],
+    "content_answer": "1",
+    "meta": {
+      "document": "SPS-382",
+      "page_start": null,
+      "page_end": null
+    },
+    "document_answer": "SPS-382"
+  },
+  {
+    "bucket": "DFU table recall",
+    "difficulty": "easy",
+    "question": "Per Table 382.30-1, what DFU is assigned to a residential shower stall?",
+    "location_options": [
+      "382.30-Table 382.30-1",
+      "382.31-Table 382.31-1",
+      "382.30(3)(b)",
+      "382.31(9)"
+    ],
+    "location_answer": "382.30-Table 382.30-1",
+    "content_options": [
+      "2",
+      "1",
+      "3",
+      "4"
+    ],
+    "content_answer": "2",
+    "meta": {
+      "document": "SPS-382",
+      "page_start": null,
+      "page_end": null
+    },
+    "document_answer": "SPS-382"
+  },
+  {
+    "bucket": "DFU table recall",
+    "difficulty": "medium",
+    "question": "What DFU value is assigned to a public water closet (per Table 382.30-1)?",
+    "location_options": [
+      "382.30-Table 382.30-1",
+      "382.31-Table 382.31-1",
+      "382.30(3)",
+      "382.31(3)"
+    ],
+    "location_answer": "382.30-Table 382.30-1",
+    "content_options": [
+      "6",
+      "4",
+      "2",
+      "1"
+    ],
+    "content_answer": "6",
+    "meta": {
+      "document": "SPS-382",
+      "page_start": null,
+      "page_end": null
+    },
+    "document_answer": "SPS-382"
+  },
+  {
+    "bucket": "DFU table recall",
+    "difficulty": "medium",
+    "question": "What DFU value is assigned to a nonpublic (private) water closet (per Table 382.30-1)?",
+    "location_options": [
+      "382.30-Table 382.30-1",
+      "382.31-Table 382.31-1",
+      "382.30(3)",
+      "382.31(3)"
+    ],
+    "location_answer": "382.30-Table 382.30-1",
+    "content_options": [
+      "4",
+      "6",
+      "2",
+      "1"
+    ],
+    "content_answer": "4",
+    "meta": {
+      "document": "SPS-382",
+      "page_start": null,
+      "page_end": null
+    },
+    "document_answer": "SPS-382"
+  },
+  {
+    "bucket": "DFU table recall",
+    "difficulty": "medium",
+    "question": "What DFU value is assigned to a residential automatic dishwasher?",
+    "location_options": [
+      "382.30-Table 382.30-1",
+      "382.31-Table 382.31-1",
+      "382.30(3)",
+      "382.31(3)"
+    ],
+    "location_answer": "382.30-Table 382.30-1",
+    "content_options": [
+      "2",
+      "1",
+      "3",
+      "4"
+    ],
+    "content_answer": "2",
+    "meta": {
+      "document": "SPS-382",
+      "page_start": null,
+      "page_end": null
+    },
+    "document_answer": "SPS-382"
+  },
+  {
+    "bucket": "DFU table recall",
+    "difficulty": "medium",
+    "question": "What DFU value and trap size are assigned to a 2-inch floor drain?",
+    "location_options": [
+      "382.30-Table 382.30-1",
+      "382.31-Table 382.31-1",
+      "382.30(3)",
+      "382.31(3)"
+    ],
+    "location_answer": "382.30-Table 382.30-1",
+    "content_options": [
+      "2 DFU; 2-inch trap",
+      "3 DFU; 3-inch trap",
+      "4 DFU; 2-inch trap",
+      "1 DFU; 1-1/2-inch trap"
+    ],
+    "content_answer": "2 DFU; 2-inch trap",
+    "meta": {
+      "document": "SPS-382",
+      "page_start": null,
+      "page_end": null
+    },
+    "document_answer": "SPS-382"
+  },
+  {
+    "bucket": "Traps & fixture connections",
+    "difficulty": "easy",
+    "question": "What is the scope of SPS 382.32?",
+    "location_options": [
+      "382.32(1)",
+      "382.33(1)",
+      "382.35(1)",
+      "382.36(1)"
+    ],
+    "location_answer": "382.32(1)",
+    "content_options": [
+      "Requirements for the types and installation of traps and direct fixture connections.",
+      "Requirements for cleanouts and manholes for all drain piping.",
+      "Requirements for stormwater detention design only.",
+      "Requirements for product approvals for plumbing materials."
+    ],
+    "content_answer": "Requirements for the types and installation of traps and direct fixture connections.",
+    "meta": {
+      "document": "SPS-382",
+      "page_start": null,
+      "page_end": null
+    },
+    "document_answer": "SPS-382"
+  },
+  {
+    "bucket": "Traps & fixture connections",
+    "difficulty": "easy",
+    "question": "Which fixtures are NOT required to be separately trapped under SPS 382.32?",
+    "location_options": [
+      "382.32(3)(a)",
+      "382.33(5)",
+      "382.31(9)",
+      "382.34(3)"
+    ],
+    "location_answer": "382.32(3)(a)",
+    "content_options": [
+      "Fixtures with integral traps, certain storm drains, and other listed exceptions.",
+      "Any fixture connected within 5 feet of a stack base.",
+      "All floor drains in mechanical rooms.",
+      "Fixtures with trap primers installed."
+    ],
+    "content_answer": "Fixtures with integral traps, certain storm drains, and other listed exceptions.",
+    "meta": {
+      "document": "SPS-382",
+      "page_start": null,
+      "page_end": null
+    },
+    "document_answer": "SPS-382"
+  },
+  {
+    "bucket": "Traps & fixture connections",
+    "difficulty": "easy",
+    "question": "What liquid seal depth must each trap provide unless otherwise specified?",
+    "location_options": [
+      "382.32(3)(b)",
+      "382.31(3)(a)",
+      "382.33(5)",
+      "382.35(4)"
+    ],
+    "location_answer": "382.32(3)(b)",
+    "content_options": [
+      "Not less than 2 inches and not more than 4 inches.",
+      "Exactly 2 inches.",
+      "Not less than 1 inch and not more than 2 inches.",
+      "At least 6 inches."
+    ],
+    "content_answer": "Not less than 2 inches and not more than 4 inches.",
+    "meta": {
+      "document": "SPS-382",
+      "page_start": null,
+      "page_end": null
+    },
+    "document_answer": "SPS-382"
+  },
+  {
+    "bucket": "Traps & fixture connections",
+    "difficulty": "medium",
+    "question": "Which standards apply to trap seal primer valves under SPS 382.32?",
+    "location_options": [
+      "382.32(3)(c)2",
+      "382.31(9)",
+      "382.33(4)",
+      "382.35(3)"
+    ],
+    "location_answer": "382.32(3)(c)2",
+    "content_options": [
+      "ASSE 1018 or ASSE 1044.",
+      "ASME A112.6.9 only.",
+      "CSA B45.13/IAPMO Z1700.",
+      "ASTM F1417."
+    ],
+    "content_answer": "ASSE 1018 or ASSE 1044.",
+    "meta": {
+      "document": "SPS-382",
+      "page_start": null,
+      "page_end": null
+    },
+    "document_answer": "SPS-382"
+  },
+  {
+    "bucket": "Traps & fixture connections",
+    "difficulty": "medium",
+    "question": "Barrier-type trap seal protectors for floor drains must conform to which standard?",
+    "location_options": [
+      "382.32(3)(c)3",
+      "382.31(10)",
+      "382.33(6)",
+      "382.34(4)"
+    ],
+    "location_answer": "382.32(3)(c)3",
+    "content_options": [
+      "ASSE 1072.",
+      "ASSE 1018.",
+      "ASME A112.14.1.",
+      "CSA B64.1.1."
+    ],
+    "content_answer": "ASSE 1072.",
+    "meta": {
+      "document": "SPS-382",
+      "page_start": null,
+      "page_end": null
+    },
+    "document_answer": "SPS-382"
+  },
+  {
+    "bucket": "Traps & fixture connections",
+    "difficulty": "easy",
+    "question": "Which design characteristic is required of traps under SPS 382.32?",
+    "location_options": [
+      "382.32(3)(d)",
+      "382.31(4)",
+      "382.33(3)",
+      "382.35(5)"
+    ],
+    "location_answer": "382.32(3)(d)",
+    "content_options": [
+      "Traps must be self-scouring; uniform-diameter P-traps are considered self-scouring.",
+      "Traps must include internal check valves for backflow control.",
+      "Traps must be double-trapped where installed below grade.",
+      "Traps must be vented separately from the fixture."
+    ],
+    "content_answer": "Traps must be self-scouring; uniform-diameter P-traps are considered self-scouring.",
+    "meta": {
+      "document": "SPS-382",
+      "page_start": null,
+      "page_end": null
+    },
+    "document_answer": "SPS-382"
+  },
+  {
+    "bucket": "Traps & fixture connections",
+    "difficulty": "medium",
+    "question": "Under what condition may a shower replacing a nonpublic residential bathtub use a 1.5-inch trap?",
+    "location_options": [
+      "382.32(3)(e)2",
+      "382.31(9)",
+      "382.33(2)",
+      "382.35(3)"
+    ],
+    "location_answer": "382.32(3)(e)2",
+    "content_options": [
+      "When the shower has no more than one control valve and does not allow operation of more than one showerhead simultaneously.",
+      "When the shower pan is cast iron and the drain is center-set.",
+      "When the shower is within 10 feet of the vent stack.",
+      "Only when a 2-inch standpipe is provided."
+    ],
+    "content_answer": "When the shower has no more than one control valve and does not allow operation of more than one showerhead simultaneously.",
+    "meta": {
+      "document": "SPS-382",
+      "page_start": null,
+      "page_end": null
+    },
+    "document_answer": "SPS-382"
+  },
+  {
+    "bucket": "Traps & fixture connections",
+    "difficulty": "medium",
+    "question": "What is the maximum vertical distance between the water level in a floor-outlet water closet bowl and the centerline of the horizontal portion of the fixture drain?",
+    "location_options": [
+      "382.32(3)(f)1.c",
+      "382.31(9)",
+      "382.33(3)",
+      "382.35(4)"
+    ],
+    "location_answer": "382.32(3)(f)1.c",
+    "content_options": [
+      "36 inches.",
+      "24 inches.",
+      "18 inches.",
+      "60 inches."
+    ],
+    "content_answer": "36 inches.",
+    "meta": {
+      "document": "SPS-382",
+      "page_start": null,
+      "page_end": null
+    },
+    "document_answer": "SPS-382"
+  },
+  {
+    "bucket": "Traps & fixture connections",
+    "difficulty": "medium",
+    "question": "Double trapping of fixtures is ________ under SPS 382.32.",
+    "location_options": [
+      "382.32(3)",
+      "382.31(3)",
+      "382.33(1)",
+      "382.35(1)"
+    ],
+    "location_answer": "382.32(3)",
+    "content_options": [
+      "prohibited",
+      "required",
+      "allowed only below grade",
+      "allowed when vented within 24 inches"
+    ],
+    "content_answer": "prohibited",
+    "meta": {
+      "document": "SPS-382",
+      "page_start": null,
+      "page_end": null
+    },
+    "document_answer": "SPS-382"
+  },
+  {
+    "bucket": "Indirect & local waste piping",
+    "difficulty": "easy",
+    "question": "Floor drains must be located so they are:",
+    "location_options": [
+      "382.33(2)(a)1",
+      "382.35(3)",
+      "382.31(7)",
+      "382.34(3)"
+    ],
+    "location_answer": "382.33(2)(a)1",
+    "content_options": [
+      "accessible for cleaning purposes.",
+      "adjacent to every fixture trap.",
+      "within 6 feet of a vent.",
+      "below the flood rim of fixtures."
+    ],
+    "content_answer": "accessible for cleaning purposes.",
+    "meta": {
+      "document": "SPS-382",
+      "page_start": null,
+      "page_end": null
+    },
+    "document_answer": "SPS-382"
+  },
+  {
+    "bucket": "Indirect & local waste piping",
+    "difficulty": "easy",
+    "question": "A floor drain receiving the wash from garbage cans shall be at least what diameter?",
+    "location_options": [
+      "382.33(2)(a)2",
+      "382.32(3)(e)",
+      "382.35(3)",
+      "382.31(10)"
+    ],
+    "location_answer": "382.33(2)(a)2",
+    "content_options": [
+      "3 inches.",
+      "2 inches.",
+      "1.5 inches.",
+      "4 inches."
+    ],
+    "content_answer": "3 inches.",
+    "meta": {
+      "document": "SPS-382",
+      "page_start": null,
+      "page_end": null
+    },
+    "document_answer": "SPS-382"
+  },
+  {
+    "bucket": "Indirect & local waste piping",
+    "difficulty": "medium",
+    "question": "Horizontal drain piping serving a kitchen sink trap may NOT connect to vertical drain piping by which fitting when a pump discharge or food waste grinder is installed?",
+    "location_options": [
+      "382.33(2)(b)",
+      "382.31(4)",
+      "382.35(3)",
+      "382.32(3)"
+    ],
+    "location_answer": "382.33(2)(b)",
+    "content_options": [
+      "Double sanitary tee.",
+      "Sanitary tee-wye.",
+      "Long-sweep quarter bend.",
+      "45° wye."
+    ],
+    "content_answer": "Double sanitary tee.",
+    "meta": {
+      "document": "SPS-382",
+      "page_start": null,
+      "page_end": null
+    },
+    "document_answer": "SPS-382"
+  },
+  {
+    "bucket": "Indirect & local waste piping",
+    "difficulty": "medium",
+    "question": "Per Table 382.33-2, the maximum number of clothes washers permitted on a 3-inch trap is:",
+    "location_options": [
+      "382.33-Table 382.33-2",
+      "382.30-Table 382.30-1",
+      "382.31-Table 382.31-1",
+      "382.34(6)"
+    ],
+    "location_answer": "382.33-Table 382.33-2",
+    "content_options": [
+      "3 machines.",
+      "1 machine.",
+      "2 machines.",
+      "4 machines."
+    ],
+    "content_answer": "3 machines.",
+    "meta": {
+      "document": "SPS-382",
+      "page_start": null,
+      "page_end": null
+    },
+    "document_answer": "SPS-382"
+  },
+  {
+    "bucket": "Dishwashers (indirect waste)",
+    "difficulty": "medium",
+    "question": "What is the maximum developed length for indirect waste piping from a residential-type dishwashing machine?",
+    "location_options": [
+      "382.33(2)(d)1",
+      "382.33(2)(d)2",
+      "382.31(9)",
+      "382.35(3)"
+    ],
+    "location_answer": "382.33(2)(d)1",
+    "content_options": [
+      "10 feet.",
+      "30 inches.",
+      "18 inches.",
+      "6 feet."
+    ],
+    "content_answer": "10 feet.",
+    "meta": {
+      "document": "SPS-382",
+      "page_start": null,
+      "page_end": null
+    },
+    "document_answer": "SPS-382"
+  },
+  {
+    "bucket": "Dishwashers (indirect waste)",
+    "difficulty": "medium",
+    "question": "Commercial dishwashing machines shall discharge:",
+    "location_options": [
+      "382.33(2)(d)2",
+      "382.31(10)",
+      "382.35(4)",
+      "382.34(5)"
+    ],
+    "location_answer": "382.33(2)(d)2",
+    "content_options": [
+      "by an air-gap or air-break into a trapped and vented receptor; indirect waste piping may not exceed 30 inches.",
+      "directly to the sanitary drain via a 2-inch trapped tailpiece.",
+      "to a floor drain with a removable grate.",
+      "to a sump with grinder pump and check valve."
+    ],
+    "content_answer": "by an air-gap or air-break into a trapped and vented receptor; indirect waste piping may not exceed 30 inches.",
+    "meta": {
+      "document": "SPS-382",
+      "page_start": null,
+      "page_end": null
+    },
+    "document_answer": "SPS-382"
+  },
+  {
+    "bucket": "Drips & drain outlets",
+    "difficulty": "easy",
+    "question": "Appliances and devices with drip or drain outlets that discharge to the plumbing system must discharge:",
+    "location_options": [
+      "382.33(2)(e)",
+      "382.31(3)",
+      "382.35(3)",
+      "382.34(2)"
+    ],
+    "location_answer": "382.33(2)(e)",
+    "content_options": [
+      "into an approved receptor by means of an approved air-gap or air-break.",
+      "directly to a floor sink using a hose connection.",
+      "to the nearest P-trap within 10 feet.",
+      "to a storm inlet when below grade."
+    ],
+    "content_answer": "into an approved receptor by means of an approved air-gap or air-break.",
+    "meta": {
+      "document": "SPS-382",
+      "page_start": null,
+      "page_end": null
+    },
+    "document_answer": "SPS-382"
+  },
+  {
+    "bucket": "Elevator pits & threshold drains",
+    "difficulty": "medium",
+    "question": "Drains serving elevator pits shall discharge:",
+    "location_options": [
+      "382.33(2)(f)1",
+      "382.36(4)",
+      "382.35(3)",
+      "382.31(7)"
+    ],
+    "location_answer": "382.33(2)(f)1",
+    "content_options": [
+      "to the storm drain system as specified in SPS 382.36.",
+      "to the sanitary sewer via backwater valve.",
+      "to a combined sanitary/storm sewer only.",
+      "to a sump in the machine room."
+    ],
+    "content_answer": "to the storm drain system as specified in SPS 382.36.",
+    "meta": {
+      "document": "SPS-382",
+      "page_start": null,
+      "page_end": null
+    },
+    "document_answer": "SPS-382"
+  },
+  {
+    "bucket": "Elevator pits & threshold drains",
+    "difficulty": "medium",
+    "question": "Which of the following is TRUE regarding elevator pit drains?",
+    "location_options": [
+      "382.33(2)(f)2-5",
+      "382.31(10)",
+      "382.35(1)",
+      "382.34(3)"
+    ],
+    "location_answer": "382.33(2)(f)2-5",
+    "content_options": [
+      "Gravity connection to the storm system is prohibited; no sump may be in a machine room; sumps serving pits must have submerged inlets maintaining a minimum 6-inch trap seal.",
+      "They may connect by gravity to sanitary sewers if fitted with a backwater valve.",
+      "They must discharge to a grease interceptor before the storm system.",
+      "They are exempt from trap seal requirements."
+    ],
+    "content_answer": "Gravity connection to the storm system is prohibited; no sump may be in a machine room; sumps serving pits must have submerged inlets maintaining a minimum 6-inch trap seal.",
+    "meta": {
+      "document": "SPS-382",
+      "page_start": null,
+      "page_end": null
+    },
+    "document_answer": "SPS-382"
+  },
+  {
+    "bucket": "Elevator threshold drains",
+    "difficulty": "hard",
+    "question": "Elevator emergency threshold drains may be used for which purpose?",
+    "location_options": [
+      "382.33(2)(fm)",
+      "382.36(3)",
+      "382.35(3)",
+      "382.31(7)"
+    ],
+    "location_answer": "382.33(2)(fm)",
+    "content_options": [
+      "Only to minimize infiltration of water from fire sprinklers into elevator hoistways; they may not receive other water.",
+      "To collect routine cleaning water from lobbies and discharge to sanitary.",
+      "To drain sump overflows into the hoistway.",
+      "To bypass interceptors for maintenance."
+    ],
+    "content_answer": "Only to minimize infiltration of water from fire sprinklers into elevator hoistways; they may not receive other water.",
+    "meta": {
+      "document": "SPS-382",
+      "page_start": null,
+      "page_end": null
+    },
+    "document_answer": "SPS-382"
+  },
+  {
+    "bucket": "Cleanouts & manholes",
+    "difficulty": "medium",
+    "question": "For above-ground gravity horizontal drains, the developed length between cleanouts may not exceed:",
+    "location_options": [
+      "382.35(3)(a)1",
+      "382.35(3)(a)2",
+      "382.35(3)(b)1",
+      "382.31(7)"
+    ],
+    "location_answer": "382.35(3)(a)1",
+    "content_options": [
+      "75 feet.",
+      "40 feet.",
+      "100 feet.",
+      "150 feet."
+    ],
+    "content_answer": "75 feet.",
+    "meta": {
+      "document": "SPS-382",
+      "page_start": null,
+      "page_end": null
+    },
+    "document_answer": "SPS-382"
+  },
+  {
+    "bucket": "Cleanouts & manholes",
+    "difficulty": "medium",
+    "question": "For below-ground gravity horizontal drains 2 inches or less in diameter, the maximum developed length between cleanouts is:",
+    "location_options": [
+      "382.35(3)(a)2",
+      "382.35(3)(a)3",
+      "382.35(3)(b)1",
+      "382.33(2)"
+    ],
+    "location_answer": "382.35(3)(a)2",
+    "content_options": [
+      "40 feet.",
+      "75 feet.",
+      "100 feet.",
+      "25 feet."
+    ],
+    "content_answer": "40 feet.",
+    "meta": {
+      "document": "SPS-382",
+      "page_start": null,
+      "page_end": null
+    },
+    "document_answer": "SPS-382"
+  },
+  {
+    "bucket": "Cleanouts & manholes",
+    "difficulty": "medium",
+    "question": "Drain pipes carrying greasy wastes shall be provided with cleanouts:",
+    "location_options": [
+      "382.35(3)(h)",
+      "382.35(3)(i)",
+      "382.33(2)",
+      "382.31(5)"
+    ],
+    "location_answer": "382.35(3)(h)",
+    "content_options": [
+      "located not more than 40 feet apart and at all changes in direction of more than 45 degrees.",
+      "every 75 feet regardless of direction changes.",
+      "only at the base of each stack.",
+      "only where a trap primer is installed."
+    ],
+    "content_answer": "located not more than 40 feet apart and at all changes in direction of more than 45 degrees.",
+    "meta": {
+      "document": "SPS-382",
+      "page_start": null,
+      "page_end": null
+    },
+    "document_answer": "SPS-382"
+  },
+  {
+    "bucket": "Wastewater treatment & holding devices",
+    "difficulty": "medium",
+    "question": "Grease interceptors discharging to public sewers in new or remodeled plumbing systems are:",
+    "location_options": [
+      "382.34(6)(b)1",
+      "382.30(11)(g)",
+      "382.31(3)",
+      "382.35(3)"
+    ],
+    "location_answer": "382.34(6)(b)1",
+    "content_options": [
+      "required (one or more) for systems discharging to public sewers.",
+      "optional if a food waste grinder is installed.",
+      "prohibited for interior installations.",
+      "only required for dishwashers rated above 2 gpm."
+    ],
+    "content_answer": "required (one or more) for systems discharging to public sewers.",
+    "meta": {
+      "document": "SPS-382",
+      "page_start": null,
+      "page_end": null
+    },
+    "document_answer": "SPS-382"
+  },
+  {
+    "bucket": "Wastewater treatment & holding devices",
+    "difficulty": "medium",
+    "question": "Under SPS 382.34, grease interceptors must be maintained:",
+    "location_options": [
+      "382.34(3)(e)",
+      "382.35(3)",
+      "382.31(7)",
+      "382.33(2)"
+    ],
+    "location_answer": "382.34(3)(e)",
+    "content_options": [
+      "on a cycle not to exceed 90 days or per manufacturer instructions.",
+      "whenever a nuisance is observed, no maximum interval stated.",
+      "only when effluent BOD exceeds 250 mg/L.",
+      "annually, unless otherwise directed by local ordinance."
+    ],
+    "content_answer": "on a cycle not to exceed 90 days or per manufacturer instructions.",
+    "meta": {
+      "document": "SPS-382",
+      "page_start": null,
+      "page_end": null
+    },
+    "document_answer": "SPS-382"
+  },
+  {
+    "bucket": "Storm & clearwater systems",
+    "difficulty": "easy",
+    "question": "At a minimum, plumbing systems upstream of detention shall be designed based on which storm event?",
+    "location_options": [
+      "382.36(3)(a)",
+      "382.36(5)",
+      "382.30(11)(g)",
+      "382.38(3)"
+    ],
+    "location_answer": "382.36(3)(a)",
+    "content_options": [
+      "10-year, 24-hour storm event.",
+      "25-year, 1-hour storm event.",
+      "50-year, 12-hour storm event.",
+      "100-year, 24-hour storm event."
+    ],
+    "content_answer": "10-year, 24-hour storm event.",
+    "meta": {
+      "document": "SPS-382",
+      "page_start": null,
+      "page_end": null
+    },
+    "document_answer": "SPS-382"
+  },
+  {
+    "bucket": "Storm & clearwater systems",
+    "difficulty": "medium",
+    "question": "Which divisor applies to roof areas when converting square feet of contributing area to gpm for storm plumbing design?",
+    "location_options": [
+      "382.36(5) (divisors list)",
+      "382.31(10)",
+      "382.30(5)",
+      "382.35(3)"
+    ],
+    "location_answer": "382.36(5) (divisors list)",
+    "content_options": [
+      "26 square feet per gpm.",
+      "32.5 square feet per gpm.",
+      "104 square feet per gpm.",
+      "13 square feet per gpm."
+    ],
+    "content_answer": "26 square feet per gpm.",
+    "meta": {
+      "document": "SPS-382",
+      "page_start": null,
+      "page_end": null
+    },
+    "document_answer": "SPS-382"
+  },
+  {
+    "bucket": "Storm & clearwater systems",
+    "difficulty": "medium",
+    "question": "Subsoil (foundation) drains discharging to a plumbing system shall discharge to which of the following?",
+    "location_options": [
+      "382.36(7)(a)1",
+      "382.33(2)",
+      "382.31(7)",
+      "382.35(3)"
+    ],
+    "location_answer": "382.36(7)(a)1",
+    "content_options": [
+      "An area drain, manhole or storm sewer, trapped receptor, or a sump with a pump.",
+      "Directly to a sanitary building drain via air gap.",
+      "To a grease interceptor and then to sanitary.",
+      "To a floor drain in the lowest level."
+    ],
+    "content_answer": "An area drain, manhole or storm sewer, trapped receptor, or a sump with a pump.",
+    "meta": {
+      "document": "SPS-382",
+      "page_start": null,
+      "page_end": null
+    },
+    "document_answer": "SPS-382"
+  },
+  {
+    "bucket": "Storm & clearwater systems",
+    "difficulty": "medium",
+    "question": "Clearwater discharge to a sanitary sewer is limited by Table 382.38-1 to which daily amount unless otherwise approved?",
+    "location_options": [
+      "382.38-Table 382.38-1 note",
+      "382.36(7)",
+      "382.31(3)",
+      "382.35(3)"
+    ],
+    "location_answer": "382.38-Table 382.38-1 note",
+    "content_options": [
+      "50 gallons per day.",
+      "5 gallons per minute.",
+      "100 gallons per day.",
+      "10 gallons per minute."
+    ],
+    "content_answer": "50 gallons per day.",
+    "meta": {
+      "document": "SPS-382",
+      "page_start": null,
+      "page_end": null
+    },
+    "document_answer": "SPS-382"
+  },
+  {
+    "bucket": "Roof drains & overflows",
+    "difficulty": "medium",
+    "question": "Siphonic roof drains shall conform to which standards?",
+    "location_options": [
+      "382.365(8)(b)",
+      "382.36(3)",
+      "382.31(10)",
+      "382.34(6)"
+    ],
+    "location_answer": "382.365(8)(b)",
+    "content_options": [
+      "ASME A112.6.9 or ASTM F2021.",
+      "ASME A112.3.4/CSA B45.9.",
+      "CSA B45.13/IAPMO Z1700.",
+      "ASTM D2665."
+    ],
+    "content_answer": "ASME A112.6.9 or ASTM F2021.",
+    "meta": {
+      "document": "SPS-382",
+      "page_start": null,
+      "page_end": null
+    },
+    "document_answer": "SPS-382"
+  },
+  {
+    "bucket": "Roof drains & overflows",
+    "difficulty": "hard",
+    "question": "Secondary roof drain systems must:",
+    "location_options": [
+      "382.365(9)",
+      "382.36(3)",
+      "382.31(7)",
+      "382.35(3)"
+    ],
+    "location_answer": "382.365(9)",
+    "content_options": [
+      "be independent of primary roof drain systems and discharge per Table 382.38-1; openings 2–4 inches above primary drain bottoms.",
+      "be connected downstream of the primary drains into the same conductor.",
+      "discharge to sanitary via a trap primer.",
+      "use standpipes at least 8 inches above roof level."
+    ],
+    "content_answer": "be independent of primary roof drain systems and discharge per Table 382.38-1; openings 2–4 inches above primary drain bottoms.",
+    "meta": {
+      "document": "SPS-382",
+      "page_start": null,
+      "page_end": null
+    },
+    "document_answer": "SPS-382"
   },
   {
     "bucket": "Storm water & clearwater (SPS 382)",
@@ -6474,6 +6474,31 @@ const defaultQuizData = [
       "page_end": null
     },
     "document_answer": "SPS-382"
+  },
+  {
+    "bucket": "Backflow / cross-connection (SPS 381 terms + SPS 382 requirements)",
+    "difficulty": "easy",
+    "question": "Which SPS 381 definition identifies a pressure vacuum breaker assembly?",
+    "location_options": [
+      "381.01(189)",
+      "381.01(64)",
+      "381.01(79)",
+      "381.01(231m)"
+    ],
+    "location_answer": "381.01(189)",
+    "content_options": [
+      "A cross-connection control assembly consisting of an independently acting check valve and an independently acting air inlet valve located downstream of the check valve",
+      "A cross-connection control assembly consisting of two independently acting check valves with shutoff valves and test cocks",
+      "An assembly with one check valve and a bleed/vent to atmosphere located between check valves",
+      "A definition for the reference point on a vacuum breaker"
+    ],
+    "content_answer": "A cross-connection control assembly consisting of an independently acting check valve and an independently acting air inlet valve located downstream of the check valve",
+    "meta": {
+      "document": "SPS-381",
+      "page_start": null,
+      "page_end": null
+    },
+    "document_answer": "SPS-381"
   },
   {
     "bucket": "Backflow / cross-connection (SPS 381 terms + SPS 382 requirements)",
