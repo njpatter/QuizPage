@@ -38,6 +38,32 @@ const progressIndicator = document.getElementById('progress-indicator');
 const reviewContainer = document.getElementById('review-container');
 const darkModeToggle = document.getElementById('darkModeToggle');
 
+// Adjustable delays (persisted)
+let feedbackDelayMs = parseInt(localStorage.getItem('feedbackDelayMs') || '1500', 10);
+let summaryDelayMs = parseInt(localStorage.getItem('summaryDelayMs') || '4000', 10);
+const feedbackDelayInput = document.getElementById('feedbackDelayMs');
+const summaryDelayInput = document.getElementById('summaryDelayMs');
+if (feedbackDelayInput) {
+  feedbackDelayInput.value = String(feedbackDelayMs);
+  feedbackDelayInput.addEventListener('input', () => {
+    const v = parseInt(feedbackDelayInput.value || '0', 10);
+    if (!Number.isNaN(v) && v >= 0) {
+      feedbackDelayMs = v;
+      localStorage.setItem('feedbackDelayMs', String(v));
+    }
+  });
+}
+if (summaryDelayInput) {
+  summaryDelayInput.value = String(summaryDelayMs);
+  summaryDelayInput.addEventListener('input', () => {
+    const v = parseInt(summaryDelayInput.value || '0', 10);
+    if (!Number.isNaN(v) && v >= 0) {
+      summaryDelayMs = v;
+      localStorage.setItem('summaryDelayMs', String(v));
+    }
+  });
+}
+
 // Question type checkboxes
 const documentCheck = document.getElementById('documentCheck');
 const locationCheck = document.getElementById('locationCheck');
@@ -189,6 +215,7 @@ document.addEventListener('DOMContentLoaded', () => {
       statusIndicator.style.display = 'block';
       statusIndicator.innerHTML = `✅ Default questions loaded (${defaultQuizData.length} questions available)`;
     }
+
   }
 });
 
@@ -546,6 +573,12 @@ style.textContent = `
 
   body.dark-mode .answers-summary .correct-answer .type-label {
     color: #e2e8f0;
+  }
+
+  /* Dark mode styles for review context */
+  body.dark-mode .review-container .question-pair > div:last-child {
+    background: #334155;
+    color: #cbd5e1;
   }
 `;
 document.head.appendChild(style);
@@ -980,6 +1013,23 @@ function showReview() {
       pair.appendChild(contA);
     }
     
+    // Add document and location context for reference
+    const contextDiv = document.createElement('div');
+    contextDiv.style.cssText = `
+      margin-top: 1rem;
+      padding: 1rem;
+      background: #f8fafc;
+      border-radius: 8px;
+      border-left: 4px solid #4f46e5;
+      font-size: 0.9rem;
+      color: #64748b;
+    `;
+    contextDiv.innerHTML = `
+      <strong>📚 Document:</strong> ${item.document_answer}<br>
+      <strong>📍 Location:</strong> ${item.location_answer}
+    `;
+    pair.appendChild(contextDiv);
+    
     reviewContainer.appendChild(pair);
   });
   const backBtn = document.createElement('button');
@@ -1046,7 +1096,7 @@ function handleQuestionComplete(q, docCorrect, docUserAnswer, locCorrect, locUse
     currentIndex += 1;
     showDocumentQuestion();
     updateProgress();
-  }, 4000); // Increased delay to give time to read the answers
+  }, summaryDelayMs); // Adjustable summary delay
 }
 
 // Show answers summary for the current question set
@@ -1147,8 +1197,13 @@ function createQuestion(text, options, answer, onDone, part, correctAnswer) {
   wrapper.className = 'question';
   
   const p = document.createElement('p');
-  p.textContent = text;
+  p.innerHTML = text;
   wrapper.appendChild(p);
+  
+  // Trigger MathJax rendering if available
+  if (typeof MathJax !== 'undefined') {
+    MathJax.typesetPromise([p]).catch((err) => console.log('MathJax error:', err));
+  }
   
   const optionsContainer = document.createElement('div');
   optionsContainer.className = 'options-container';
@@ -1156,8 +1211,13 @@ function createQuestion(text, options, answer, onDone, part, correctAnswer) {
   let userAnswer = null;
   options.forEach(opt => {
     const btn = document.createElement('button');
-    btn.textContent = opt;
+    btn.innerHTML = opt;
     btn.className = 'option';
+    
+    // Trigger MathJax rendering for options if available
+    if (typeof MathJax !== 'undefined') {
+      MathJax.typesetPromise([btn]).catch((err) => console.log('MathJax error in option:', err));
+    }
     btn.addEventListener('click', () => {
       // Disable all options
       wrapper.querySelectorAll('button.option').forEach(b => b.disabled = true);
@@ -1180,7 +1240,7 @@ function createQuestion(text, options, answer, onDone, part, correctAnswer) {
       
       setTimeout(() => {
         onDone(isCorrect, userAnswer);
-      }, 1500);
+      }, feedbackDelayMs);
     }, { once: true });
     
     optionsContainer.appendChild(btn);
@@ -1189,3 +1249,4 @@ function createQuestion(text, options, answer, onDone, part, correctAnswer) {
   wrapper.appendChild(optionsContainer);
   return wrapper;
 }
+
