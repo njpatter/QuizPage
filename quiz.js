@@ -147,16 +147,24 @@ fileInput.parentNode.insertBefore(loadDefaultBtn, fileInput.nextSibling);
 
 loadDefaultBtn.addEventListener('click', () => {
   if (typeof defaultQuizData !== 'undefined' && defaultQuizData.length > 0) {
-    // Clear any previously loaded file data and use default questions
-    quizData = defaultQuizData;
-    allDocumentNames = Array.from(new Set(quizData.map(q => q.document_answer)));
-    
-    // Update status indicator to show default questions are loaded
-    const statusIndicator = document.getElementById('status-indicator');
-    if (statusIndicator) {
-      statusIndicator.style.display = 'block';
-      statusIndicator.innerHTML = `✅ Default questions loaded (${defaultQuizData.length} questions available)`;
+    // If data_2.js is also loaded, combine both datasets
+    if (data2Loaded && typeof defaultQuizData2 !== 'undefined' && defaultQuizData2.length > 0) {
+      quizData = [...defaultQuizData, ...defaultQuizData2];
+      const statusIndicator = document.getElementById('status-indicator');
+      if (statusIndicator) {
+        statusIndicator.style.display = 'block';
+        statusIndicator.innerHTML = `✅ Using combined question sets: data.js (${defaultQuizData.length}) + data_2.js (${defaultQuizData2.length}) = ${quizData.length} total questions`;
+      }
+    } else {
+      // Just use data.js
+      quizData = defaultQuizData;
+      const statusIndicator = document.getElementById('status-indicator');
+      if (statusIndicator) {
+        statusIndicator.style.display = 'block';
+        statusIndicator.innerHTML = `✅ Default questions loaded (${defaultQuizData.length} questions available)`;
+      }
     }
+    allDocumentNames = Array.from(new Set(quizData.map(q => q.document_answer)));
     
     // Clear file inputs
     fileInput.value = '';
@@ -166,6 +174,151 @@ loadDefaultBtn.addEventListener('click', () => {
   } else {
     alert('Default questions not available. Please load a quiz file.');
   }
+});
+
+// Handle loading data_2.js as a second question set
+const loadData2Btn = document.getElementById('loadData2Btn');
+let data2Loaded = false;
+
+// Function to combine and update quiz data
+function updateQuizDataWithData2() {
+  if (typeof defaultQuizData2 !== 'undefined' && defaultQuizData2.length > 0) {
+    // Always try to combine with data.js if it exists, even if quizData was previously set
+    if (typeof defaultQuizData !== 'undefined' && defaultQuizData.length > 0) {
+      quizData = [...defaultQuizData, ...defaultQuizData2];
+      const statusIndicator = document.getElementById('status-indicator');
+      if (statusIndicator) {
+        statusIndicator.style.display = 'block';
+        statusIndicator.innerHTML = `✅ Using combined question sets: data.js (${defaultQuizData.length}) + data_2.js (${defaultQuizData2.length}) = ${quizData.length} total questions`;
+      }
+    } else {
+      // Only use data_2.js alone if data.js is truly not available
+      quizData = defaultQuizData2;
+      const statusIndicator = document.getElementById('status-indicator');
+      if (statusIndicator) {
+        statusIndicator.style.display = 'block';
+        statusIndicator.innerHTML = `✅ Using data_2.js (${defaultQuizData2.length} questions available). Note: data.js not found.`;
+      }
+    }
+    allDocumentNames = Array.from(new Set(quizData.map(q => q.document_answer)));
+    fileInput.value = '';
+    dirInput.value = '';
+    return true;
+  }
+  return false;
+}
+
+loadData2Btn.addEventListener('click', () => {
+  // Ensure data.js is loaded first - if not, warn the user
+  if (typeof defaultQuizData === 'undefined' || defaultQuizData.length === 0) {
+    console.warn('data.js not loaded yet. Waiting for it...');
+    // Wait a bit and check again
+    setTimeout(() => {
+      if (typeof defaultQuizData === 'undefined' || defaultQuizData.length === 0) {
+        const proceed = confirm('data.js does not appear to be loaded. Do you want to proceed with loading data_2.js only?');
+        if (!proceed) {
+          return;
+        }
+      } else {
+        // data.js is now available, proceed with loading data_2.js
+        loadData2Btn.click();
+        return;
+      }
+    }, 500);
+  }
+
+  // Check if data_2.js is already loaded
+  if (data2Loaded) {
+    // If already loaded, just use the existing data
+    if (!updateQuizDataWithData2()) {
+      alert('data_2.js was loaded but no quiz data found. Ensure it defines defaultQuizData2.');
+    }
+    return;
+  }
+
+  // Check if script already exists in DOM
+  const existingScript = document.querySelector('script[src*="data_2.js"]');
+  if (existingScript) {
+    // Script tag exists, check if data is available
+    if (updateQuizDataWithData2()) {
+      data2Loaded = true;
+      return;
+    }
+    // If script exists but data not available, try loading again
+    existingScript.remove();
+  }
+
+  // Try loading via fetch first (more reliable for web)
+  fetch('data_2.js?' + new Date().getTime())
+    .then(response => {
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      return response.text();
+    })
+    .then(scriptText => {
+      // Execute the script text
+      try {
+        // Create a new script element and execute it
+        const script = document.createElement('script');
+        script.textContent = scriptText;
+        document.head.appendChild(script);
+        
+        // Wait a moment for the script to execute
+        setTimeout(() => {
+          data2Loaded = true;
+          if (updateQuizDataWithData2()) {
+            console.log('Successfully loaded data_2.js via fetch');
+            // Ensure data.js is still included
+            if (typeof defaultQuizData !== 'undefined' && defaultQuizData.length > 0) {
+              // Re-combine to ensure data.js is included
+              quizData = [...defaultQuizData, ...defaultQuizData2];
+              allDocumentNames = Array.from(new Set(quizData.map(q => q.document_answer)));
+              const statusIndicator = document.getElementById('status-indicator');
+              if (statusIndicator) {
+                statusIndicator.innerHTML = `✅ Using combined question sets: data.js (${defaultQuizData.length}) + data_2.js (${defaultQuizData2.length}) = ${quizData.length} total questions`;
+              }
+            }
+          } else {
+            alert('data_2.js loaded but no quiz data found. Ensure it defines defaultQuizData2.');
+          }
+        }, 100);
+      } catch (err) {
+        console.error('Error executing data_2.js:', err);
+        alert('Error executing data_2.js: ' + err.message);
+      }
+    })
+    .catch(err => {
+      console.error('Error loading data_2.js via fetch:', err);
+      // Fallback to script tag method
+      const script = document.createElement('script');
+      script.src = 'data_2.js?' + new Date().getTime(); // Cache-busting
+      script.onload = () => {
+        data2Loaded = true;
+        setTimeout(() => {
+          if (updateQuizDataWithData2()) {
+            console.log('Successfully loaded data_2.js via script tag');
+            // Ensure data.js is still included
+            if (typeof defaultQuizData !== 'undefined' && defaultQuizData.length > 0) {
+              // Re-combine to ensure data.js is included
+              quizData = [...defaultQuizData, ...defaultQuizData2];
+              allDocumentNames = Array.from(new Set(quizData.map(q => q.document_answer)));
+              const statusIndicator = document.getElementById('status-indicator');
+              if (statusIndicator) {
+                statusIndicator.innerHTML = `✅ Using combined question sets: data.js (${defaultQuizData.length}) + data_2.js (${defaultQuizData2.length}) = ${quizData.length} total questions`;
+              }
+            }
+          } else {
+            alert('data_2.js loaded but no quiz data found. Ensure it defines defaultQuizData2.');
+          }
+        }, 100);
+      };
+      script.onerror = () => {
+        alert('Error loading data_2.js. Make sure the file exists in the same directory. Check the browser console for details.');
+        console.error('Failed to load data_2.js');
+      };
+      document.head.appendChild(script);
+    });
 });
 
 // Add test button for debugging directory loading
@@ -201,22 +354,39 @@ testDirBtn.addEventListener('click', () => {
 
 // Auto-load default questions on page load
 document.addEventListener('DOMContentLoaded', () => {
-  if (typeof defaultQuizData !== 'undefined' && defaultQuizData.length > 0) {
-    quizData = defaultQuizData;
-    allDocumentNames = Array.from(new Set(quizData.map(q => q.document_answer)));
-    // Set default question count to 10 if not specified
-    if (!questionCountInput.value) {
-      questionCountInput.value = '10';
+  // Wait a bit to ensure data.js has loaded (it's loaded synchronously, but just to be safe)
+  setTimeout(() => {
+    if (typeof defaultQuizData !== 'undefined' && defaultQuizData.length > 0) {
+      // Only set quizData if it hasn't been set yet (preserve if data_2.js was loaded first somehow)
+      if (quizData.length === 0 || (typeof defaultQuizData2 === 'undefined' || defaultQuizData2.length === 0)) {
+        quizData = defaultQuizData;
+        allDocumentNames = Array.from(new Set(quizData.map(q => q.document_answer)));
+      } else {
+        // If data_2.js was already loaded, combine them
+        quizData = [...defaultQuizData, ...defaultQuizData2];
+        allDocumentNames = Array.from(new Set(quizData.map(q => q.document_answer)));
+      }
+      
+      // Set default question count to 10 if not specified
+      if (!questionCountInput.value) {
+        questionCountInput.value = '10';
+      }
+      
+      // Add status indicator
+      const statusIndicator = document.getElementById('status-indicator');
+      if (statusIndicator) {
+        if (typeof defaultQuizData2 !== 'undefined' && defaultQuizData2.length > 0) {
+          statusIndicator.style.display = 'block';
+          statusIndicator.innerHTML = `✅ Loaded: data.js (${defaultQuizData.length}) + data_2.js (${defaultQuizData2.length}) = ${quizData.length} total questions`;
+        } else {
+          statusIndicator.style.display = 'block';
+          statusIndicator.innerHTML = `✅ Default questions loaded (${defaultQuizData.length} questions available). Click "Load data_2.js" to add more questions.`;
+        }
+      }
+    } else {
+      console.warn('defaultQuizData not found on page load. Make sure data.js is loaded.');
     }
-    
-    // Add status indicator
-    const statusIndicator = document.getElementById('status-indicator');
-    if (statusIndicator) {
-      statusIndicator.style.display = 'block';
-      statusIndicator.innerHTML = `✅ Default questions loaded (${defaultQuizData.length} questions available)`;
-    }
-
-  }
+  }, 50);
 });
 
 // Dark mode toggle
