@@ -1,5 +1,5 @@
 // Default quiz data - automatically loaded
-const defaultQuizData = [
+const defaultQuizData2 = [
   {
     "bucket": "Code navigation & definitions",
     "difficulty": "easy",
