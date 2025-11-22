@@ -862,7 +862,29 @@ function updateProgress() {
   
   if (currentIndex < selectedQuestions.length) {
     const progress = ((currentIndex + 1) / selectedQuestions.length) * 100;
-    progressIndicator.textContent = `Question ${currentIndex + 1} of ${selectedQuestions.length}`;
+    
+    // Calculate questions per quiz set
+    const questionsPerQuiz = (selectedQuestionTypes.document ? 1 : 0) + 
+                            (selectedQuestionTypes.location ? 1 : 0) + 
+                            (selectedQuestionTypes.content ? 1 : 0);
+    
+    // Calculate score information
+    let progressText = `Question ${currentIndex + 1} of ${selectedQuestions.length}`;
+    
+    if (currentIndex > 0 && questionsPerQuiz > 0) {
+      // Number of questions answered so far (completed question sets)
+      const questionsAnswered = currentIndex;
+      // Total possible points so far
+      const totalPossible = questionsAnswered * questionsPerQuiz;
+      // Current score (number of correct sub-questions)
+      const currentScore = score;
+      // Calculate percentage
+      const percentage = totalPossible > 0 ? Math.round((currentScore / totalPossible) * 100) : 0;
+      
+      progressText = `Question ${currentIndex + 1} (${currentScore} - ${percentage}%) of ${selectedQuestions.length}`;
+    }
+    
+    progressIndicator.textContent = progressText;
     
     if (progressBar && progressFill) {
       progressBar.style.display = 'block';
