@@ -1,5 +1,97 @@
 // Default quiz data - automatically loaded
-const defaultQuizData2 = [
+const defaultQuizData2 = [ 
+  {
+    "bucket": "Code navigation & definitions",
+    "difficulty": "easy",
+    "question": "What color is tracer wire for non-metallic storm sewer/drain pipes?",
+    "location_options": [
+      "382.30",
+      "382.36",
+      "382.41",
+      "384.01"
+    ],
+    "location_answer": "382.30",
+    "content_options": [
+      "Brown",
+      "Green",
+      "Blue",
+      "Purple"
+    ],
+    "content_answer": "Brown",
+    "meta": {
+      "document": "SPS-382.30"
+    },
+    "document_answer": "SPS-382.30"
+  },
+  {
+    "bucket": "Code navigation & definitions",
+    "difficulty": "easy",
+    "question": "What color is tracer wire for non-metallic sanitary sewer/drain pipes?",
+    "location_options": [
+      "382.30",
+      "382.36",
+      "382.41",
+      "384.01"
+    ],
+    "location_answer": "382.30",
+    "content_options": [
+      "Brown",
+      "Green",
+      "Blue",
+      "Purple"
+    ],
+    "content_answer": "Green",
+    "meta": {
+      "document": "SPS-382.30"
+    },
+    "document_answer": "SPS-382.30"
+  },
+  {
+    "bucket": "Code navigation & definitions",
+    "difficulty": "easy",
+    "question": "What color is tracer wire for non-metallic potable water supply pipes?",
+    "location_options": [
+      "382.30",
+      "382.36",
+      "382.41",
+      "384.01"
+    ],
+    "location_answer": "382.30",
+    "content_options": [
+      "Brown",
+      "Green",
+      "Blue",
+      "Purple"
+    ],
+    "content_answer": "Blue",
+    "meta": {
+      "document": "SPS-382.30"
+    },
+    "document_answer": "SPS-382.30"
+  },
+  {
+    "bucket": "Code navigation & definitions",
+    "difficulty": "easy",
+    "question": "What color is tracer wire for non-metallic non-potable water supply pipes?",
+    "location_options": [
+      "382.30",
+      "382.36",
+      "382.41",
+      "384.01"
+    ],
+    "location_answer": "382.30",
+    "content_options": [
+      "Brown",
+      "Green",
+      "Blue",
+      "Purple"
+    ],
+    "content_answer": "Purple",
+    "meta": {
+      "document": "SPS-382.30"
+    },
+    "document_answer": "SPS-382.30"
+  },
   {
     "bucket": "Code navigation & definitions",
     "difficulty": "easy",
