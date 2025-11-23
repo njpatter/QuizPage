@@ -449,5 +449,213 @@ const defaultQuizData3 = [
       "page_end": 1
     },
     "document_answer": "SPS-382.32"
+  },
+  {
+    "bucket": "AAV testing",
+    "difficulty": "easy",
+    "question": "An AAV passes a pressure test if pressure drop after 1 minute is no more than:",
+    "location_options": [
+      "382.31(17m)(f)",
+      "382.31(17m)(e)",
+      "382.31(16)",
+      "382.31(17)"
+    ],
+    "location_answer": "382.31(17m)(f)",
+    "content_options": [
+      "0.25 in. WC",
+      "0.5 in. WC",
+      "1 in. WC",
+      "2 in. WC"
+    ],
+    "content_answer": "0.5 in. WC",
+    "meta": {
+      "document": "SPS-382.31",
+      "page_start": 7,
+      "page_end": 7
+    },
+    "document_answer": "SPS-382.31"
+  },
+  {
+    "bucket": "Common vents",
+    "difficulty": "easy",
+    "question": "A common vent may serve how many fixtures on a vertical drain?",
+    "location_options": [
+      "382.31(11)(a)",
+      "382.31(10)",
+      "382.31(12)",
+      "382.31(17)"
+    ],
+    "location_answer": "382.31(11)(a)",
+    "content_options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "content_answer": "2",
+    "meta": {
+      "document": "SPS-382.31",
+      "page_start": 3,
+      "page_end": 3
+    },
+    "document_answer": "SPS-382.31"
+  },
+  {
+    "bucket": "Code navigation & definitions",
+    "difficulty": "easy",
+    "question": "What minimum capacity requirement applies to a sump containing only one pump?",
+    "location_options": [
+      "382.20",
+      "382.30",
+      "382.36",
+      "384.25"
+    ],
+    "location_answer": "382.30",
+    "content_options": [
+      "Must hold 5 gallons above the pump inlet",
+      "Must allow the pump to run at least 20 seconds",
+      "Must include two automatic float switches",
+      "Must have a minimum 30-inch depth"
+    ],
+    "content_answer": "Must allow the pump to run at least 20 seconds",
+    "meta": {
+      "document": "SPS-382.30"
+    },
+    "document_answer": "SPS-382.30"
+  },
+  {
+    "bucket": "Laundry interceptors",
+    "difficulty": "easy",
+    "question": "An in-line laundry interceptor must have a minimum inside dimension of:",
+    "location_options": [
+      "382.34(7)(c)1",
+      "382.34(7)(a)",
+      "382.34(7)(b)",
+      "382.34(12)"
+    ],
+    "location_answer": "382.34(7)(c)1",
+    "content_options": [
+      "12 inches",
+      "18 inches",
+      "24 inches",
+      "30 inches"
+    ],
+    "content_answer": "24 inches",
+    "document_answer": "SPS-382.34",
+    "meta": {}
+  },
+  {
+    "bucket": "Sand interceptors",
+    "difficulty": "easy",
+    "question": "The outlet of a sand interceptor must be submerged to form a trap with a minimum water seal of:",
+    "location_options": [
+      "382.34(12)",
+      "382.34(7)",
+      "382.34(6)",
+      "382.34(14)"
+    ],
+    "location_answer": "382.34(12)",
+    "content_options": [
+      "4 inches",
+      "6 inches",
+      "8 inches",
+      "12 inches"
+    ],
+    "content_answer": "12 inches",
+    "document_answer": "SPS-382.34",
+    "meta": {}
+  },
+  {
+    "bucket": "Code navigation & definitions",
+    "difficulty": "hard",
+    "question": "What minimum bedding compaction is required when stable trench conditions allow standard installation?",
+    "location_options": [
+      "382.30",
+      "382.60",
+      "382.40",
+      "383.44"
+    ],
+    "location_answer": "382.30",
+    "content_options": [
+      "80% standard proctor",
+      "85% standard proctor",
+      "90% standard proctor",
+      "95% standard proctor"
+    ],
+    "content_answer": "90% standard proctor",
+    "meta": {
+      "document": "SPS-382.30"
+    },
+    "document_answer": "SPS-382.30"
+  },
+  {
+    "bucket": "Elevator drains",
+    "difficulty": "medium",
+    "question": "The minimum size of an elevator threshold drain trap is:",
+    "location_options": [
+      "382.31(17)(d)2",
+      "382.31(17)(d)1",
+      "382.31(16)",
+      "382.31(8)"
+    ],
+    "location_answer": "382.31(17)(d)2",
+    "content_options": [
+      "2 in.",
+      "3 in.",
+      "4 in.",
+      "6 in."
+    ],
+    "content_answer": "4 in.",
+    "meta": {
+      "document": "SPS-382.31",
+      "page_start": 6,
+      "page_end": 6
+    },
+    "document_answer": "SPS-382.31"
+  },
+  {
+    "bucket": "Chemical waste basins",
+    "difficulty": "medium",
+    "question": "If adequate diluting water cannot be supplied to a chemical neutralizing basin, it must be filled with marble or limestone chips of what size?",
+    "location_options": [
+      "382.34(14)(a)3",
+      "382.34(14)(a)2",
+      "382.34(14)(b)",
+      "382.34(12)"
+    ],
+    "location_answer": "382.34(14)(a)3",
+    "content_options": [
+      "1/4 to 1/2 inch diameter",
+      "1 inch to 3 inch diameter",
+      "4 to 6 inch diameter",
+      "3/4 to 1 inch diameter"
+    ],
+    "content_answer": "1 inch to 3 inch diameter",
+    "document_answer": "SPS-382.34",
+    "meta": {}
+  },
+  {
+    "bucket": "Code navigation & definitions",
+    "difficulty": "medium",
+    "question": "The first 90-degree fitting downstream of a roof drain must comply with what requirement?",
+    "location_options": [
+      "382.30",
+      "382.35",
+      "382.36",
+      "383.44"
+    ],
+    "location_answer": "382.36",
+    "content_options": [
+      "Minimum radius per Table 382.30-4",
+      "Minimum radius per Table 382.36-1",
+      "A welded long-sweep configuration",
+      "Manufacturer-approved detent radius"
+    ],
+    "content_answer": "Minimum radius per Table 382.30-4",
+    "meta": {
+      "document": "SPS-382.36",
+      "page_start": 36,
+      "page_end": 36
+    }
   }
 ]
