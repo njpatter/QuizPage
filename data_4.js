@@ -127,7 +127,7 @@ const defaultQuizData4 = [
     {
         "bucket": "POWTS - Mound System",
         "difficulty": "medium",
-        "question": "What is the minimum required sand fill depth beneath a distribution cell when the required soil treatment depth is greater than 36 inches?",
+        "question": "What is the minimum required sand fill depth beneath a Mound distribution cell when the required soil treatment depth is greater than 36 inches?",
         "location_options": [
             "Section VI",
             "Table 1",
@@ -527,7 +527,7 @@ const defaultQuizData4 = [
     {
         "bucket": "Dimensions & rules",
         "difficulty": "easy",
-        "question": "How much aggregate must be placed beneath the distribution lateral?",
+        "question": "How much aggregate must be placed beneath the distribution lateral in an At-Grade system?",
         "location_options": [
             "Page 10",
             "Page 11",
@@ -852,7 +852,7 @@ const defaultQuizData4 = [
     {
         "bucket": "Dimensions",
         "difficulty": "easy",
-        "question": "What is the required depth of cover soil above the distribution cell?",
+        "question": "What is the required minimum depth of cover soil above the distribution cell in an in-ground system?",
         "location_options": [
             "Component Manual p.5",
             "Component Manual p.6",
@@ -861,12 +861,12 @@ const defaultQuizData4 = [
         ],
         "location_answer": "Component Manual p.10",
         "content_options": [
-            "4-6 inches",
-            "6-12 inches",
-            "12-18 inches",
-            "18-24 inches"
+            "at least 4 inches",
+            "at least 6 inches",
+            "at least 12 inches",
+            "at least 18 inches"
         ],
-        "content_answer": "12 inches (minimum)",
+        "content_answer": "at least 12 inches",
         "meta": {
             "document": "In-Ground Soil Absorption Component Manual",
             "page_start": 10,
@@ -927,7 +927,7 @@ const defaultQuizData4 = [
     {
         "bucket": "Dimensions",
         "difficulty": "easy",
-        "question": "What is the maximum allowable width of a distribution cell?",
+        "question": "What is the maximum allowable width of an In-Ground distribution cell?",
         "location_options": [
             "Component Manual p.5",
             "Component Manual p.8",
