@@ -275,6 +275,204 @@ loadData2Btn.addEventListener('click', () => {
     });
 });
 
+// Handle loading data_3.js as a third question set
+const loadData3Btn = document.getElementById('loadData3Btn');
+let data3Loaded = false;
+
+// Function to switch to data_3.js questions only (not combined)
+function updateQuizDataWithData3() {
+  if (typeof defaultQuizData3 !== 'undefined' && defaultQuizData3.length > 0) {
+    // Use only data_3.js questions, not combined with data.js
+    quizData = defaultQuizData3;
+    allDocumentNames = Array.from(new Set(quizData.map(q => q.document_answer)));
+    
+    const statusIndicator = document.getElementById('status-indicator');
+    if (statusIndicator) {
+      statusIndicator.style.display = 'block';
+      statusIndicator.innerHTML = `✅ Switched to data_3.js (${defaultQuizData3.length} questions available)`;
+    }
+    
+    fileInput.value = '';
+    dirInput.value = '';
+    return true;
+  }
+  return false;
+}
+
+loadData3Btn.addEventListener('click', () => {
+  // Check if data_3.js is already loaded
+  if (data3Loaded) {
+    // If already loaded, just use the existing data
+    if (!updateQuizDataWithData3()) {
+      alert('data_3.js was loaded but no quiz data found. Ensure it defines defaultQuizData3.');
+    }
+    return;
+  }
+
+  // Check if script already exists in DOM
+  const existingScript = document.querySelector('script[src*="data_3.js"]');
+  if (existingScript) {
+    // Script tag exists, check if data is available
+    if (updateQuizDataWithData3()) {
+      data3Loaded = true;
+      return;
+    }
+    // If script exists but data not available, try loading again
+    existingScript.remove();
+  }
+
+  // Try loading via fetch first (more reliable for web)
+  fetch('data_3.js?' + new Date().getTime())
+    .then(response => {
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      return response.text();
+    })
+    .then(scriptText => {
+      // Execute the script text
+      try {
+        // Create a new script element and execute it
+        const script = document.createElement('script');
+        script.textContent = scriptText;
+        document.head.appendChild(script);
+        
+        // Wait a moment for the script to execute
+        setTimeout(() => {
+          data3Loaded = true;
+          if (updateQuizDataWithData3()) {
+            console.log('Successfully loaded data_3.js via fetch');
+          } else {
+            alert('data_3.js loaded but no quiz data found. Ensure it defines defaultQuizData3.');
+          }
+        }, 100);
+      } catch (err) {
+        console.error('Error executing data_3.js:', err);
+        alert('Error executing data_3.js: ' + err.message);
+      }
+    })
+    .catch(err => {
+      console.error('Error loading data_3.js via fetch:', err);
+      // Fallback to script tag method
+      const script = document.createElement('script');
+      script.src = 'data_3.js?' + new Date().getTime(); // Cache-busting
+      script.onload = () => {
+        data3Loaded = true;
+        setTimeout(() => {
+          if (updateQuizDataWithData3()) {
+            console.log('Successfully loaded data_3.js via script tag');
+          } else {
+            alert('data_3.js loaded but no quiz data found. Ensure it defines defaultQuizData3.');
+          }
+        }, 100);
+      };
+      script.onerror = () => {
+        alert('Error loading data_3.js. Make sure the file exists in the same directory. Check the browser console for details.');
+        console.error('Failed to load data_3.js');
+      };
+      document.head.appendChild(script);
+    });
+});
+
+// Handle loading data_4.js as a fourth question set
+const loadData4Btn = document.getElementById('loadData4Btn');
+let data4Loaded = false;
+
+// Function to switch to data_4.js questions only (not combined)
+function updateQuizDataWithData4() {
+  if (typeof defaultQuizData4 !== 'undefined' && defaultQuizData4.length > 0) {
+    // Use only data_4.js questions, not combined with data.js
+    quizData = defaultQuizData4;
+    allDocumentNames = Array.from(new Set(quizData.map(q => q.document_answer)));
+    
+    const statusIndicator = document.getElementById('status-indicator');
+    if (statusIndicator) {
+      statusIndicator.style.display = 'block';
+      statusIndicator.innerHTML = `✅ Switched to data_4.js (${defaultQuizData4.length} questions available)`;
+    }
+    
+    fileInput.value = '';
+    dirInput.value = '';
+    return true;
+  }
+  return false;
+}
+
+loadData4Btn.addEventListener('click', () => {
+  // Check if data_4.js is already loaded
+  if (data4Loaded) {
+    // If already loaded, just use the existing data
+    if (!updateQuizDataWithData4()) {
+      alert('data_4.js was loaded but no quiz data found. Ensure it defines defaultQuizData4.');
+    }
+    return;
+  }
+
+  // Check if script already exists in DOM
+  const existingScript = document.querySelector('script[src*="data_4.js"]');
+  if (existingScript) {
+    // Script tag exists, check if data is available
+    if (updateQuizDataWithData4()) {
+      data4Loaded = true;
+      return;
+    }
+    // If script exists but data not available, try loading again
+    existingScript.remove();
+  }
+
+  // Try loading via fetch first (more reliable for web)
+  fetch('data_4.js?' + new Date().getTime())
+    .then(response => {
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      return response.text();
+    })
+    .then(scriptText => {
+      // Execute the script text
+      try {
+        // Create a new script element and execute it
+        const script = document.createElement('script');
+        script.textContent = scriptText;
+        document.head.appendChild(script);
+        
+        // Wait a moment for the script to execute
+        setTimeout(() => {
+          data4Loaded = true;
+          if (updateQuizDataWithData4()) {
+            console.log('Successfully loaded data_4.js via fetch');
+          } else {
+            alert('data_4.js loaded but no quiz data found. Ensure it defines defaultQuizData4.');
+          }
+        }, 100);
+      } catch (err) {
+        console.error('Error executing data_4.js:', err);
+        alert('Error executing data_4.js: ' + err.message);
+      }
+    })
+    .catch(err => {
+      console.error('Error loading data_4.js via fetch:', err);
+      // Fallback to script tag method
+      const script = document.createElement('script');
+      script.src = 'data_4.js?' + new Date().getTime(); // Cache-busting
+      script.onload = () => {
+        data4Loaded = true;
+        setTimeout(() => {
+          if (updateQuizDataWithData4()) {
+            console.log('Successfully loaded data_4.js via script tag');
+          } else {
+            alert('data_4.js loaded but no quiz data found. Ensure it defines defaultQuizData4.');
+          }
+        }, 100);
+      };
+      script.onerror = () => {
+        alert('Error loading data_4.js. Make sure the file exists in the same directory. Check the browser console for details.');
+        console.error('Failed to load data_4.js');
+      };
+      document.head.appendChild(script);
+    });
+});
+
 // Add test button for debugging directory loading
 const testDirBtn = document.createElement('button');
 testDirBtn.textContent = 'Test Directory';
@@ -802,7 +1000,27 @@ startBtn.addEventListener('click', () => {
 
 function startQuiz() {
   const count = parseInt(questionCountInput.value, 10) || quizData.length;
-  selectedQuestions = shuffleArray(quizData).slice(0, Math.min(count, quizData.length));
+  
+  // Remove duplicates from quizData before selection
+  // Use a combination of question text and document_answer as unique identifier
+  const uniqueQuestions = [];
+  const seenQuestions = new Set();
+  
+  for (const question of quizData) {
+    // Create a unique key from question text and document answer
+    const uniqueKey = `${question.question || ''}_${question.document_answer || ''}_${question.location_answer || ''}_${question.content_answer || ''}`;
+    
+    if (!seenQuestions.has(uniqueKey)) {
+      seenQuestions.add(uniqueKey);
+      uniqueQuestions.push(question);
+    }
+  }
+  
+  // Shuffle and select questions
+  const shuffled = shuffleArray(uniqueQuestions);
+  const requestedCount = Math.min(count, shuffled.length);
+  selectedQuestions = shuffled.slice(0, requestedCount);
+  
   currentIndex = 0;
   score = 0;
   userAnswers = [];
@@ -828,7 +1046,13 @@ function startQuiz() {
   const statusIndicator = document.getElementById('status-indicator');
   if (statusIndicator) {
     statusIndicator.style.display = 'block';
-    statusIndicator.innerHTML = `📝 Quiz started with ${selectedQuestions.length} questions from ${quizData.length} total questions`;
+    const duplicateCount = quizData.length - uniqueQuestions.length;
+    let statusMessage = `📝 Quiz started with ${selectedQuestions.length} questions`;
+    if (duplicateCount > 0) {
+      statusMessage += ` (${duplicateCount} duplicate${duplicateCount > 1 ? 's' : ''} removed)`;
+    }
+    statusMessage += ` from ${uniqueQuestions.length} unique questions`;
+    statusIndicator.innerHTML = statusMessage;
   }
   
   // Clear file inputs to show they've been processed
@@ -1329,12 +1553,14 @@ function formatTime(milliseconds) {
   return `${seconds}.${ms.toString().padStart(3, '0')}s`;
 }
 
-// Fisher-Yates shuffle
+// Fisher-Yates shuffle (proper implementation)
 function shuffleArray(arr) {
-  return arr
-    .map(value => ({ value, sort: Math.random() }))
-    .sort((a, b) => a.sort - b.sort)
-    .map(({ value }) => value);
+  const shuffled = [...arr]; // Create a copy to avoid mutating the original
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+  return shuffled;
 }
 
 // Create a question UI, handle answer, show feedback, then call onDone after delay
