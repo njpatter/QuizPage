@@ -657,5 +657,192 @@ const defaultQuizData3 = [
       "page_start": 36,
       "page_end": 36
     }
+  },
+  {
+    "bucket": "Special vertical distance rule",
+    "difficulty": "medium",
+    "question": "What is the maximum vertical distance from the water level in a floor outlet water closet bowl to the horizontal fixture drain portion?",
+    "location_options": [
+      "382.32(4)(b)1.c",
+      "382.32(4)(b)1",
+      "382.32(4)(b)2",
+      "382.32(3)(c)"
+    ],
+    "location_answer": "382.32(4)(b)1.c",
+    "content_options": [
+      "36 inches",
+      "15 inches",
+      "24 inches",
+      "18 inches"
+    ],
+    "content_answer": "36 inches",
+    "meta": {
+      "document": "SPS-382.32",
+      "page_start": 1,
+      "page_end": 1
+    },
+    "document_answer": "SPS-382.32"
+  },
+  {
+    "bucket": "Code navigation & definitions",
+    "difficulty": "easy",
+    "question": "Secondary roof drain openings must be at least how far above the primary drain opening?",
+    "location_options": [
+      "382.32",
+      "382.36",
+      "382.40",
+      "384.30"
+    ],
+    "location_answer": "382.36",
+    "content_options": [
+      "1 inch",
+      "2 inches",
+      "6 inches",
+      "10 inches"
+    ],
+    "content_answer": "2 inches",
+    "meta": {
+      "document": "SPS-382.36",
+      "page_start": 39,
+      "page_end": 39
+    }
+  },
+  {
+    "bucket": "Garage basin design",
+    "difficulty": "medium",
+    "question": "A garage catch basin must have a minimum inside diameter of:",
+    "location_options": [
+      "382.34(4)(a)2.b",
+      "382.34(4)(b)2",
+      "382.34(4)(a)3",
+      "382.34(5)"
+    ],
+    "location_answer": "382.34(4)(a)2.b",
+    "content_options": [
+      "18 inches",
+      "24 inches",
+      "30 inches",
+      "36 inches"
+    ],
+    "content_answer": "36 inches",
+    "document_answer": "SPS-382.34",
+    "meta": {}
+  },
+  {
+    "bucket": "Vent piping offsets",
+    "difficulty": "medium",
+    "question": "Vent piping for wall-outlet fixtures may not offset horizontally less than how many inches above the floor?",
+    "location_options": [
+      "382.31(15)(b)2",
+      "382.31(15)(b)3",
+      "382.31(16)",
+      "382.31(9)"
+    ],
+    "location_answer": "382.31(15)(b)2",
+    "content_options": [
+      "24 in.",
+      "30 in.",
+      "36 in.",
+      "48 in."
+    ],
+    "content_answer": "36 in.",
+    "meta": {
+      "document": "SPS-382.31",
+      "page_start": 5,
+      "page_end": 5
+    },
+    "document_answer": "SPS-382.31"
+  },
+  {
+    "bucket": "Receptors",
+    "difficulty": "easy",
+    "question": "A waste sink or standpipe used as a receptor must have its rim located at least how far above the floor?",
+    "location_options": [
+      "½ inch",
+      "1 inch",
+      "2 inches",
+      "4 inches"
+    ],
+    "location_answer": "1 inch",
+    "content_options": [
+      "½ inch above the floor",
+      "1 inch above the floor",
+      "2 inches above the floor",
+      "4 inches above the floor"
+    ],
+    "content_answer": "1 inch above the floor",
+    "meta": {
+      "document": "SPS-382.33",
+      "page_start": 2,
+      "page_end": 2
+    },
+    "document_answer": "SPS-382.33"
+  },
+  {
+    "bucket": "Floor outlet fixture rule",
+    "difficulty": "medium",
+    "question": "What is the maximum vertical distance for a floor outlet fixture between the drain outlet and trap outlet centerline?",
+    "location_options": [
+      "382.32(4)(b)1.e",
+      "382.32(4)(b)1.c",
+      "382.32(3)(b)",
+      "382.32(5)(b)"
+    ],
+    "location_answer": "382.32(4)(b)1.e",
+    "content_options": [
+      "18 inches",
+      "36 inches",
+      "24 inches",
+      "15 inches"
+    ],
+    "content_answer": "18 inches",
+    "meta": {
+      "document": "SPS-382.32",
+      "page_start": 1,
+      "page_end": 1
+    },
+    "document_answer": "SPS-382.32"
+  },
+  {
+    "bucket": "Locations & distances",
+    "difficulty": "easy",
+    "question": "An exterior wastewater holding device may NOT be located within how many feet of a building?",
+    "location_options": [
+      "382.34(3)(g)",
+      "382.34(4)",
+      "382.31(16)",
+      "383.44(2)"
+    ],
+    "location_answer": "382.34(3)(g)",
+    "content_options": [
+      "3 feet",
+      "5 feet",
+      "10 feet",
+      "12 feet"
+    ],
+    "content_answer": "5 feet",
+    "meta": {},
+    "document_answer": "SPS-382.34"
+  },
+  {
+    "bucket": "Grease interceptors",
+    "difficulty": "medium",
+    "question": "What is the minimum liquid depth for an exterior grease interceptor?",
+    "location_options": [
+      "382.34(5)(c)1.a",
+      "382.34(5)(d)",
+      "382.34(3)",
+      "382.34(7)"
+    ],
+    "location_answer": "382.34(5)(c)1.a",
+    "content_options": [
+      "18 inches",
+      "30 inches",
+      "42 inches",
+      "60 inches"
+    ],
+    "content_answer": "42 inches",
+    "meta": {},
+    "document_answer": "SPS-382.34"
   }
 ]
